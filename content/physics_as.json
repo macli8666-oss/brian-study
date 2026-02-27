@@ -1,0 +1,1116 @@
+{
+  "subject_id": "physics_as",
+  "subject_name_en": "AS Physics",
+  "subject_name_zh": "AS 物理",
+  "exam_board": "CIE 9702",
+  "chapters": [
+    {
+      "chapter_id": "phy_ch1",
+      "title_en": "Physical Quantities and Units",
+      "title_zh": "物理量与单位",
+      "knowledge_points": [
+        {
+          "title_en": "SI Base Units and Derived Units",
+          "title_zh": "SI基本单位与导出单位",
+          "content_en": "The SI system defines seven base quantities and their units:\n• Mass — kilogram (kg)\n• Length — metre (m)\n• Time — second (s)\n• Electric current — ampere (A)\n• Temperature — kelvin (K)\n• Amount of substance — mole (mol)\n• Luminous intensity — candela (cd)\n\nAll other physical quantities are derived from these base quantities. For example:\n- Velocity = displacement / time, unit: m s^{-1}\n- Force = mass x acceleration, unit: kg m s^{-2} (newton, N)\n- Energy = force x distance, unit: kg m^2 s^{-2} (joule, J)\n- Pressure = force / area, unit: kg m^{-1} s^{-2} (pascal, Pa)\n- Power = energy / time, unit: kg m^2 s^{-3} (watt, W)\n\nWorked example: Show that the unit of resistance (ohm) in base units is kg m^2 s^{-3} A^{-2}.\nSolution: R = V/I, and V = W/Q = (kg m^2 s^{-2})/(A s) = kg m^2 s^{-3} A^{-1}. So R = V/I = kg m^2 s^{-3} A^{-1} / A = kg m^2 s^{-3} A^{-2}.",
+          "content_zh": "SI国际单位制定义了七个基本物理量及其单位：\n• 质量 — 千克 (kg)\n• 长度 — 米 (m)\n• 时间 — 秒 (s)\n• 电流 — 安培 (A)\n• 温度 — 开尔文 (K)\n• 物质的量 — 摩尔 (mol)\n• 发光强度 — 坎德拉 (cd)\n\n所有其他物理量都由这些基本量导出。例如：\n- 速度 = 位移 / 时间，单位：m s^{-1}\n- 力 = 质量 x 加速度，单位：kg m s^{-2}（牛顿，N）\n- 能量 = 力 x 距离，单位：kg m^2 s^{-2}（焦耳，J）\n\n例题：证明电阻（欧姆）的基本单位为 kg m^2 s^{-3} A^{-2}。\n解答：R = V/I，而 V = W/Q = (kg m^2 s^{-2})/(A s) = kg m^2 s^{-3} A^{-1}。所以 R = V/I = kg m^2 s^{-3} A^{-2}。"
+        },
+        {
+          "title_en": "SI Prefixes and Standard Form",
+          "title_zh": "SI前缀与标准形式",
+          "content_en": "SI prefixes are used to express very large or very small quantities.\n\nCommon prefixes (large): T (tera) = 10^{12}, G (giga) = 10^9, M (mega) = 10^6, k (kilo) = 10^3.\nCommon prefixes (small): m (milli) = 10^{-3}, μ (micro) = 10^{-6}, n (nano) = 10^{-9}, p (pico) = 10^{-12}.\n\nStandard form expresses a number as A x 10^n where 1 <= A < 10.\n\nWorked example: Convert 0.035 mm to metres in standard form.\n0.035 mm = 0.035 x 10^{-3} m = 3.5 x 10^{-5} m.\n\nWorked example: Express 4700 μA in amperes.\n4700 μA = 4700 x 10^{-6} A = 4.7 x 10^{-3} A = 4.7 mA.",
+          "content_zh": "SI前缀用于方便地表达非常大或非常小的量。\n\n常用前缀（大数）：T（太拉）= 10^{12}，G（吉哖）= 10^9，M（兆）= 10^6，k（千）= 10^3。\n常用前缀（小数）：m（毫）= 10^{-3}，μ（微）= 10^{-6}，n（纳）= 10^{-9}，p（皮）= 10^{-12}。\n\n标准形式将数字表示为 A x 10^n，其中 1 <= A < 10。\n\n例题：将 0.035 mm 转换为米并用标准形式表示。\n0.035 mm = 0.035 x 10^{-3} m = 3.5 x 10^{-5} m。"
+        },
+        {
+          "title_en": "Scalars and Vectors",
+          "title_zh": "标量与矢量",
+          "content_en": "A scalar quantity has magnitude only. A vector quantity has both magnitude and direction.\n\nCommon scalars: distance, speed, mass, energy, temperature, time, power, pressure, electric charge.\nCommon vectors: displacement, velocity, acceleration, force, weight, momentum, electric field strength.\n\nAdding vectors: Vectors are added using the triangle rule or parallelogram rule. When two vectors are at right angles, the resultant R = sqrt(A^2 + B^2), and the angle theta = arctan(B/A).\n\nResolving vectors: Any vector can be resolved into two perpendicular components:\n- Horizontal component: Fx = F cos(theta)\n- Vertical component: Fy = F sin(theta)\n\nWorked example: A force of 10 N acts at 30 degrees above the horizontal. Fx = 10 cos(30) = 8.66 N; Fy = 10 sin(30) = 5.0 N.",
+          "content_zh": "标量只有大小。矢量既有大小又有方向。\n\n常见标量：距离、速率、质量、能量、温度、时间、功率、压强、电荷。\n常见矢量：位移、速度、加速度、力、重力、动量、电场强度。\n\n矢量加法：使用三角形法则或平行四边形法则。当两个矢量垂直时，合力 R = sqrt(A^2 + B^2)，角度 theta = arctan(B/A)。\n\n矢量分解：任何矢量可分解为两个垂直分量：\n- 水平分量：Fx = F cos(theta)\n- 垂直分量：Fy = F sin(theta)\n\n例题：一个 10 N 的力沿水平方向上方 30° 作用。Fx = 10 cos(30) = 8.66 N；Fy = 10 sin(30) = 5.0 N。"
+        },
+        {
+          "title_en": "Estimations and Orders of Magnitude",
+          "title_zh": "估算与数量级",
+          "content_en": "Physicists often estimate quantities to the nearest order of magnitude (power of 10).\n\nKey estimates:\n• Mass of an electron: ~10^{-30} kg\n• Mass of a proton/neutron: ~10^{-27} kg\n• Mass of a person: ~70 kg (~10^2 kg)\n• Diameter of an atom: ~10^{-10} m\n• Diameter of a nucleus: ~10^{-15} m\n• Speed of sound in air: ~340 m/s (~10^2 m/s)\n• Speed of light: ~3.0 x 10^8 m/s\n• Atmospheric pressure: ~10^5 Pa\n• g near Earth's surface: ~10 m/s^2\n\nTwo quantities are of the same order of magnitude if their ratio is within about 10.",
+          "content_zh": "物理学家经常将物理量估算到最接近的数量级（10的幂）。\n\n关键估算值：\n• 电子质量：~10^{-30} kg\n• 质子/中子质量：~10^{-27} kg\n• 人的质量：~70 kg\n• 原子直径：~10^{-10} m\n• 原子核直径：~10^{-15} m\n• 空气中声速：~340 m/s\n• 光速：~3.0 x 10^8 m/s\n• 大气压：~10^5 Pa"
+        },
+        {
+          "title_en": "Dimensional Analysis and Homogeneity",
+          "title_zh": "量纲分析与方程的一致性",
+          "content_en": "An equation is homogeneous if the dimensions on the left-hand side equal those on the right.\n\nDimensional analysis can:\n1. Check whether an equation is physically valid.\n2. Determine the units of an unknown quantity.\n3. Derive possible relationships between variables.\n\nNote: It cannot verify numerical constants or signs.\n\nWorked example: Check the homogeneity of v^2 = u^2 + 2as.\nLHS: [v^2] = (m/s)^2 = m^2 s^{-2}\nRHS: [u^2] = m^2 s^{-2}; [2as] = (m s^{-2})(m) = m^2 s^{-2}\nAll terms have dimensions m^2 s^{-2}, so the equation is homogeneous.\n\nWorked example: The period T of a pendulum depends on length l and g. Suppose T = k * l^a * g^b. Then s = m^a * (m s^{-2})^b = m^{a+b} s^{-2b}. Comparing: a+b=0 and -2b=1, so b=-1/2, a=1/2. Thus T = k*sqrt(l/g).",
+          "content_zh": "如果等式左右两边的量纲相等，则该方程具有一致性。\n\n量纲分析可用于：\n1. 检验方程是否在物理上有效。\n2. 确定未知量的单位。\n3. 推导变量之间可能的关系。\n\n注意：量纲分析无法验证数值常数或符号。\n\n例题：检验 v^2 = u^2 + 2as 的一致性。\n左边：[v^2] = (m/s)^2 = m^2 s^{-2}\n右边：[u^2] = m^2 s^{-2}；[2as] = (m s^{-2})(m) = m^2 s^{-2}\n所有项的量纲均为 m^2 s^{-2}，因此方程具有一致性。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "Which of the following is a vector quantity?",
+          "question_zh": "以下哪个是矢量？",
+          "options": {
+            "A": "Energy",
+            "B": "Power",
+            "C": "Momentum",
+            "D": "Speed"
+          },
+          "answer": "C",
+          "explanation_en": "Momentum is a vector (p = mv, where v is a vector). Energy, power and speed are scalars.",
+          "explanation_zh": "动量是矢量（p = mv，其中 v 是矢量）。能量、功率和速率都是标量。"
+        },
+        {
+          "question_en": "What is the SI base unit of pressure?",
+          "question_zh": "压强的SI基本单位是什么？",
+          "options": {
+            "A": "kg m^{-1} s^{-2}",
+            "B": "kg m s^{-2}",
+            "C": "kg m^{-2} s^{-2}",
+            "D": "kg m^2 s^{-2}"
+          },
+          "answer": "A",
+          "explanation_en": "Pressure = Force/Area = (kg m s^{-2})/m^2 = kg m^{-1} s^{-2} (pascal).",
+          "explanation_zh": "压强 = 力/面积 = (kg m s^{-2})/m^2 = kg m^{-1} s^{-2}（帕斯卡）。"
+        },
+        {
+          "question_en": "A force of 20 N acts at 60 degrees to the horizontal. What is the horizontal component?",
+          "question_zh": "一个 20 N 的力与水平方向成 60°。水平分量是多少？",
+          "options": {
+            "A": "10.0 N",
+            "B": "17.3 N",
+            "C": "20.0 N",
+            "D": "40.0 N"
+          },
+          "answer": "A",
+          "explanation_en": "Horizontal component = F cos(theta) = 20 x cos(60) = 20 x 0.5 = 10.0 N.",
+          "explanation_zh": "水平分量 = F cos(theta) = 20 x cos(60) = 20 x 0.5 = 10.0 N。"
+        },
+        {
+          "question_en": "Which pair of quantities has the same SI base units?",
+          "question_zh": "哪一对物理量具有相同的SI基本单位？",
+          "options": {
+            "A": "Work and power",
+            "B": "Pressure and stress",
+            "C": "Force and momentum",
+            "D": "Velocity and acceleration"
+          },
+          "answer": "B",
+          "explanation_en": "Pressure = Force/Area = kg m^{-1} s^{-2}. Stress = Force/Area = kg m^{-1} s^{-2}. They have identical units.",
+          "explanation_zh": "压强 = 力/面积 = kg m^{-1} s^{-2}。应力 = 力/面积 = kg m^{-1} s^{-2}。它们单位相同。"
+        },
+        {
+          "question_en": "What is 0.075 GW expressed in watts in standard form?",
+          "question_zh": "0.075 GW 用标准形式表示为多少瓦特？",
+          "options": {
+            "A": "7.5 x 10^5 W",
+            "B": "7.5 x 10^6 W",
+            "C": "7.5 x 10^7 W",
+            "D": "7.5 x 10^8 W"
+          },
+          "answer": "C",
+          "explanation_en": "0.075 GW = 0.075 x 10^9 W = 7.5 x 10^7 W.",
+          "explanation_zh": "0.075 GW = 0.075 x 10^9 W = 7.5 x 10^7 W。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "phy_ch2",
+      "title_en": "Kinematics",
+      "title_zh": "运动学",
+      "knowledge_points": [
+        {
+          "title_en": "Displacement, Velocity and Acceleration",
+          "title_zh": "位移、速度与加速度",
+          "content_en": "Displacement (s) is the shortest distance from start to finish in a specified direction (vector).\n\nVelocity (v) = rate of change of displacement: v = ds/dt. It is a vector.\nSpeed = rate of change of distance (scalar).\n\nAcceleration (a) = rate of change of velocity: a = dv/dt. Unit: m s^{-2} (vector).\n\nInstantaneous velocity = gradient of a displacement-time graph at a point.\nInstantaneous acceleration = gradient of a velocity-time graph at a point.\n\nAverage velocity = total displacement / total time.\nAverage speed = total distance / total time.",
+          "content_zh": "位移 (s) 是从起点到终点的最短距离，带有方向（矢量）。\n\n速度 (v) = 位移的变化率：v = ds/dt（矢量）。\n速率 = 距离的变化率（标量）。\n\n加速度 (a) = 速度的变化率：a = dv/dt。单位：m s^{-2}（矢量）。\n\n瞬时速度 = 位移-时间图上某点的斜率。\n瞬时加速度 = 速度-时间图上某点的斜率。"
+        },
+        {
+          "title_en": "Equations of Uniformly Accelerated Motion (SUVAT)",
+          "title_zh": "匀变速运动方程（SUVAT）",
+          "content_en": "For constant acceleration, the SUVAT equations apply:\n\n1. v = u + at\n2. s = ut + (1/2)at^2\n3. s = (1/2)(u + v)t\n4. v^2 = u^2 + 2as\n\nWhere: s = displacement, u = initial velocity, v = final velocity, a = acceleration, t = time.\n\nThese equations ONLY apply when acceleration is constant.\n\nWorked example: A car accelerates from rest at 2.0 m s^{-2} for 8.0 s.\n(a) v = u + at = 0 + 2.0 x 8.0 = 16 m/s\n(b) s = ut + (1/2)at^2 = 0 + 0.5 x 2.0 x 64 = 64 m\n\nFor objects in free fall near Earth's surface, a = g = 9.81 m s^{-2} (downward).",
+          "content_zh": "对于匀变速运动，SUVAT方程适用：\n\n1. v = u + at\n2. s = ut + (1/2)at^2\n3. s = (1/2)(u + v)t\n4. v^2 = u^2 + 2as\n\n其中：s=位移，u=初速度，v=末速度，a=加速度，t=时间。\n\n这些方程仅在加速度恒定时适用。\n\n例题：一辆汽车从静止以 2.0 m s^{-2} 加速 8.0 s。\n(a) v = 0 + 2.0 x 8.0 = 16 m/s\n(b) s = 0 + 0.5 x 2.0 x 64 = 64 m"
+        },
+        {
+          "title_en": "Displacement-Time and Velocity-Time Graphs",
+          "title_zh": "位移-时间图与速度-时间图",
+          "content_en": "Displacement-time (s-t) graphs:\n• Gradient = velocity\n• Horizontal line: stationary (v=0)\n• Straight line with positive gradient: constant positive velocity\n• Curve: changing velocity (acceleration)\n\nVelocity-time (v-t) graphs:\n• Gradient = acceleration\n• Area under graph = displacement\n• Horizontal line: constant velocity (a=0)\n• Straight positive gradient: constant positive acceleration\n• Negative gradient: deceleration\n\nWorked example: v-t graph shows v increasing from 5 to 25 m/s over 4 s:\nAcceleration = (25-5)/4 = 5 m s^{-2}\nDisplacement = area = (1/2)(5+25) x 4 = 60 m.",
+          "content_zh": "位移-时间图：斜率=速度；水平线=静止；直线=匀速；曲线=变速。\n\n速度-时间图：斜率=加速度；图线下面积=位移。\n\n例题：v-t图显示速度在 4 s 内从 5 m/s 增加到 25 m/s：\n加速度 = (25-5)/4 = 5 m s^{-2}\n位移 = 面积 = (1/2)(5+25) x 4 = 60 m。"
+        },
+        {
+          "title_en": "Free Fall and Projectile Motion",
+          "title_zh": "自由落体与抛体运动",
+          "content_en": "Free fall: motion under gravity alone, no air resistance. All objects have the same acceleration g = 9.81 m s^{-2} regardless of mass.\n\nProjectile motion combines:\n- Constant horizontal velocity (no horizontal acceleration)\n- Constant vertical acceleration (g downward)\n\nThese components are independent.\n\nFor horizontal launch from height h with speed u:\nHorizontal: x = ut\nVertical: y = (1/2)gt^2\nTime to ground: t = sqrt(2h/g)\nRange: R = u x sqrt(2h/g)\n\nFor launch at angle theta with speed u:\nHorizontal: ux = u cos(theta)\nVertical: uy = u sin(theta)\nTime of flight: T = 2u sin(theta)/g\nMax height: H = u^2 sin^2(theta)/(2g)\nRange: R = u^2 sin(2*theta)/g",
+          "content_zh": "自由落体：仅受重力作用、无空气阻力的运动。所有物体加速度相同 g = 9.81 m s^{-2}。\n\n抛体运动包含：\n- 匀速水平运动\n- 匀加速垂直运动（g 向下）\n\n从高度 h 以速度 u 水平抛出：\n水平：x = ut；垂直：y = (1/2)gt^2\n落地时间：t = sqrt(2h/g)\n射程：R = u x sqrt(2h/g)"
+        },
+        {
+          "title_en": "Measuring g Experimentally",
+          "title_zh": "实验测定重力加速度 g",
+          "content_en": "Drop a ball from measured height h, time the fall with light gates or electronic timer.\n\nUsing s = ut + (1/2)at^2 with u=0: h = (1/2)gt^2, so g = 2h/t^2.\n\nBetter method: Plot h vs t^2. Gradient = (1/2)g, so g = 2 x gradient.\n\nSources of error:\n• Reaction time with stopwatch (systematic)\n• Air resistance reduces measured g\n• Difficulty measuring exact release point\n\nAccepted value: g = 9.81 m s^{-2}. Key point: g does not depend on mass.",
+          "content_zh": "实验：从已知高度 h 释放小球，用光电门或电子计时器计时。\n\n利用 h = (1/2)gt^2，g = 2h/t^2。\n\n改进方法：绘制 h 对 t^2 的图。斜率 = (1/2)g。\n\n误差来源：反应时间、空气阻力、释放点的精确性。\n\n公认值：g = 9.81 m s^{-2}。关键点：g 不依赖于质量。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "A ball is thrown vertically upward at 20 m/s. What is the maximum height? (g = 10 m s^{-2})",
+          "question_zh": "球以 20 m/s 竖直上抛。最大高度是多少？(g=10)",
+          "options": {
+            "A": "10 m",
+            "B": "20 m",
+            "C": "30 m",
+            "D": "40 m"
+          },
+          "answer": "B",
+          "explanation_en": "At max height v=0. v^2 = u^2 + 2as: 0 = 400 + 2(-10)s, s = 20 m.",
+          "explanation_zh": "最高点 v=0。v^2 = u^2 + 2as: 0 = 400 - 20s, s = 20 m。"
+        },
+        {
+          "question_en": "On a velocity-time graph, the area under the curve represents:",
+          "question_zh": "在速度-时间图上，曲线下方的面积代表：",
+          "options": {
+            "A": "Acceleration",
+            "B": "Force",
+            "C": "Displacement",
+            "D": "Power"
+          },
+          "answer": "C",
+          "explanation_en": "The area under a v-t graph gives displacement: s = integral of v dt.",
+          "explanation_zh": "速度-时间图下方面积 = 位移：s = ∫v dt。"
+        },
+        {
+          "question_en": "A stone is dropped from rest. How far does it fall in the third second? (g = 10 m s^{-2})",
+          "question_zh": "石头从静止释放。第三秒内下落多远？(g=10)",
+          "options": {
+            "A": "15 m",
+            "B": "20 m",
+            "C": "25 m",
+            "D": "30 m"
+          },
+          "answer": "C",
+          "explanation_en": "s(3) = 0.5x10x9 = 45 m. s(2) = 0.5x10x4 = 20 m. 3rd second = 45-20 = 25 m.",
+          "explanation_zh": "s(3) = 45 m, s(2) = 20 m。第三秒 = 45-20 = 25 m。"
+        },
+        {
+          "question_en": "A projectile is launched horizontally at 15 m/s from a cliff. After 2 s, what is the horizontal displacement?",
+          "question_zh": "物体以 15 m/s 水平抛出。2 秒后水平位移是多少？",
+          "options": {
+            "A": "7.5 m",
+            "B": "15 m",
+            "C": "20 m",
+            "D": "30 m"
+          },
+          "answer": "D",
+          "explanation_en": "Horizontal: constant velocity. x = ut = 15 x 2 = 30 m.",
+          "explanation_zh": "水平方向匀速：x = ut = 15 x 2 = 30 m。"
+        },
+        {
+          "question_en": "A car decelerates uniformly from 30 m/s to rest over 90 m. What is the deceleration?",
+          "question_zh": "汽车从 30 m/s 匀减速停止，行驶 90 m。减速度是多少？",
+          "options": {
+            "A": "2.5 m s^{-2}",
+            "B": "5.0 m s^{-2}",
+            "C": "7.5 m s^{-2}",
+            "D": "10.0 m s^{-2}"
+          },
+          "answer": "B",
+          "explanation_en": "v^2 = u^2 + 2as: 0 = 900 + 2a(90), a = -5.0 m s^{-2}. Deceleration = 5.0.",
+          "explanation_zh": "v^2 = u^2 + 2as: 0 = 900 + 180a, a = -5.0 m s^{-2}。减速度 = 5.0。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "phy_ch3",
+      "title_en": "Dynamics",
+      "title_zh": "动力学",
+      "knowledge_points": [
+        {
+          "title_en": "Newton's Laws of Motion",
+          "title_zh": "牛顿运动定律",
+          "content_en": "Newton's First Law: An object remains at rest or moves with constant velocity unless acted on by a resultant force. This defines inertia.\n\nNewton's Second Law: F = dp/dt. For constant mass: F = ma. F is net force (N), m is mass (kg), a is acceleration (m s^{-2}).\n\nNewton's Third Law: If body A exerts a force on body B, then B exerts an equal and opposite force on A. These forces:\n- Act on different objects\n- Are the same type of force\n- Equal in magnitude, opposite in direction\n- Act simultaneously\n\nWorked example: A 1200 kg car, driving force 3000 N, friction 600 N.\nNet force = 2400 N. a = F/m = 2400/1200 = 2.0 m s^{-2}.",
+          "content_zh": "牛顿第一定律：物体保持静止或匀速直线运动，除非受到合力作用。\n\n牛顿第二定律：F = dp/dt。质量恒定时：F = ma。\n\n牛顿第三定律：作用力与反作用力大小相等、方向相反、作用在不同物体上、同时作用、属于同一类型。\n\n例题：1200 kg 汽车，驱动力 3000 N，摩擦力 600 N。\n合力 = 2400 N。a = 2400/1200 = 2.0 m s^{-2}。"
+        },
+        {
+          "title_en": "Momentum and Impulse",
+          "title_zh": "动量与冲量",
+          "content_en": "Momentum: p = mv. Unit: kg m s^{-1} (or N s). Momentum is a vector.\n\nImpulse = F x dt = change in momentum = dp = mv - mu.\nImpulse equals the area under a force-time graph.\n\nWorked example: A 0.15 kg ball at 20 m/s hits a wall and bounces back at 15 m/s. Contact time = 0.02 s.\ndp = 0.15 x (-15) - 0.15 x 20 = -2.25 - 3.0 = -5.25 kg m/s\nF = dp/dt = -5.25/0.02 = -262.5 N\nAverage force = 262.5 N (toward wall).",
+          "content_zh": "动量：p = mv。单位：kg m s^{-1}。动量是矢量。\n\n冲量 = F x dt = 动量变化 = dp = mv - mu。\n冲量等于力-时间图下方的面积。\n\n例题：0.15 kg 球以 20 m/s 撞墙后以 15 m/s 弹回。接触时间 0.02 s。\ndp = -5.25 kg m/s。F = 262.5 N。"
+        },
+        {
+          "title_en": "Conservation of Momentum",
+          "title_zh": "动量守恒",
+          "content_en": "In a closed system (no external resultant force), total momentum before = total momentum after.\n\nm1*u1 + m2*u2 = m1*v1 + m2*v2\n\nTypes of collision:\n• Perfectly elastic: both momentum AND kinetic energy conserved.\n• Inelastic: momentum conserved but KE NOT conserved (some KE becomes heat, sound, etc.).\n• Perfectly inelastic: objects stick together. Maximum KE lost.\n\nWorked example: 2 kg trolley at 3 m/s hits stationary 1 kg trolley. They stick together.\n2x3 + 1x0 = (2+1)v, v = 6/3 = 2 m/s.",
+          "content_zh": "在封闭系统中，相互作用前的总动量 = 相互作用后的总动量。\n\n类型：\n• 完全弹性碰撞：动量和动能都守恒。\n• 非弹性碰撞：动量守恒但动能不守恒。\n• 完全非弹性：碰后粘在一起。\n\n例题：2 kg 小车以 3 m/s 撞击静止的 1 kg 小车，粘在一起。\nv = 6/3 = 2 m/s。"
+        },
+        {
+          "title_en": "Force as Rate of Change of Momentum",
+          "title_zh": "力与动量变化率",
+          "content_en": "Newton's second law (general form): F = dp/dt.\n\nThis is more general than F = ma because it applies when mass changes (e.g. rockets).\n\nApplications:\n1. Car safety: Crumple zones, seat belts, airbags increase collision time dt. Since F = dp/dt and dp is fixed, larger dt means smaller F.\n2. Catching a ball: Moving hands backward increases dt, reducing force.\n3. Water hitting a wall at speed v, mass rate dm/dt: Force = v x dm/dt.\n\nWorked example: Water hits a wall at 5 m/s, 2.0 kg per second, does not bounce.\nF = dp/dt = (2.0 x 5)/1 = 10 N.",
+          "content_zh": "牛顿第二定律一般形式：F = dp/dt。比 F=ma 更具一般性。\n\n应用：\n1. 汽车安全：缓冲区、安全带、气囊增大 dt，减小 F。\n2. 接球时手向后移动增大 dt。\n\n例题：水以 5 m/s 打到墙上，每秒 2.0 kg，不反弹。\nF = (2.0 x 5)/1 = 10 N。"
+        },
+        {
+          "title_en": "Elastic and Inelastic Collisions",
+          "title_zh": "弹性与非弹性碰撞",
+          "content_en": "Elastic: both momentum and KE conserved.\nInelastic: momentum conserved, KE NOT conserved.\n\nTo check: Calculate total KE before and after.\nIf KE_before = KE_after: elastic.\nIf KE_after < KE_before: inelastic.\n\nThe 'lost' KE transforms into heat, sound, or deformation.\n\nWorked example: 1 kg ball at 4 m/s hits stationary 1 kg ball. After collision first stops, second moves at 4 m/s.\nKE before = 0.5 x 1 x 16 = 8 J. KE after = 0.5 x 1 x 16 = 8 J.\nKE conserved: elastic collision.",
+          "content_zh": "弹性碰撞：动量和动能都守恒。\n非弹性碰撞：动量守恒，动能不守恒。\n\n判断方法：计算碰前和碰后的总动能。\n\n例题：1 kg 球以 4 m/s 撞击静止 1 kg 球。碰后第一个停止，第二个 4 m/s。\n碰前 KE = 8 J。碰后 KE = 8 J。动能守恒：弹性碰撞。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "A resultant force of 12 N acts on a 4 kg object. What is its acceleration?",
+          "question_zh": "12 N 的合力作用于 4 kg 物体。加速度是多少？",
+          "options": {
+            "A": "0.33 m s^{-2}",
+            "B": "3.0 m s^{-2}",
+            "C": "8.0 m s^{-2}",
+            "D": "48 m s^{-2}"
+          },
+          "answer": "B",
+          "explanation_en": "F = ma, a = F/m = 12/4 = 3.0 m s^{-2}.",
+          "explanation_zh": "F = ma, a = 12/4 = 3.0 m s^{-2}。"
+        },
+        {
+          "question_en": "Two objects collide and stick together. Which quantity is always conserved?",
+          "question_zh": "两个物体碰撞后粘在一起。哪个量总是守恒的？",
+          "options": {
+            "A": "Kinetic energy",
+            "B": "Velocity",
+            "C": "Momentum",
+            "D": "Acceleration"
+          },
+          "answer": "C",
+          "explanation_en": "In all collisions, total momentum is conserved (provided no external resultant force). KE is NOT conserved in inelastic collisions.",
+          "explanation_zh": "在所有碰撞中，总动量守恒。非弹性碰撞中动能不守恒。"
+        },
+        {
+          "question_en": "A 0.5 kg ball at 6 m/s is stopped by a force in 0.03 s. What is the average force?",
+          "question_zh": "0.5 kg 球以 6 m/s 运动，0.03 s 内被停止。平均力多大？",
+          "options": {
+            "A": "10 N",
+            "B": "50 N",
+            "C": "100 N",
+            "D": "200 N"
+          },
+          "answer": "C",
+          "explanation_en": "F = dp/dt = mv/dt = (0.5 x 6)/0.03 = 3.0/0.03 = 100 N.",
+          "explanation_zh": "F = dp/dt = (0.5 x 6)/0.03 = 100 N。"
+        },
+        {
+          "question_en": "Which statement about Newton's third law force pairs is correct?",
+          "question_zh": "关于牛顿第三定律力对，哪个正确？",
+          "options": {
+            "A": "They act on the same object",
+            "B": "They are always gravitational",
+            "C": "They act on different objects",
+            "D": "They do not act simultaneously"
+          },
+          "answer": "C",
+          "explanation_en": "Newton's third law pairs always act on different objects, equal magnitude, opposite direction, same type, simultaneous.",
+          "explanation_zh": "牛顿第三定律力对作用在不同物体上。"
+        },
+        {
+          "question_en": "3 kg at 4 m/s hits 1 kg at 2 m/s (same direction). They stick. What is the final velocity?",
+          "question_zh": "3 kg (4 m/s) 撞 1 kg (2 m/s)，同向，粘合。末速度？",
+          "options": {
+            "A": "2.0 m/s",
+            "B": "3.0 m/s",
+            "C": "3.5 m/s",
+            "D": "4.0 m/s"
+          },
+          "answer": "C",
+          "explanation_en": "3(4) + 1(2) = (3+1)v. 14 = 4v. v = 3.5 m/s.",
+          "explanation_zh": "3(4) + 1(2) = 4v。v = 14/4 = 3.5 m/s。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "phy_ch4",
+      "title_en": "Forces, Density and Pressure",
+      "title_zh": "力、密度与压强",
+      "knowledge_points": [
+        {
+          "title_en": "Types of Forces",
+          "title_zh": "力的类型",
+          "content_en": "Key forces:\n• Weight (W = mg): gravitational force, acts at centre of gravity.\n• Normal contact force (N): perpendicular to surface.\n• Friction (f): opposes relative motion between surfaces.\n• Tension (T): pulling force in a string/rope.\n• Drag/Air resistance: opposes motion through fluid, increases with speed. At terminal velocity, drag = weight.\n• Upthrust: upward buoyancy force = weight of displaced fluid (Archimedes' principle).",
+          "content_zh": "主要力：\n• 重力 (W = mg)：作用在重心。\n• 法向接触力：垂直于表面。\n• 摩擦力：阻碍相对运动。\n• 张力：绳索中的拉力。\n• 阻力/空气阻力：随速度增大。终端速度时阻力=重力。\n• 浮力：等于排开流体的重力。"
+        },
+        {
+          "title_en": "Equilibrium and Free Body Diagrams",
+          "title_zh": "平衡与受力分析图",
+          "content_en": "Equilibrium conditions:\n1. Resultant force = 0 (translational equilibrium)\n2. Resultant torque about any point = 0 (rotational equilibrium)\n\nFor three coplanar forces in equilibrium: they form a closed triangle (triangle of forces).\n\nFree body diagram: shows ALL forces on a SINGLE object.\nSteps: (1) Identify object (2) Draw all forces ON it (3) Label forces (4) Do NOT include forces the object exerts on others.\n\nWorked example: 5 kg lamp on two cables at 30 deg and 60 deg to horizontal.\nVertical: T1 sin(30) + T2 sin(60) = 49 N\nHorizontal: T1 cos(30) = T2 cos(60)\nSolving: T1 = 24.5 N, T2 = 42.4 N.",
+          "content_zh": "平衡条件：(1) 合力 = 0；(2) 合力矩 = 0。\n\n三个共面力平衡：形成封闭三角形。\n\n受力分析图：显示作用在单个物体上的所有力。\n\n例题：5 kg 灯通过 30° 和 60° 电缆悬挂。\nT1 = 24.5 N, T2 = 42.4 N。"
+        },
+        {
+          "title_en": "Moments and Torques",
+          "title_zh": "力矩与转矩",
+          "content_en": "Moment of a force about a point = Force x perpendicular distance from pivot to line of action.\nMoment = Fd sin(theta). Unit: N m.\n\nPrinciple of moments: For rotational equilibrium, sum of clockwise moments = sum of anticlockwise moments.\n\nA couple: pair of equal and opposite parallel forces. Torque = F x d (perpendicular distance between forces).\n\nWorked example: Uniform 4 m beam, weight 200 N, supported at both ends. 300 N load placed 1 m from left.\nMoments about left: R2 x 4 = 300 x 1 + 200 x 2 = 700. R2 = 175 N.\nR1 + R2 = 500, R1 = 325 N.",
+          "content_zh": "力矩 = 力 x 从支点到力的作用线的垂直距离。单位：N m。\n\n力矩原理：顺时针力矩之和 = 逆时针力矩之和。\n\n力偶：一对大小相等、方向相反的平行力。力偶矩 = F x d。\n\n例题：4 m 均匀横梁，200 N，两端支撑。300 N 载荷在距左端 1 m 处。\nR2 = 175 N, R1 = 325 N。"
+        },
+        {
+          "title_en": "Density",
+          "title_zh": "密度",
+          "content_en": "Density = mass per unit volume: rho = m/V. Unit: kg m^{-3}.\nConversion: 1 g cm^{-3} = 1000 kg m^{-3}.\n\nTypical values:\n• Air: ~1.2 kg m^{-3}\n• Water: 1000 kg m^{-3}\n• Aluminium: 2700 kg m^{-3}\n• Steel: 7800 kg m^{-3}\n\nDensity is a scalar, property of the material not the object.\n\nWorked example: Cube side 0.1 m, mass 2.7 kg.\nV = 0.001 m^3. rho = 2.7/0.001 = 2700 kg m^{-3} (aluminium).",
+          "content_zh": "密度 = 单位体积的质量：rho = m/V。单位：kg m^{-3}。\n\n典型值：空气 ~1.2，水 1000，铝 2700，钢 7800 kg m^{-3}。\n\n例题：边长 0.1 m 的立方体，质量 2.7 kg。\nV = 0.001 m^3。rho = 2700 kg m^{-3}（铝）。"
+        },
+        {
+          "title_en": "Pressure in Fluids",
+          "title_zh": "流体中的压强",
+          "content_en": "Pressure = Force / Area: p = F/A. Unit: pascal (Pa) = N m^{-2}.\n\nPressure at depth h in a fluid: p = rho x g x h.\nAssumes: incompressible fluid, static equilibrium.\n\nTotal pressure at depth h = atmospheric pressure + rho*g*h.\n\nKey points:\n• Pressure acts equally in all directions at a point in a fluid.\n• Pressure depends on depth, not container shape.\n• Same depth in connected fluid = same pressure.\n\nWorked example: Pressure at 10 m depth in seawater (rho = 1025).\np = 1.01 x 10^5 + 1025 x 9.81 x 10 = 2.02 x 10^5 Pa.",
+          "content_zh": "压强 = 力 / 面积：p = F/A。单位：Pa = N m^{-2}。\n\n流体深度 h 处的压强：p = rho x g x h。\n总压强 = 大气压 + rho*g*h。\n\n关键点：流体中某点压强各方向相等；压强取决于深度。\n\n例题：海水 10 m 深处。p = 2.02 x 10^5 Pa。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "A uniform 2.0 m beam (100 N) is pivoted at centre. 60 N at 0.5 m from pivot. Where to place 40 N for balance?",
+          "question_zh": "均匀横梁 2.0 m, 100 N, 中心支撑。60 N 在距支点 0.5 m。40 N 放哪平衡？",
+          "options": {
+            "A": "0.50 m",
+            "B": "0.75 m",
+            "C": "1.00 m",
+            "D": "1.25 m"
+          },
+          "answer": "B",
+          "explanation_en": "60 x 0.5 = 40 x d. d = 30/40 = 0.75 m. Beam weight acts at pivot (zero moment).",
+          "explanation_zh": "60 x 0.5 = 40 x d。d = 0.75 m。横梁重力在支点处，力矩为零。"
+        },
+        {
+          "question_en": "A solid cube has side 0.2 m and density 8000 kg m^{-3}. What is its mass?",
+          "question_zh": "实心立方体边长 0.2 m，密度 8000 kg m^{-3}。质量？",
+          "options": {
+            "A": "6.4 kg",
+            "B": "32 kg",
+            "C": "64 kg",
+            "D": "640 kg"
+          },
+          "answer": "C",
+          "explanation_en": "V = 0.2^3 = 0.008 m^3. m = rho x V = 8000 x 0.008 = 64 kg.",
+          "explanation_zh": "V = 0.008 m^3。m = 8000 x 0.008 = 64 kg。"
+        },
+        {
+          "question_en": "Pressure at depth 5 m in water? (rho=1000, g=9.81, ignore atmospheric)",
+          "question_zh": "水下 5 m 压强？(忽略大气压)",
+          "options": {
+            "A": "4.9 x 10^3 Pa",
+            "B": "4.9 x 10^4 Pa",
+            "C": "9.8 x 10^4 Pa",
+            "D": "9.8 x 10^5 Pa"
+          },
+          "answer": "B",
+          "explanation_en": "p = rho*g*h = 1000 x 9.81 x 5 = 49050 Pa = 4.9 x 10^4 Pa.",
+          "explanation_zh": "p = 1000 x 9.81 x 5 = 4.9 x 10^4 Pa。"
+        },
+        {
+          "question_en": "An object is in equilibrium. Which must be true?",
+          "question_zh": "物体处于平衡。哪个一定正确？",
+          "options": {
+            "A": "No forces act on it",
+            "B": "It must be stationary",
+            "C": "Resultant force is zero",
+            "D": "Only two forces act"
+          },
+          "answer": "C",
+          "explanation_en": "Equilibrium means zero resultant force (and zero resultant torque). The object can move at constant velocity.",
+          "explanation_zh": "平衡意味着合力为零。物体可以匀速运动。"
+        },
+        {
+          "question_en": "At terminal velocity, the relationship between weight W and drag D is:",
+          "question_zh": "终端速度时，重力 W 和阻力 D 的关系：",
+          "options": {
+            "A": "W > D",
+            "B": "W < D",
+            "C": "W = D",
+            "D": "D = 0"
+          },
+          "answer": "C",
+          "explanation_en": "At terminal velocity, acceleration = 0, so net force = 0, meaning W = D.",
+          "explanation_zh": "终端速度时加速度=0，合力=0，所以 W = D。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "phy_ch5",
+      "title_en": "Work, Energy and Power",
+      "title_zh": "功、能量与功率",
+      "knowledge_points": [
+        {
+          "title_en": "Work Done by a Force",
+          "title_zh": "力所做的功",
+          "content_en": "Work done = force x displacement in direction of force: W = Fs cos(theta).\nUnit: joule (J) = 1 N m.\n\nSpecial cases:\n• theta = 0 deg: W = Fs (max work)\n• theta = 90 deg: W = 0 (no work done)\n• theta > 90 deg: W is negative\n\nWork against gravity: W = mgh.\nWork by expanding gas: W = p x deltaV (constant pressure).\n\nWorked example: 50 N at 60 deg to horizontal, 4 m along floor.\nW = 50 x 4 x cos(60) = 100 J.",
+          "content_zh": "功 = 力 x 沿力方向的位移：W = Fs cos(theta)。\n单位：焦耳 (J)。\n\n特殊情况：theta=0° 时 W=Fs；theta=90° 时 W=0。\n\n克服重力做功：W = mgh。\n\n例题：50 N 力沿 60°，4 m。W = 50 x 4 x cos(60) = 100 J。"
+        },
+        {
+          "title_en": "Kinetic Energy and Potential Energy",
+          "title_zh": "动能与势能",
+          "content_en": "Kinetic energy: KE = (1/2)mv^2.\n\nGravitational potential energy: GPE = mgh (near Earth's surface), h = height above reference.\n\nWork-energy theorem: Net work = change in KE.\nW_net = (1/2)mv^2 - (1/2)mu^2.\n\nWorked example: 2 kg ball dropped from 5 m.\nmgh = (1/2)mv^2. v = sqrt(2gh) = sqrt(2 x 9.81 x 5) = 9.9 m/s.",
+          "content_zh": "动能：KE = (1/2)mv^2。\n\n重力势能：GPE = mgh。\n\n动能定理：净功 = 动能变化。\n\n例题：2 kg 球从 5 m 落下。v = sqrt(2 x 9.81 x 5) = 9.9 m/s。"
+        },
+        {
+          "title_en": "Conservation of Energy",
+          "title_zh": "能量守恒",
+          "content_en": "Energy cannot be created or destroyed, only transformed. Total energy of a closed system is constant.\n\nCommon transformations:\n• Falling: GPE -> KE\n• Braking: KE -> thermal\n• Generator: KE -> electrical\n• Pendulum: KE <-> GPE\n\nWithout friction: mgh = (1/2)mv^2.\nWith friction: mgh = (1/2)mv^2 + energy lost to friction.\n\nWorked example: 500 g ball thrown up at 12 m/s.\nh = v^2/(2g) = 144/19.62 = 7.3 m.",
+          "content_zh": "能量不能创造或消灭，只能转化。\n\n常见转化：下落 GPE->动能；制动 动能->热能。\n\n无摩擦：mgh = (1/2)mv^2。\n有摩擦：mgh = (1/2)mv^2 + 摩擦损失。\n\n例题：500 g 球以 12 m/s 上抛。h = 144/19.62 = 7.3 m。"
+        },
+        {
+          "title_en": "Power",
+          "title_zh": "功率",
+          "content_en": "Power = rate of doing work: P = W/t = E/t. Unit: watt (W) = J s^{-1}.\n\nFor constant force at constant velocity: P = Fv.\nDerived from: P = W/t = Fs/t = Fv.\n\nWorked example: Car at constant 30 m/s against 800 N resistive force.\nP = Fv = 800 x 30 = 24000 W = 24 kW.\n\nAt constant speed: driving force = resistive force (Newton's first law).",
+          "content_zh": "功率 = 做功的速率：P = W/t。单位：瓦特 (W)。\n\n恒力匀速时：P = Fv。\n\n例题：汽车以 30 m/s 匀速行驶，阻力 800 N。\nP = 800 x 30 = 24 kW。"
+        },
+        {
+          "title_en": "Efficiency",
+          "title_zh": "效率",
+          "content_en": "Efficiency = (useful output energy / total input energy) x 100%\n          = (useful output power / total input power) x 100%\n\nAlways less than 100% due to energy 'wasted' (usually thermal/friction).\nEfficiency is dimensionless.\n\nWorked example: Motor input 500 W, lifts 10 kg through 3 m in 2 s.\nUseful output power = mgh/t = 10 x 9.81 x 3 / 2 = 147 W.\nEfficiency = (147/500) x 100% = 29.4%.\n\nSankey diagrams show energy flow with arrow widths proportional to energy.",
+          "content_zh": "效率 = (有用输出 / 总输入) x 100%。\n总是小于 100%。无量纲。\n\n例题：电动机输入 500 W，2 s 内将 10 kg 提升 3 m。\n有用功率 = 147 W。效率 = 29.4%。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "A 2 kg object speeds up from 10 to 20 m/s. Change in KE?",
+          "question_zh": "2 kg 物体从 10 加速到 20 m/s。动能变化？",
+          "options": {
+            "A": "100 J",
+            "B": "200 J",
+            "C": "300 J",
+            "D": "400 J"
+          },
+          "answer": "C",
+          "explanation_en": "dKE = 0.5(2)(400) - 0.5(2)(100) = 400 - 100 = 300 J.",
+          "explanation_zh": "dKE = 400 - 100 = 300 J。"
+        },
+        {
+          "question_en": "40 N at 30 deg to motion over 5 m. Work done?",
+          "question_zh": "40 N 沿 30°，5 m。做功？",
+          "options": {
+            "A": "100 J",
+            "B": "141 J",
+            "C": "173 J",
+            "D": "200 J"
+          },
+          "answer": "C",
+          "explanation_en": "W = 40 x 5 x cos(30) = 200 x 0.866 = 173 J.",
+          "explanation_zh": "W = 40 x 5 x cos(30) = 173 J。"
+        },
+        {
+          "question_en": "Car at constant 25 m/s, driving force 600 N. Output power?",
+          "question_zh": "汽车匀速 25 m/s，驱动力 600 N。输出功率？",
+          "options": {
+            "A": "12 kW",
+            "B": "15 kW",
+            "C": "24 kW",
+            "D": "30 kW"
+          },
+          "answer": "B",
+          "explanation_en": "P = Fv = 600 x 25 = 15000 W = 15 kW.",
+          "explanation_zh": "P = Fv = 600 x 25 = 15 kW。"
+        },
+        {
+          "question_en": "Machine efficiency 40%, input power 2.0 kW. Useful output power?",
+          "question_zh": "机器效率 40%，输入 2.0 kW。有用输出？",
+          "options": {
+            "A": "0.40 kW",
+            "B": "0.80 kW",
+            "C": "1.2 kW",
+            "D": "5.0 kW"
+          },
+          "answer": "B",
+          "explanation_en": "Output = 0.40 x 2.0 = 0.80 kW.",
+          "explanation_zh": "输出 = 0.40 x 2.0 = 0.80 kW。"
+        },
+        {
+          "question_en": "Ball dropped from 20 m. Speed before hitting ground? (g = 10)",
+          "question_zh": "球从 20 m 落下。着地速度？(g=10)",
+          "options": {
+            "A": "10 m/s",
+            "B": "14 m/s",
+            "C": "20 m/s",
+            "D": "40 m/s"
+          },
+          "answer": "C",
+          "explanation_en": "v = sqrt(2gh) = sqrt(2 x 10 x 20) = sqrt(400) = 20 m/s.",
+          "explanation_zh": "v = sqrt(400) = 20 m/s。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "phy_ch6",
+      "title_en": "Deformation of Solids",
+      "title_zh": "固体形变",
+      "knowledge_points": [
+        {
+          "title_en": "Hooke's Law",
+          "title_zh": "胡克定律",
+          "content_en": "Hooke's Law states that the force F needed to extend or compress a spring is directly proportional to the extension x, provided the elastic limit is not exceeded: F = kx, where k is the spring constant (N/m). The spring constant represents the stiffness of the spring. When multiple springs are combined: in series, 1/k_total = 1/k1 + 1/k2; in parallel, k_total = k1 + k2.",
+          "content_zh": "胡克定律指出，在未超过弹性极限的条件下，弹簧的弹力F与其伸长量x成正比：F = kx，其中k为弹簧常数（单位N/m）。弹簧常数表示弹簧的刚度。多个弹簧组合时：串联时 1/k总 = 1/k1 + 1/k2；并联时 k总 = k1 + k2。"
+        },
+        {
+          "title_en": "Stress, Strain and Young's Modulus",
+          "title_zh": "应力、应变与杨氏模量",
+          "content_en": "Stress (σ) = Force/Area = F/A, measured in Pascals (Pa). Strain (ε) = extension/original length = x/L, it is dimensionless. Young's Modulus E = stress/strain = (F/A)/(x/L) = FL/(Ax), measured in Pa. Young's modulus is a material property that describes stiffness. A stress-strain graph has a linear region (obeys Hooke's law), elastic limit, yield point, and breaking point.",
+          "content_zh": "应力(σ) = 力/面积 = F/A，单位为帕斯卡(Pa)。应变(ε) = 伸长量/原长 = x/L，无量纲。杨氏模量 E = 应力/应变 = (F/A)/(x/L) = FL/(Ax)，单位Pa。杨氏模量是描述材料刚度的物理量。应力-应变图包含线性区域（遵循胡克定律）、弹性极限、屈服点和断裂点。"
+        },
+        {
+          "title_en": "Elastic and Plastic Deformation",
+          "title_zh": "弹性形变与塑性形变",
+          "content_en": "Elastic deformation: the material returns to its original shape when the force is removed. Energy is stored as elastic potential energy. Plastic deformation: the material is permanently deformed and does not return to its original shape. The elastic limit is the maximum stress that can be applied without causing permanent deformation. Beyond the elastic limit, deformation becomes plastic.",
+          "content_zh": "弹性形变：外力移除后材料恢复原状，能量以弹性势能形式储存。塑性形变：材料永久变形，不恢复原状。弹性极限是不引起永久形变的最大应力。超过弹性极限后，形变变为塑性形变。"
+        },
+        {
+          "title_en": "Elastic Potential Energy",
+          "title_zh": "弹性势能",
+          "content_en": "The elastic potential energy stored in a stretched spring or wire is: E = ½Fx = ½kx², where F is the force, x is the extension, and k is the spring constant. This equals the area under the force-extension graph. For materials obeying Hooke's law, the graph is linear, so the area is a triangle: E = ½ × base × height.",
+          "content_zh": "拉伸弹簧或金属线中储存的弹性势能为：E = ½Fx = ½kx²，其中F为力，x为伸长量，k为弹簧常数。这等于力-伸长量图下方的面积。对于遵循胡克定律的材料，图形是线性的，面积为三角形：E = ½ × 底 × 高。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "A spring has a spring constant of 200 N/m. What is the elastic potential energy stored when it is stretched by 0.05 m?",
+          "question_zh": "一根弹簧的弹簧常数为200 N/m。当它被拉伸0.05 m时，储存的弹性势能是多少？",
+          "options": {
+            "A": "0.10 J",
+            "B": "0.25 J",
+            "C": "0.50 J",
+            "D": "5.0 J"
+          },
+          "answer": "B",
+          "explanation_en": "E = ½kx² = ½ × 200 × 0.05² = ½ × 200 × 0.0025 = 0.25 J.",
+          "explanation_zh": "E = ½kx² = ½ × 200 × 0.05² = ½ × 200 × 0.0025 = 0.25 J。"
+        },
+        {
+          "question_en": "A wire of length 2.0 m and cross-sectional area 1.0 × 10⁻⁶ m² extends by 0.4 mm when a force of 50 N is applied. What is the Young's modulus?",
+          "question_zh": "一根长2.0 m、截面积为1.0 × 10⁻⁶ m²的金属线，在50 N力作用下伸长0.4 mm。杨氏模量是多少？",
+          "options": {
+            "A": "1.25 × 10⁸ Pa",
+            "B": "2.5 × 10¹¹ Pa",
+            "C": "5.0 × 10¹⁰ Pa",
+            "D": "1.0 × 10¹¹ Pa"
+          },
+          "answer": "B",
+          "explanation_en": "E = FL/(Ax) = 50 × 2.0 / (1.0×10⁻⁶ × 4×10⁻⁴) = 100 / (4×10⁻¹⁰) = 2.5 × 10¹¹ Pa.",
+          "explanation_zh": "E = FL/(Ax) = 50 × 2.0 / (1.0×10⁻⁶ × 4×10⁻⁴) = 100 / (4×10⁻¹⁰) = 2.5 × 10¹¹ Pa。"
+        },
+        {
+          "question_en": "Which statement about elastic and plastic deformation is correct?",
+          "question_zh": "关于弹性形变和塑性形变，哪个说法正确？",
+          "options": {
+            "A": "Elastic deformation is always larger than plastic deformation",
+            "B": "Plastic deformation occurs before elastic deformation",
+            "C": "In elastic deformation, the material returns to its original shape when the force is removed",
+            "D": "Elastic deformation only occurs in metals"
+          },
+          "answer": "C",
+          "explanation_en": "By definition, elastic deformation is reversible - the material returns to its original shape when the deforming force is removed.",
+          "explanation_zh": "根据定义，弹性形变是可逆的——当外力移除后，材料恢复原来的形状。"
+        },
+        {
+          "question_en": "The stress on a wire is 2.0 × 10⁸ Pa and the strain is 1.0 × 10⁻³. What is the Young's modulus?",
+          "question_zh": "金属线上的应力为2.0 × 10⁸ Pa，应变为1.0 × 10⁻³。杨氏模量是多少？",
+          "options": {
+            "A": "2.0 × 10⁵ Pa",
+            "B": "2.0 × 10⁸ Pa",
+            "C": "2.0 × 10¹¹ Pa",
+            "D": "2.0 × 10¹⁴ Pa"
+          },
+          "answer": "C",
+          "explanation_en": "Young's modulus E = stress/strain = 2.0×10⁸ / 1.0×10⁻³ = 2.0 × 10¹¹ Pa.",
+          "explanation_zh": "杨氏模量 E = 应力/应变 = 2.0×10⁸ / 1.0×10⁻³ = 2.0 × 10¹¹ Pa。"
+        },
+        {
+          "question_en": "Two identical springs each with spring constant k are connected in parallel. What is the effective spring constant?",
+          "question_zh": "两根相同的弹簧（弹簧常数为k）并联连接。有效弹簧常数是多少？",
+          "options": {
+            "A": "k/2",
+            "B": "k",
+            "C": "2k",
+            "D": "k²"
+          },
+          "answer": "C",
+          "explanation_en": "For springs in parallel, the effective spring constant is the sum: k_eff = k + k = 2k.",
+          "explanation_zh": "并联弹簧的有效弹簧常数为各弹簧常数之和：k_eff = k + k = 2k。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "phy_ch7",
+      "title_en": "Waves",
+      "title_zh": "波",
+      "knowledge_points": [
+        {
+          "title_en": "Transverse and Longitudinal Waves",
+          "title_zh": "横波与纵波",
+          "content_en": "In transverse waves, the oscillation direction is perpendicular to the wave travel direction (e.g., light, water waves). In longitudinal waves, the oscillation is parallel to the wave direction (e.g., sound). Longitudinal waves consist of compressions (high pressure) and rarefactions (low pressure). Both types transfer energy without transferring matter.",
+          "content_zh": "横波中，振动方向垂直于波的传播方向（如光波、水波）。纵波中，振动方向平行于波的传播方向（如声波）。纵波由压缩（高压区）和稀疏（低压区）组成。两种波都传递能量而不传递物质。"
+        },
+        {
+          "title_en": "Wave Properties: Wavelength, Frequency, Speed",
+          "title_zh": "波的性质：波长、频率、速度",
+          "content_en": "Wavelength (λ): distance between two consecutive points in phase (e.g., crest to crest). Frequency (f): number of complete oscillations per second, measured in Hz. Period (T) = 1/f. Wave speed: v = fλ. This equation applies to all waves. The speed of a wave depends on the medium, not on its frequency or amplitude.",
+          "content_zh": "波长(λ)：两个相邻同相点之间的距离（如波峰到波峰）。频率(f)：每秒完成的振动次数，单位Hz。周期(T) = 1/f。波速：v = fλ。此公式适用于所有波。波速取决于介质，而非频率或振幅。"
+        },
+        {
+          "title_en": "Electromagnetic Spectrum",
+          "title_zh": "电磁波谱",
+          "content_en": "The electromagnetic spectrum (in order of increasing frequency): radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, gamma rays. All EM waves travel at the speed of light c = 3.0 × 10⁸ m/s in vacuum. They are all transverse waves and do not require a medium for propagation.",
+          "content_zh": "电磁波谱（按频率递增排列）：无线电波、微波、红外线、可见光、紫外线、X射线、伽马射线。所有电磁波在真空中以光速 c = 3.0 × 10⁸ m/s 传播。它们都是横波，不需要介质传播。"
+        },
+        {
+          "title_en": "Doppler Effect (qualitative)",
+          "title_zh": "多普勒效应（定性）",
+          "content_en": "When a wave source moves towards an observer, the observed frequency increases and wavelength decreases. When moving away, observed frequency decreases and wavelength increases. This explains why an ambulance siren sounds higher pitched as it approaches and lower pitched as it moves away.",
+          "content_zh": "当波源向观察者靠近时，观测到的频率增大、波长减小。当波源远离时，观测频率减小、波长增大。这解释了为什么救护车驶来时笛声更尖锐，远去时更低沉。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "A wave has a frequency of 500 Hz and a wavelength of 0.68 m. What is the wave speed?",
+          "question_zh": "一列波的频率为500 Hz，波长为0.68 m。波速是多少？",
+          "options": {
+            "A": "170 m/s",
+            "B": "340 m/s",
+            "C": "680 m/s",
+            "D": "735 m/s"
+          },
+          "answer": "B",
+          "explanation_en": "v = fλ = 500 × 0.68 = 340 m/s.",
+          "explanation_zh": "v = fλ = 500 × 0.68 = 340 m/s。"
+        },
+        {
+          "question_en": "Which of the following is a longitudinal wave?",
+          "question_zh": "以下哪个是纵波？",
+          "options": {
+            "A": "Light",
+            "B": "Water surface waves",
+            "C": "Sound",
+            "D": "Radio waves"
+          },
+          "answer": "C",
+          "explanation_en": "Sound is a longitudinal wave where air molecules oscillate parallel to the direction of wave propagation.",
+          "explanation_zh": "声波是纵波，空气分子沿波传播方向平行振动。"
+        },
+        {
+          "question_en": "Which electromagnetic wave has the highest frequency?",
+          "question_zh": "哪种电磁波频率最高？",
+          "options": {
+            "A": "Microwaves",
+            "B": "Ultraviolet",
+            "C": "X-rays",
+            "D": "Gamma rays"
+          },
+          "answer": "D",
+          "explanation_en": "In the EM spectrum, gamma rays have the highest frequency (and shortest wavelength).",
+          "explanation_zh": "在电磁波谱中，伽马射线频率最高（波长最短）。"
+        },
+        {
+          "question_en": "A wave source moves towards a stationary observer. What happens to the observed wavelength and frequency?",
+          "question_zh": "波源向静止观察者移动。观测到的波长和频率如何变化？",
+          "options": {
+            "A": "Wavelength increases, frequency increases",
+            "B": "Wavelength decreases, frequency increases",
+            "C": "Wavelength decreases, frequency decreases",
+            "D": "Wavelength increases, frequency decreases"
+          },
+          "answer": "B",
+          "explanation_en": "As the source approaches, wavefronts are compressed, so wavelength decreases and frequency increases (Doppler effect).",
+          "explanation_zh": "波源靠近时，波前被压缩，波长减小，频率增大（多普勒效应）。"
+        },
+        {
+          "question_en": "The period of a wave is 0.02 s. What is its frequency?",
+          "question_zh": "一列波的周期为0.02 s。频率是多少？",
+          "options": {
+            "A": "0.02 Hz",
+            "B": "5 Hz",
+            "C": "50 Hz",
+            "D": "500 Hz"
+          },
+          "answer": "C",
+          "explanation_en": "f = 1/T = 1/0.02 = 50 Hz.",
+          "explanation_zh": "f = 1/T = 1/0.02 = 50 Hz。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "phy_ch8",
+      "title_en": "Superposition",
+      "title_zh": "波的叠加",
+      "knowledge_points": [
+        {
+          "title_en": "Principle of Superposition",
+          "title_zh": "叠加原理",
+          "content_en": "When two or more waves meet at a point, the resultant displacement is the vector sum of the individual displacements. Constructive interference occurs when waves are in phase (path difference = nλ), giving maximum amplitude. Destructive interference occurs when waves are in antiphase (path difference = (n+½)λ), giving zero or minimum amplitude.",
+          "content_zh": "当两列或多列波在某点相遇时，合位移等于各波位移的矢量和。相长干涉发生在波同相时（路程差 = nλ），产生最大振幅。相消干涉发生在波反相时（路程差 = (n+½)λ），产生零或最小振幅。"
+        },
+        {
+          "title_en": "Two-Source Interference",
+          "title_zh": "双源干涉",
+          "content_en": "For observable interference, the two sources must be coherent (same frequency and constant phase difference). Young's double-slit experiment demonstrates this with light: bright fringes appear where path difference = nλ, dark fringes where path difference = (n+½)λ. Fringe spacing: w = λD/s, where D is the distance to the screen and s is the slit separation.",
+          "content_zh": "要观察到干涉现象，两个波源必须是相干的（频率相同且相位差恒定）。杨氏双缝实验用光演示了这一点：路程差 = nλ 处出现亮条纹，路程差 = (n+½)λ 处出现暗条纹。条纹间距：w = λD/s，其中D为到屏幕的距离，s为缝间距。"
+        },
+        {
+          "title_en": "Diffraction",
+          "title_zh": "衍射",
+          "content_en": "Diffraction is the spreading of waves when they pass through a gap or around an obstacle. Maximum diffraction occurs when the gap width is approximately equal to the wavelength. A diffraction grating has many parallel slits and produces sharp, bright maxima at angles given by: d sin θ = nλ, where d is the slit spacing.",
+          "content_zh": "衍射是波通过缝隙或绕过障碍物时发生的扩展现象。当缝隙宽度约等于波长时，衍射最明显。衍射光栅有许多平行缝隙，在满足 d sin θ = nλ 的角度产生尖锐明亮的最大值，其中d为缝间距。"
+        },
+        {
+          "title_en": "Stationary (Standing) Waves",
+          "title_zh": "驻波",
+          "content_en": "Stationary waves form when two identical waves travel in opposite directions and superpose. Nodes are points of zero displacement; antinodes are points of maximum displacement. The distance between adjacent nodes (or antinodes) is λ/2. In a string fixed at both ends: fundamental frequency f₁ = v/(2L), harmonics are integer multiples of f₁.",
+          "content_zh": "驻波由两列相同但方向相反的波叠加形成。波节是位移为零的点；波腹是位移最大的点。相邻波节（或波腹）间距为λ/2。两端固定的弦：基频 f₁ = v/(2L)，谐波是基频的整数倍。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "In Young's double-slit experiment, the slit separation is 0.5 mm, the screen distance is 1.0 m, and the wavelength is 600 nm. What is the fringe spacing?",
+          "question_zh": "在杨氏双缝实验中，缝间距为0.5 mm，屏幕距离为1.0 m，波长为600 nm。条纹间距是多少？",
+          "options": {
+            "A": "0.6 mm",
+            "B": "1.2 mm",
+            "C": "2.4 mm",
+            "D": "3.0 mm"
+          },
+          "answer": "B",
+          "explanation_en": "w = λD/s = (600×10⁻⁹ × 1.0) / (0.5×10⁻³) = 1.2×10⁻³ m = 1.2 mm.",
+          "explanation_zh": "w = λD/s = (600×10⁻⁹ × 1.0) / (0.5×10⁻³) = 1.2×10⁻³ m = 1.2 mm。"
+        },
+        {
+          "question_en": "What is the distance between adjacent nodes in a stationary wave with wavelength 0.8 m?",
+          "question_zh": "波长为0.8 m的驻波中，相邻波节之间的距离是多少？",
+          "options": {
+            "A": "0.2 m",
+            "B": "0.4 m",
+            "C": "0.8 m",
+            "D": "1.6 m"
+          },
+          "answer": "B",
+          "explanation_en": "Distance between adjacent nodes = λ/2 = 0.8/2 = 0.4 m.",
+          "explanation_zh": "相邻波节距离 = λ/2 = 0.8/2 = 0.4 m。"
+        },
+        {
+          "question_en": "For two waves to produce a stable interference pattern, they must be:",
+          "question_zh": "两列波要产生稳定的干涉图样，它们必须是：",
+          "options": {
+            "A": "Of the same amplitude",
+            "B": "Coherent",
+            "C": "Transverse",
+            "D": "Polarised"
+          },
+          "answer": "B",
+          "explanation_en": "Coherent sources have the same frequency and a constant phase difference, which is required for a stable interference pattern.",
+          "explanation_zh": "相干波源具有相同的频率和恒定的相位差，这是产生稳定干涉图样的必要条件。"
+        },
+        {
+          "question_en": "A diffraction grating has 500 lines per mm. Light of wavelength 600 nm passes through it. What is the angle of the first-order maximum?",
+          "question_zh": "一个衍射光栅每毫米500条线。波长600 nm的光通过它。一级最大值的角度是多少？",
+          "options": {
+            "A": "8.6°",
+            "B": "17.5°",
+            "C": "30.0°",
+            "D": "45.0°"
+          },
+          "answer": "B",
+          "explanation_en": "d = 1/500 mm = 2×10⁻⁶ m. d sin θ = nλ → sin θ = nλ/d = 1×600×10⁻⁹/(2×10⁻⁶) = 0.3 → θ = sin⁻¹(0.3) = 17.5°.",
+          "explanation_zh": "d = 1/500 mm = 2×10⁻⁶ m。d sin θ = nλ → sin θ = nλ/d = 1×600×10⁻⁹/(2×10⁻⁶) = 0.3 → θ = sin⁻¹(0.3) = 17.5°。"
+        },
+        {
+          "question_en": "Constructive interference occurs when the path difference between two coherent waves is:",
+          "question_zh": "两列相干波的路程差为多少时发生相长干涉？",
+          "options": {
+            "A": "λ/4",
+            "B": "λ/2",
+            "C": "3λ/4",
+            "D": "λ"
+          },
+          "answer": "D",
+          "explanation_en": "Constructive interference occurs when path difference = nλ (where n is an integer). λ is the simplest case (n=1).",
+          "explanation_zh": "相长干涉发生在路程差 = nλ 时（n为整数）。λ是最简单的情况（n=1）。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "phy_ch9",
+      "title_en": "Electricity",
+      "title_zh": "电学",
+      "knowledge_points": [
+        {
+          "title_en": "Current and Charge",
+          "title_zh": "电流与电荷",
+          "content_en": "Electric current I is the rate of flow of charge: I = Q/t, where Q is charge in coulombs (C) and t is time in seconds. One ampere = one coulomb per second. Current is conventional (positive to negative), while electron flow is in the opposite direction. In metals, current is carried by free electrons.",
+          "content_zh": "电流I是电荷的流动速率：I = Q/t，其中Q为电荷（单位库仑C），t为时间（单位秒）。一安培 = 每秒一库仑。电流方向为传统方向（正极到负极），而电子流方向相反。在金属中，电流由自由电子传导。"
+        },
+        {
+          "title_en": "Potential Difference and EMF",
+          "title_zh": "电位差与电动势",
+          "content_en": "Potential difference (p.d.) V = W/Q, where W is the energy transferred and Q is the charge. EMF (electromotive force) is the energy per unit charge converted from other forms to electrical energy by a source. P.d. is the energy per unit charge converted from electrical to other forms. Both are measured in volts (V). P = VI = I²R = V²/R.",
+          "content_zh": "电位差(p.d.) V = W/Q，其中W为转换的能量，Q为电荷。电动势(EMF)是电源将其他形式的能量转换为电能时每单位电荷的能量。电位差是电能转换为其他形式时每单位电荷的能量。两者单位均为伏特(V)。P = VI = I²R = V²/R。"
+        },
+        {
+          "title_en": "Resistance and Resistivity",
+          "title_zh": "电阻与电阻率",
+          "content_en": "Resistance R = V/I, measured in ohms (Ω). Ohm's law: V = IR for ohmic conductors (constant temperature). Resistivity ρ = RA/L, where R is resistance, A is cross-sectional area, and L is length. Resistivity is a material property. For a metallic conductor, resistance increases with temperature due to increased lattice vibrations.",
+          "content_zh": "电阻 R = V/I，单位欧姆(Ω)。欧姆定律：对于欧姆导体（恒温下）V = IR。电阻率 ρ = RA/L，其中R为电阻，A为截面积，L为长度。电阻率是材料性质。金属导体的电阻随温度升高而增大，因为晶格振动加剧。"
+        },
+        {
+          "title_en": "I-V Characteristics",
+          "title_zh": "I-V特性曲线",
+          "content_en": "Different components have different I-V characteristics. Ohmic conductor (resistor): straight line through origin. Filament lamp: curve that flattens at higher V (resistance increases with temperature). Diode: almost no current for reverse bias; current increases rapidly above threshold voltage (~0.7V for silicon) in forward bias. Thermistor (NTC): resistance decreases as temperature increases.",
+          "content_zh": "不同元件有不同的I-V特性。欧姆导体（电阻器）：过原点的直线。灯丝灯泡：在高电压处弯曲变平（温度升高导致电阻增大）。二极管：反向偏置时几乎无电流；正向偏置超过阈值电压（硅约0.7V）后电流迅速增大。NTC热敏电阻：温度升高时电阻减小。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "A charge of 30 C flows through a conductor in 10 s. What is the current?",
+          "question_zh": "30 C的电荷在10 s内通过导体。电流是多少？",
+          "options": {
+            "A": "0.33 A",
+            "B": "3.0 A",
+            "C": "30 A",
+            "D": "300 A"
+          },
+          "answer": "B",
+          "explanation_en": "I = Q/t = 30/10 = 3.0 A.",
+          "explanation_zh": "I = Q/t = 30/10 = 3.0 A。"
+        },
+        {
+          "question_en": "A wire of length 2.0 m and cross-sectional area 5.0 × 10⁻⁷ m² has a resistance of 8.0 Ω. What is the resistivity?",
+          "question_zh": "一根长2.0 m、截面积5.0 × 10⁻⁷ m²的导线电阻为8.0 Ω。电阻率是多少？",
+          "options": {
+            "A": "2.0 × 10⁻⁶ Ω·m",
+            "B": "4.0 × 10⁻⁶ Ω·m",
+            "C": "8.0 × 10⁻⁶ Ω·m",
+            "D": "1.6 × 10⁻⁵ Ω·m"
+          },
+          "answer": "A",
+          "explanation_en": "ρ = RA/L = 8.0 × 5.0×10⁻⁷ / 2.0 = 2.0 × 10⁻⁶ Ω·m.",
+          "explanation_zh": "ρ = RA/L = 8.0 × 5.0×10⁻⁷ / 2.0 = 2.0 × 10⁻⁶ Ω·m。"
+        },
+        {
+          "question_en": "Which I-V graph represents a filament lamp?",
+          "question_zh": "哪个I-V图代表灯丝灯泡？",
+          "options": {
+            "A": "Straight line through origin",
+            "B": "Curve with decreasing gradient at higher V",
+            "C": "Curve with increasing gradient at higher V",
+            "D": "Horizontal line"
+          },
+          "answer": "B",
+          "explanation_en": "A filament lamp's resistance increases with temperature (as current heats it), so the I-V curve has a decreasing gradient at higher voltages.",
+          "explanation_zh": "灯丝灯泡的电阻随温度升高而增大（电流加热），因此I-V曲线在高电压处梯度减小。"
+        },
+        {
+          "question_en": "The power dissipated in a 10 Ω resistor carrying a current of 2.0 A is:",
+          "question_zh": "通过2.0 A电流的10 Ω电阻器消耗的功率是：",
+          "options": {
+            "A": "5 W",
+            "B": "20 W",
+            "C": "40 W",
+            "D": "200 W"
+          },
+          "answer": "C",
+          "explanation_en": "P = I²R = 2.0² × 10 = 40 W.",
+          "explanation_zh": "P = I²R = 2.0² × 10 = 40 W。"
+        },
+        {
+          "question_en": "A silicon diode starts conducting significantly when the forward bias voltage exceeds approximately:",
+          "question_zh": "硅二极管在正向偏置电压超过约多少时开始显著导通？",
+          "options": {
+            "A": "0.1 V",
+            "B": "0.3 V",
+            "C": "0.7 V",
+            "D": "1.5 V"
+          },
+          "answer": "C",
+          "explanation_en": "A silicon diode has a threshold (turn-on) voltage of approximately 0.7 V.",
+          "explanation_zh": "硅二极管的阈值（导通）电压约为0.7 V。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "phy_ch10",
+      "title_en": "DC Circuits",
+      "title_zh": "直流电路",
+      "knowledge_points": [
+        {
+          "title_en": "Kirchhoff's Laws",
+          "title_zh": "基尔霍夫定律",
+          "content_en": "Kirchhoff's First Law (junction rule): The sum of currents entering a junction equals the sum leaving (conservation of charge). Kirchhoff's Second Law (loop rule): The sum of EMFs around any closed loop equals the sum of potential differences (conservation of energy). These laws are essential for analyzing complex circuits.",
+          "content_zh": "基尔霍夫第一定律（节点定律）：流入节点的电流之和等于流出的电流之和（电荷守恒）。基尔霍夫第二定律（回路定律）：任何闭合回路中电动势之和等于电位差之和（能量守恒）。这些定律是分析复杂电路的基础。"
+        },
+        {
+          "title_en": "Series and Parallel Circuits",
+          "title_zh": "串联与并联电路",
+          "content_en": "Series: same current through all components, total R = R₁ + R₂ + ..., total V = V₁ + V₂ + .... Parallel: same p.d. across all components, 1/R_total = 1/R₁ + 1/R₂ + ..., total I = I₁ + I₂ + .... For two resistors in parallel: R = R₁R₂/(R₁+R₂).",
+          "content_zh": "串联：各元件电流相同，总电阻 R = R₁ + R₂ + ...，总电压 V = V₁ + V₂ + ...。并联：各元件电压相同，1/R总 = 1/R₁ + 1/R₂ + ...，总电流 I = I₁ + I₂ + ...。两个电阻并联：R = R₁R₂/(R₁+R₂)。"
+        },
+        {
+          "title_en": "Potential Divider",
+          "title_zh": "分压器",
+          "content_en": "A potential divider consists of two resistors in series connected to a voltage source. The output voltage is: V_out = V_in × R₂/(R₁+R₂). Potential dividers can use variable resistors, thermistors, or LDRs to provide a voltage that varies with conditions. For example, with an NTC thermistor: as temperature rises, its resistance falls, changing the output voltage.",
+          "content_zh": "分压器由两个串联电阻连接到电压源组成。输出电压为：V_out = V_in × R₂/(R₁+R₂)。分压器可使用可变电阻器、热敏电阻或光敏电阻提供随条件变化的电压。例如，使用NTC热敏电阻：温度升高时其电阻减小，改变输出电压。"
+        },
+        {
+          "title_en": "Internal Resistance",
+          "title_zh": "内阻",
+          "content_en": "A real battery has internal resistance r. EMF (ε) = terminal p.d. (V) + lost volts (v): ε = V + Ir = I(R+r), where R is the external resistance. Terminal p.d. V = ε - Ir. When the battery is on open circuit (I=0), V = ε. The maximum current (short circuit) is I = ε/r.",
+          "content_zh": "实际电池有内阻r。电动势(ε) = 端电压(V) + 内部损失电压(v)：ε = V + Ir = I(R+r)，其中R为外部电阻。端电压 V = ε - Ir。开路（I=0）时，V = ε。短路时最大电流 I = ε/r。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "Two resistors of 6 Ω and 3 Ω are connected in parallel. What is the combined resistance?",
+          "question_zh": "6 Ω和3 Ω的两个电阻并联。组合电阻是多少？",
+          "options": {
+            "A": "1 Ω",
+            "B": "2 Ω",
+            "C": "4.5 Ω",
+            "D": "9 Ω"
+          },
+          "answer": "B",
+          "explanation_en": "R = R₁R₂/(R₁+R₂) = 6×3/(6+3) = 18/9 = 2 Ω.",
+          "explanation_zh": "R = R₁R₂/(R₁+R₂) = 6×3/(6+3) = 18/9 = 2 Ω。"
+        },
+        {
+          "question_en": "A battery has EMF 6.0 V and internal resistance 0.5 Ω. When connected to a 5.5 Ω resistor, what is the terminal p.d.?",
+          "question_zh": "一个电池的电动势为6.0 V，内阻为0.5 Ω。连接5.5 Ω电阻时，端电压是多少？",
+          "options": {
+            "A": "4.5 V",
+            "B": "5.0 V",
+            "C": "5.5 V",
+            "D": "6.0 V"
+          },
+          "answer": "C",
+          "explanation_en": "I = ε/(R+r) = 6.0/(5.5+0.5) = 1.0 A. V = ε - Ir = 6.0 - 1.0×0.5 = 5.5 V.",
+          "explanation_zh": "I = ε/(R+r) = 6.0/(5.5+0.5) = 1.0 A。V = ε - Ir = 6.0 - 1.0×0.5 = 5.5 V。"
+        },
+        {
+          "question_en": "In a potential divider with R₁ = 3 kΩ and R₂ = 6 kΩ, and input voltage 9 V, what is the output voltage across R₂?",
+          "question_zh": "分压器中R₁ = 3 kΩ，R₂ = 6 kΩ，输入电压9 V，R₂上的输出电压是多少？",
+          "options": {
+            "A": "2 V",
+            "B": "3 V",
+            "C": "6 V",
+            "D": "9 V"
+          },
+          "answer": "C",
+          "explanation_en": "V_out = V_in × R₂/(R₁+R₂) = 9 × 6/(3+6) = 9 × 6/9 = 6 V.",
+          "explanation_zh": "V_out = V_in × R₂/(R₁+R₂) = 9 × 6/(3+6) = 9 × 6/9 = 6 V。"
+        },
+        {
+          "question_en": "At a junction in a circuit, currents of 3 A and 5 A flow in. One current of 6 A flows out. What is the other outgoing current?",
+          "question_zh": "电路某节点处，流入电流为3 A和5 A，一个流出电流为6 A。另一个流出电流是多少？",
+          "options": {
+            "A": "1 A",
+            "B": "2 A",
+            "C": "4 A",
+            "D": "8 A"
+          },
+          "answer": "B",
+          "explanation_en": "By Kirchhoff's first law: currents in = currents out → 3 + 5 = 6 + I → I = 2 A.",
+          "explanation_zh": "根据基尔霍夫第一定律：流入 = 流出 → 3 + 5 = 6 + I → I = 2 A。"
+        },
+        {
+          "question_en": "Three identical resistors of resistance R are connected: two in parallel, then in series with the third. What is the total resistance?",
+          "question_zh": "三个相同的电阻R的连接方式为：两个并联后再与第三个串联。总电阻是多少？",
+          "options": {
+            "A": "R/3",
+            "B": "2R/3",
+            "C": "3R/2",
+            "D": "3R"
+          },
+          "answer": "C",
+          "explanation_en": "Two in parallel: R_p = R×R/(R+R) = R/2. In series with third: R_total = R/2 + R = 3R/2.",
+          "explanation_zh": "两个并联：R_p = R×R/(R+R) = R/2。再串联第三个：R_total = R/2 + R = 3R/2。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "phy_ch11",
+      "title_en": "Particle Physics",
+      "title_zh": "粒子物理",
+      "knowledge_points": [
+        {
+          "title_en": "Atomic Structure",
+          "title_zh": "原子结构",
+          "content_en": "An atom consists of a nucleus (protons + neutrons) surrounded by electrons. Proton: charge +e, mass ≈ 1u. Neutron: charge 0, mass ≈ 1u. Electron: charge -e, mass ≈ 1/1836 u. Nucleon number A = protons + neutrons. Proton number Z = number of protons. Isotopes have the same Z but different A. Nuclear notation: ᴬ_Z X.",
+          "content_zh": "原子由原子核（质子+中子）和核外电子组成。质子：电荷+e，质量≈1u。中子：电荷0，质量≈1u。电子：电荷-e，质量≈1/1836 u。核子数A = 质子数+中子数。质子数Z = 质子数量。同位素：Z相同但A不同。核符号：ᴬ_Z X。"
+        },
+        {
+          "title_en": "Nuclear Processes",
+          "title_zh": "核反应过程",
+          "content_en": "Alpha (α) decay: nucleus emits ⁴₂He, A decreases by 4, Z by 2. Beta-minus (β⁻) decay: neutron → proton + electron + antineutrino, Z increases by 1. Beta-plus (β⁺) decay: proton → neutron + positron + neutrino, Z decreases by 1. Gamma (γ) emission: nucleus releases energy as a photon, no change in A or Z. Conservation laws: charge, baryon number, and lepton number are conserved.",
+          "content_zh": "α衰变：原子核释放⁴₂He，A减4，Z减2。β⁻衰变：中子→质子+电子+反中微子，Z增1。β⁺衰变：质子→中子+正电子+中微子，Z减1。γ辐射：原子核以光子释放能量，A和Z不变。守恒定律：电荷、重子数和轻子数守恒。"
+        },
+        {
+          "title_en": "Quarks and Hadrons",
+          "title_zh": "夸克与强子",
+          "content_en": "Quarks come in 6 flavors: up (u, +2/3e), down (d, -1/3e), strange (s, -1/3e), charm (c, +2/3e), top (t, +2/3e), bottom (b, -1/3e). Hadrons are made of quarks: baryons (3 quarks, e.g., proton = uud, neutron = udd) and mesons (quark-antiquark pair, e.g., pion). Quarks are held together by the strong nuclear force mediated by gluons.",
+          "content_zh": "夸克有6种：上夸克(u, +2/3e)、下夸克(d, -1/3e)、奇夸克(s, -1/3e)、粲夸克(c, +2/3e)、顶夸克(t, +2/3e)、底夸克(b, -1/3e)。强子由夸克组成：重子（3个夸克，如质子=uud，中子=udd）和介子（夸克-反夸克对，如π介子）。夸克通过胶子介导的强核力结合。"
+        },
+        {
+          "title_en": "Leptons and Fundamental Forces",
+          "title_zh": "轻子与基本力",
+          "content_en": "Leptons are fundamental particles not made of quarks: electron (e⁻), muon (μ⁻), tau (τ⁻), and their neutrinos. The four fundamental forces: Strong nuclear (holds nucleus together, range ~10⁻¹⁵m), Electromagnetic (between charges, infinite range), Weak nuclear (responsible for β decay, range ~10⁻¹⁸m), Gravitational (between masses, infinite range, weakest).",
+          "content_zh": "轻子是不由夸克组成的基本粒子：电子(e⁻)、μ子(μ⁻)、τ子(τ⁻)及其中微子。四种基本力：强核力（维系原子核，范围~10⁻¹⁵m）、电磁力（带电粒子间，无限远程）、弱核力（负责β衰变，范围~10⁻¹⁸m）、引力（物体间，无限远程，最弱）。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "What is the quark composition of a proton?",
+          "question_zh": "质子的夸克组成是什么？",
+          "options": {
+            "A": "uuu",
+            "B": "uud",
+            "C": "udd",
+            "D": "ddd"
+          },
+          "answer": "B",
+          "explanation_en": "A proton is made of two up quarks and one down quark (uud). Charge: 2/3 + 2/3 - 1/3 = +1e.",
+          "explanation_zh": "质子由两个上夸克和一个下夸克组成(uud)。电荷：2/3 + 2/3 - 1/3 = +1e。"
+        },
+        {
+          "question_en": "In beta-minus decay, a neutron transforms into:",
+          "question_zh": "在β⁻衰变中，中子转变为：",
+          "options": {
+            "A": "Proton + electron + neutrino",
+            "B": "Proton + electron + antineutrino",
+            "C": "Proton + positron + neutrino",
+            "D": "Proton + positron + antineutrino"
+          },
+          "answer": "B",
+          "explanation_en": "β⁻ decay: n → p + e⁻ + ν̄ₑ (antineutrino). Lepton number is conserved: 0 → 0 + 1 + (-1).",
+          "explanation_zh": "β⁻衰变：n → p + e⁻ + ν̄ₑ（反电子中微子）。轻子数守恒：0 → 0 + 1 + (-1)。"
+        },
+        {
+          "question_en": "Which fundamental force is responsible for holding quarks together inside a proton?",
+          "question_zh": "哪种基本力负责将夸克束缚在质子内部？",
+          "options": {
+            "A": "Gravitational",
+            "B": "Electromagnetic",
+            "C": "Weak nuclear",
+            "D": "Strong nuclear"
+          },
+          "answer": "D",
+          "explanation_en": "The strong nuclear force (mediated by gluons) holds quarks together inside hadrons.",
+          "explanation_zh": "强核力（由胶子介导）将夸克束缚在强子内部。"
+        },
+        {
+          "question_en": "An atom of ²³⁸₉₂U undergoes alpha decay. What is the resulting nucleus?",
+          "question_zh": "²³⁸₉₂U发生α衰变。生成的原子核是什么？",
+          "options": {
+            "A": "²³⁴₉₀Th",
+            "B": "²³⁴₈₈Ra",
+            "C": "²³⁶₉₀Th",
+            "D": "²³⁸₉₀Th"
+          },
+          "answer": "A",
+          "explanation_en": "Alpha decay: A decreases by 4, Z decreases by 2. 238-4=234, 92-2=90. The product is ²³⁴₉₀Th (Thorium).",
+          "explanation_zh": "α衰变：A减4，Z减2。238-4=234，92-2=90。产物为²³⁴₉₀Th（钍）。"
+        },
+        {
+          "question_en": "Which of the following is a lepton?",
+          "question_zh": "以下哪个是轻子？",
+          "options": {
+            "A": "Proton",
+            "B": "Neutron",
+            "C": "Electron",
+            "D": "Pion"
+          },
+          "answer": "C",
+          "explanation_en": "The electron is a lepton. Protons and neutrons are baryons (hadrons), and pions are mesons (hadrons).",
+          "explanation_zh": "电子是轻子。质子和中子是重子（强子），π介子是介子（强子）。"
+        }
+      ]
+    }
+  ]
+}

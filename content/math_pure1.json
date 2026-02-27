@@ -1,0 +1,845 @@
+{
+  "subject_id": "math_pure1",
+  "subject_name_en": "Pure Mathematics 1",
+  "subject_name_zh": "纯数学 1",
+  "chapters": [
+    {
+      "chapter_id": "p1_ch1",
+      "title_en": "Quadratics",
+      "title_zh": "二次方程与函数",
+      "knowledge_points": [
+        {
+          "title_en": "Solving Quadratic Equations",
+          "title_zh": "求解二次方程",
+          "content_en": "A quadratic equation has the general form ax² + bx + c = 0 where a ≠ 0. There are three main methods to solve it:\n\n1. Factorisation: Express ax² + bx + c as a product of two linear factors, e.g. (px + q)(rx + s) = 0.\n2. Completing the square: Rewrite as a(x + p)² + q = 0, then solve for x.\n3. Quadratic formula: x = (-b ± √(b² - 4ac)) / (2a).\n\nExample: Solve 2x² - 5x - 3 = 0.\nUsing the formula: x = (5 ± √(25 + 24)) / 4 = (5 ± 7) / 4, giving x = 3 or x = -1/2.",
+          "content_zh": "二次方程的一般形式为 ax² + bx + c = 0，其中 a ≠ 0。主要有三种求解方法：\n\n1. 因式分解法：将 ax² + bx + c 表示为两个一次因式的乘积，例如 (px + q)(rx + s) = 0。\n2. 配方法：改写为 a(x + p)² + q = 0，然后求解 x。\n3. 求根公式：x = (-b ± √(b² - 4ac)) / (2a)。\n\n例题：解方程 2x² - 5x - 3 = 0。\n用求根公式：x = (5 ± √(25 + 24)) / 4 = (5 ± 7) / 4，得 x = 3 或 x = -1/2。"
+        },
+        {
+          "title_en": "Completing the Square",
+          "title_zh": "配方法",
+          "content_en": "To complete the square for ax² + bx + c:\n\nStep 1: Factor out a from the first two terms: a(x² + (b/a)x) + c.\nStep 2: Add and subtract (b/(2a))² inside the bracket: a(x + b/(2a))² - b²/(4a) + c.\n\nThe vertex form is y = a(x - h)² + k, where the vertex is at (h, k).\nIf a > 0, the vertex is a minimum; if a < 0, the vertex is a maximum.\n\nExample: Write y = 2x² - 12x + 7 in completed square form.\ny = 2(x² - 6x) + 7 = 2(x - 3)² - 18 + 7 = 2(x - 3)² - 11.\nVertex is at (3, -11), which is a minimum point.",
+          "content_zh": "对 ax² + bx + c 进行配方：\n\n第一步：从前两项提取 a：a(x² + (b/a)x) + c。\n第二步：在括号内加减 (b/(2a))²：a(x + b/(2a))² - b²/(4a) + c。\n\n顶点式为 y = a(x - h)² + k，顶点坐标为 (h, k)。\n若 a > 0，顶点为最小值点；若 a < 0，顶点为最大值点。\n\n例题：将 y = 2x² - 12x + 7 化为配方形式。\ny = 2(x² - 6x) + 7 = 2(x - 3)² - 18 + 7 = 2(x - 3)² - 11。\n顶点为 (3, -11)，是最小值点。"
+        },
+        {
+          "title_en": "The Discriminant",
+          "title_zh": "判别式",
+          "content_en": "For the equation ax² + bx + c = 0, the discriminant is D = b² - 4ac.\n\nIf D > 0: two distinct real roots.\nIf D = 0: two equal real roots (one repeated root).\nIf D < 0: no real roots (two complex conjugate roots).\n\nThis is essential for determining the nature of roots without solving the equation. It is also used to find conditions for a line to be tangent to a curve (set D = 0) or for a curve to not intersect a line (set D < 0).\n\nExample: Find the values of k for which kx² + 6x + k = 0 has equal roots.\nD = 36 - 4k² = 0, so k² = 9, giving k = 3 or k = -3.",
+          "content_zh": "对于方程 ax² + bx + c = 0，判别式为 D = b² - 4ac。\n\n若 D > 0：有两个不相等的实根。\n若 D = 0：有两个相等的实根（一个重根）。\n若 D < 0：无实根（两个共轭复数根）。\n\n判别式用于在不解方程的情况下判断根的性质。也可用于求直线与曲线相切的条件（令 D = 0）或曲线与直线不相交的条件（令 D < 0）。\n\n例题：求使 kx² + 6x + k = 0 有相等实根的 k 值。\nD = 36 - 4k² = 0，所以 k² = 9，得 k = 3 或 k = -3。"
+        },
+        {
+          "title_en": "Quadratic Graphs and Inequalities",
+          "title_zh": "二次函数图像与不等式",
+          "content_en": "The graph of y = ax² + bx + c is a parabola. If a > 0, it opens upwards (U-shape); if a < 0, it opens downwards (inverted U-shape). The axis of symmetry is x = -b/(2a).\n\nTo solve quadratic inequalities:\n1. Find the roots of the corresponding equation ax² + bx + c = 0.\n2. Sketch the parabola.\n3. Read off the solution from the graph.\n\nFor ax² + bx + c > 0 with a > 0 and two real roots p, q (p < q): x < p or x > q.\nFor ax² + bx + c < 0 with a > 0 and two real roots p, q (p < q): p < x < q.\n\nExample: Solve x² - 5x + 6 < 0.\nRoots: x = 2, x = 3. Since a > 0 and we want < 0, the solution is 2 < x < 3.",
+          "content_zh": "y = ax² + bx + c 的图像是抛物线。若 a > 0，开口向上（U 形）；若 a < 0，开口向下（倒 U 形）。对称轴为 x = -b/(2a)。\n\n求解二次不等式的步骤：\n1. 求对应方程 ax² + bx + c = 0 的根。\n2. 画出抛物线草图。\n3. 从图像中读出解集。\n\n当 a > 0 且有两个实根 p, q（p < q）时：ax² + bx + c > 0 的解为 x < p 或 x > q。\nax² + bx + c < 0 的解为 p < x < q。\n\n例题：解不等式 x² - 5x + 6 < 0。\n根为 x = 2, x = 3。因为 a > 0 且要求 < 0，解集为 2 < x < 3。"
+        },
+        {
+          "title_en": "Maximum and Minimum Values of Quadratics",
+          "title_zh": "二次函数的最大值与最小值",
+          "content_en": "Using completed square form y = a(x - h)² + k:\n\nIf a > 0, the minimum value is k, occurring at x = h.\nIf a < 0, the maximum value is k, occurring at x = h.\n\nIn problems with restricted domains [p, q], evaluate y at x = h (if h is in [p, q]) and at the endpoints x = p, x = q, then compare.\n\nExample: Find the maximum value of y = -3x² + 12x - 7.\ny = -3(x² - 4x) - 7 = -3(x - 2)² + 12 - 7 = -3(x - 2)² + 5.\nSince a = -3 < 0, the maximum value is 5 at x = 2.",
+          "content_zh": "利用配方形式 y = a(x - h)² + k：\n\n若 a > 0，最小值为 k，在 x = h 处取得。\n若 a < 0，最大值为 k，在 x = h 处取得。\n\n若在限定定义域 [p, q] 上，需要分别计算 x = h（若 h 在 [p, q] 内）和端点 x = p, x = q 处的值，然后比较。\n\n例题：求 y = -3x² + 12x - 7 的最大值。\ny = -3(x² - 4x) - 7 = -3(x - 2)² + 12 - 7 = -3(x - 2)² + 5。\n因为 a = -3 < 0，最大值为 5，在 x = 2 处取得。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "What is the discriminant of the equation 3x² - 4x + 2 = 0?",
+          "question_zh": "方程 3x² - 4x + 2 = 0 的判别式是多少？",
+          "options": {
+            "A": "40",
+            "B": "-8",
+            "C": "8",
+            "D": "-40"
+          },
+          "answer": "B",
+          "explanation_en": "D = b² - 4ac = (-4)² - 4(3)(2) = 16 - 24 = -8. Since D < 0, the equation has no real roots.",
+          "explanation_zh": "D = b² - 4ac = (-4)² - 4(3)(2) = 16 - 24 = -8。因为 D < 0，方程无实根。"
+        },
+        {
+          "question_en": "Express 2x² + 8x + 3 in the form a(x + p)² + q. What is q?",
+          "question_zh": "将 2x² + 8x + 3 化为 a(x + p)² + q 的形式，q 等于多少？",
+          "options": {
+            "A": "-5",
+            "B": "5",
+            "C": "-11",
+            "D": "11"
+          },
+          "answer": "A",
+          "explanation_en": "2x² + 8x + 3 = 2(x² + 4x) + 3 = 2(x + 2)² - 8 + 3 = 2(x + 2)² - 5. So q = -5.",
+          "explanation_zh": "2x² + 8x + 3 = 2(x² + 4x) + 3 = 2(x + 2)² - 8 + 3 = 2(x + 2)² - 5。所以 q = -5。"
+        },
+        {
+          "question_en": "Solve the inequality x² - 7x + 10 > 0.",
+          "question_zh": "解不等式 x² - 7x + 10 > 0。",
+          "options": {
+            "A": "2 < x < 5",
+            "B": "x < 2 or x > 5",
+            "C": "x < -2 or x > -5",
+            "D": "-5 < x < -2"
+          },
+          "answer": "B",
+          "explanation_en": "x² - 7x + 10 = (x - 2)(x - 5) = 0 gives x = 2 or x = 5. Since a > 0 and we need > 0, the solution is x < 2 or x > 5.",
+          "explanation_zh": "x² - 7x + 10 = (x - 2)(x - 5) = 0 得 x = 2 或 x = 5。因为 a > 0 且要求 > 0，解集为 x < 2 或 x > 5。"
+        },
+        {
+          "question_en": "The equation kx² + 4x + k = 0 has two equal roots. What are the possible values of k?",
+          "question_zh": "方程 kx² + 4x + k = 0 有两个相等的实根，k 的可能值是多少？",
+          "options": {
+            "A": "k = 2 or k = -2",
+            "B": "k = 4 or k = -4",
+            "C": "k = 1 or k = -1",
+            "D": "k = 16"
+          },
+          "answer": "A",
+          "explanation_en": "For equal roots, D = 0: 16 - 4(k)(k) = 0, so 16 - 4k² = 0, k² = 4, giving k = 2 or k = -2.",
+          "explanation_zh": "令 D = 0：16 - 4(k)(k) = 0，即 16 - 4k² = 0，k² = 4，得 k = 2 或 k = -2。"
+        },
+        {
+          "question_en": "What is the minimum value of x² - 6x + 11?",
+          "question_zh": "x² - 6x + 11 的最小值是多少？",
+          "options": {
+            "A": "11",
+            "B": "2",
+            "C": "-2",
+            "D": "0"
+          },
+          "answer": "B",
+          "explanation_en": "Completing the square: x² - 6x + 11 = (x - 3)² - 9 + 11 = (x - 3)² + 2. The minimum value is 2, when x = 3.",
+          "explanation_zh": "配方：x² - 6x + 11 = (x - 3)² - 9 + 11 = (x - 3)² + 2。最小值为 2，在 x = 3 时取得。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "p1_ch2",
+      "title_en": "Functions",
+      "title_zh": "函数",
+      "knowledge_points": [
+        {
+          "title_en": "Definition and Notation of Functions",
+          "title_zh": "函数的定义与表示",
+          "content_en": "A function f is a rule that maps each element in the domain to exactly one element in the range. We write f: x → 2x + 1 or f(x) = 2x + 1. The domain is the set of allowed input values, and the range is the set of possible output values.\n\nA mapping is a function if and only if it is one-to-one or many-to-one. One-to-many mappings are NOT functions.\n\nThe range of f can be determined by considering the graph of y = f(x) and reading off the set of y-values covered.",
+          "content_zh": "函数 f 是一个将定义域中每个元素映射到值域中恰好一个元素的规则。记作 f: x → 2x + 1 或 f(x) = 2x + 1。定义域是允许的输入值集合，值域是所有可能的输出值集合。\n\n一个映射是函数，当且仅当它是一对一或多对一的。一对多的映射不是函数。\n\n函数 f 的值域可以通过观察 y = f(x) 的图像，读取所覆盖的 y 值集合来确定。"
+        },
+        {
+          "title_en": "Composite Functions",
+          "title_zh": "复合函数",
+          "content_en": "If f and g are functions, the composite function fg means apply g first, then f. So fg(x) = f(g(x)).\n\nImportant: fg ≠ gf in general. The domain of fg requires that the range of g is a subset of (or equal to) the domain of f.\n\nExample: f(x) = x² + 1, g(x) = 2x - 3.\nfg(x) = f(g(x)) = f(2x - 3) = (2x - 3)² + 1 = 4x² - 12x + 10.\ngf(x) = g(f(x)) = g(x² + 1) = 2(x² + 1) - 3 = 2x² - 1.",
+          "content_zh": "若 f 和 g 是函数，复合函数 fg 表示先作用 g，再作用 f。即 fg(x) = f(g(x))。\n\n重要：一般情况下 fg ≠ gf。fg 的定义域要求 g 的值域是 f 的定义域的子集。\n\n例题：f(x) = x² + 1，g(x) = 2x - 3。\nfg(x) = f(g(x)) = f(2x - 3) = (2x - 3)² + 1 = 4x² - 12x + 10。\ngf(x) = g(f(x)) = g(x² + 1) = 2(x² + 1) - 3 = 2x² - 1。"
+        },
+        {
+          "title_en": "Inverse Functions",
+          "title_zh": "反函数",
+          "content_en": "The inverse function f⁻¹ reverses the effect of f. If f(a) = b, then f⁻¹(b) = a. A function has an inverse if and only if it is one-to-one.\n\nTo find f⁻¹:\n1. Write y = f(x).\n2. Swap x and y (interchange them).\n3. Rearrange to make y the subject. This gives y = f⁻¹(x).\n\nProperties:\nThe domain of f⁻¹ = range of f, and the range of f⁻¹ = domain of f.\nThe graph of y = f⁻¹(x) is the reflection of y = f(x) in the line y = x.\nff⁻¹(x) = f⁻¹f(x) = x.\n\nExample: f(x) = 3x - 5. Let y = 3x - 5, swap: x = 3y - 5, so y = (x + 5)/3. Hence f⁻¹(x) = (x + 5)/3.",
+          "content_zh": "反函数 f⁻¹ 是 f 的逆操作。若 f(a) = b，则 f⁻¹(b) = a。函数有反函数的充要条件是它是一对一的。\n\n求 f⁻¹ 的方法：\n1. 令 y = f(x)。\n2. 交换 x 和 y。\n3. 将 y 表示为 x 的函数，即得 y = f⁻¹(x)。\n\n性质：\nf⁻¹ 的定义域 = f 的值域，f⁻¹ 的值域 = f 的定义域。\ny = f⁻¹(x) 的图像是 y = f(x) 关于直线 y = x 的对称图形。\nff⁻¹(x) = f⁻¹f(x) = x。\n\n例题：f(x) = 3x - 5。令 y = 3x - 5，交换得 x = 3y - 5，所以 y = (x + 5)/3。故 f⁻¹(x) = (x + 5)/3。"
+        },
+        {
+          "title_en": "Graphs of Functions and Transformations",
+          "title_zh": "函数图像与变换",
+          "content_en": "Key graph transformations of y = f(x):\n\n1. y = f(x) + a: translate a units upward (a > 0) or downward (a < 0).\n2. y = f(x - a): translate a units to the right (a > 0) or left (a < 0).\n3. y = -f(x): reflect in the x-axis.\n4. y = f(-x): reflect in the y-axis.\n5. y = af(x): vertical stretch with scale factor a.\n6. y = f(ax): horizontal stretch with scale factor 1/a.\n\nOrder of transformations matters when combining multiple transformations.\n\nExample: To get y = 2f(x - 3) + 1 from y = f(x), translate 3 units right, stretch vertically by factor 2, then translate 1 unit up.",
+          "content_zh": "y = f(x) 的关键图像变换：\n\n1. y = f(x) + a：向上平移 a 个单位（a > 0）或向下（a < 0）。\n2. y = f(x - a)：向右平移 a 个单位（a > 0）或向左（a < 0）。\n3. y = -f(x)：关于 x 轴对称。\n4. y = f(-x)：关于 y 轴对称。\n5. y = af(x)：纵向伸缩，比例因子为 a。\n6. y = f(ax)：横向伸缩，比例因子为 1/a。\n\n组合多个变换时，变换的顺序很重要。\n\n例题：从 y = f(x) 到 y = 2f(x - 3) + 1，先向右平移 3 个单位，再纵向拉伸 2 倍，最后向上平移 1 个单位。"
+        },
+        {
+          "title_en": "Modulus Function",
+          "title_zh": "绝对值函数",
+          "content_en": "The modulus (absolute value) function is defined as |x| = x if x >= 0 and |x| = -x if x < 0. The graph of y = |f(x)| is obtained by reflecting any parts of y = f(x) that are below the x-axis to above the x-axis.\n\nTo solve equations involving modulus:\n|f(x)| = k (k > 0): solve f(x) = k and f(x) = -k.\n|f(x)| = |g(x)|: solve f(x) = g(x) and f(x) = -g(x).\n\nTo solve inequalities: |f(x)| < k means -k < f(x) < k; |f(x)| > k means f(x) > k or f(x) < -k.\n\nExample: Solve |2x - 1| = 5. Either 2x - 1 = 5, giving x = 3, or 2x - 1 = -5, giving x = -2.",
+          "content_zh": "绝对值函数定义为 |x| = x（当 x >= 0）和 |x| = -x（当 x < 0）。y = |f(x)| 的图像是将 y = f(x) 在 x 轴下方的部分翻折到 x 轴上方。\n\n含绝对值的方程求解：\n|f(x)| = k（k > 0）：解 f(x) = k 和 f(x) = -k。\n|f(x)| = |g(x)|：解 f(x) = g(x) 和 f(x) = -g(x)。\n\n含绝对值的不等式：|f(x)| < k 意味着 -k < f(x) < k；|f(x)| > k 意味着 f(x) > k 或 f(x) < -k。\n\n例题：解 |2x - 1| = 5。2x - 1 = 5 得 x = 3，或 2x - 1 = -5 得 x = -2。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "Given f(x) = 2x + 1 and g(x) = x², find fg(3).",
+          "question_zh": "已知 f(x) = 2x + 1，g(x) = x²，求 fg(3)。",
+          "options": {
+            "A": "49",
+            "B": "19",
+            "C": "37",
+            "D": "7"
+          },
+          "answer": "B",
+          "explanation_en": "fg(3) = f(g(3)) = f(9) = 2(9) + 1 = 19.",
+          "explanation_zh": "fg(3) = f(g(3)) = f(9) = 2(9) + 1 = 19。"
+        },
+        {
+          "question_en": "Find the inverse of f(x) = (2x - 3)/5.",
+          "question_zh": "求 f(x) = (2x - 3)/5 的反函数。",
+          "options": {
+            "A": "f⁻¹(x) = (5x + 3)/2",
+            "B": "f⁻¹(x) = (5x - 3)/2",
+            "C": "f⁻¹(x) = 5/(2x - 3)",
+            "D": "f⁻¹(x) = (3 - 5x)/2"
+          },
+          "answer": "A",
+          "explanation_en": "Let y = (2x - 3)/5. Swap: x = (2y - 3)/5. Solve: 5x = 2y - 3, so 2y = 5x + 3, y = (5x + 3)/2.",
+          "explanation_zh": "令 y = (2x - 3)/5。交换：x = (2y - 3)/5。求解：5x = 2y - 3，所以 2y = 5x + 3，y = (5x + 3)/2。"
+        },
+        {
+          "question_en": "The graph of y = f(x) is translated 2 units to the right and 3 units up. What is the equation of the new graph?",
+          "question_zh": "y = f(x) 的图像向右平移 2 个单位再向上平移 3 个单位后，新图像的方程是什么？",
+          "options": {
+            "A": "y = f(x + 2) + 3",
+            "B": "y = f(x - 2) + 3",
+            "C": "y = f(x - 2) - 3",
+            "D": "y = f(x + 2) - 3"
+          },
+          "answer": "B",
+          "explanation_en": "Translating 2 right: replace x with (x - 2). Translating 3 up: add 3. New equation: y = f(x - 2) + 3.",
+          "explanation_zh": "向右平移 2：将 x 替换为 (x - 2)。向上平移 3：加 3。新方程为 y = f(x - 2) + 3。"
+        },
+        {
+          "question_en": "Solve |3x - 2| = 7.",
+          "question_zh": "解方程 |3x - 2| = 7。",
+          "options": {
+            "A": "x = 3 or x = -5/3",
+            "B": "x = 3 or x = 5/3",
+            "C": "x = -3 or x = 5/3",
+            "D": "x = 3 or x = -3"
+          },
+          "answer": "A",
+          "explanation_en": "Case 1: 3x - 2 = 7, so 3x = 9, x = 3. Case 2: 3x - 2 = -7, so 3x = -5, x = -5/3.",
+          "explanation_zh": "情况 1：3x - 2 = 7，3x = 9，x = 3。情况 2：3x - 2 = -7，3x = -5，x = -5/3。"
+        },
+        {
+          "question_en": "If f(x) = x² - 4 for x >= 0, what is the range of f?",
+          "question_zh": "若 f(x) = x² - 4，x >= 0，f 的值域是什么？",
+          "options": {
+            "A": "f(x) >= 0",
+            "B": "f(x) >= -4",
+            "C": "f(x) > -4",
+            "D": "f(x) <= -4"
+          },
+          "answer": "B",
+          "explanation_en": "When x = 0, f(0) = -4 (minimum). As x increases, x² - 4 increases without bound. So range is f(x) >= -4.",
+          "explanation_zh": "当 x = 0 时，f(0) = -4（最小值）。当 x 增大时，x² - 4 无限增大。因此值域为 f(x) >= -4。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "p1_ch3",
+      "title_en": "Coordinate Geometry",
+      "title_zh": "坐标几何",
+      "knowledge_points": [
+        {
+          "title_en": "Distance, Midpoint and Gradient",
+          "title_zh": "两点间距离、中点与斜率",
+          "content_en": "For two points A(x1, y1) and B(x2, y2):\n\nDistance: AB = sqrt((x2 - x1)² + (y2 - y1)²)\nMidpoint: M = ((x1 + x2)/2, (y1 + y2)/2)\nGradient (slope): m = (y2 - y1)/(x2 - x1)\n\nSpecial cases: Horizontal line has gradient 0. Vertical line has undefined gradient.\n\nExample: A(1, 3), B(5, 7). Distance = sqrt(16 + 16) = 4√2. Midpoint = (3, 5). Gradient = 4/4 = 1.",
+          "content_zh": "对于两点 A(x1, y1) 和 B(x2, y2)：\n\n距离：AB = sqrt((x2 - x1)² + (y2 - y1)²)\n中点：M = ((x1 + x2)/2, (y1 + y2)/2)\n斜率：m = (y2 - y1)/(x2 - x1)\n\n特殊情况：水平线斜率为 0，垂直线斜率无定义。\n\n例题：A(1, 3)，B(5, 7)。距离 = sqrt(16 + 16) = 4√2。中点 = (3, 5)。斜率 = 4/4 = 1。"
+        },
+        {
+          "title_en": "Equation of a Straight Line",
+          "title_zh": "直线方程",
+          "content_en": "Forms of the equation of a line:\n\n1. y = mx + c: slope-intercept form, where m is the gradient and c is the y-intercept.\n2. y - y1 = m(x - x1): point-slope form, passing through (x1, y1) with gradient m.\n3. ax + by + c = 0: general form.\n\nTo find the equation of a line, you need either:\nA point and a gradient, or two points (find gradient first, then use point-slope form).\n\nExample: Line through (2, 5) with gradient 3: y - 5 = 3(x - 2), so y = 3x - 1.",
+          "content_zh": "直线方程的几种形式：\n\n1. y = mx + c：斜截式，m 为斜率，c 为 y 轴截距。\n2. y - y1 = m(x - x1)：点斜式，过点 (x1, y1)，斜率为 m。\n3. ax + by + c = 0：一般式。\n\n确定一条直线方程需要：一个点和一个斜率，或两个点（先求斜率，再用点斜式）。\n\n例题：过点 (2, 5)、斜率为 3 的直线：y - 5 = 3(x - 2)，即 y = 3x - 1。"
+        },
+        {
+          "title_en": "Parallel and Perpendicular Lines",
+          "title_zh": "平行线与垂直线",
+          "content_en": "Two lines are parallel if and only if they have the same gradient: m1 = m2.\n\nTwo lines are perpendicular if and only if the product of their gradients is -1: m1 x m2 = -1, i.e., m2 = -1/m1.\n\nThis is frequently used in exam questions to find:\nThe equation of a line parallel/perpendicular to a given line through a given point.\nThe perpendicular bisector of a line segment (passes through the midpoint and has gradient -1/m).\n\nExample: Line L has gradient 2/3. A perpendicular line has gradient -3/2.",
+          "content_zh": "两条直线平行的充要条件是斜率相等：m1 = m2。\n\n两条直线垂直的充要条件是斜率之积为 -1：m1 x m2 = -1，即 m2 = -1/m1。\n\n考试中常用于求：过某点且平行/垂直于已知直线的方程；线段的垂直平分线（过中点，斜率为 -1/m）。\n\n例题：直线 L 的斜率为 2/3，垂直于 L 的直线斜率为 -3/2。"
+        },
+        {
+          "title_en": "Equation of a Circle",
+          "title_zh": "圆的方程",
+          "content_en": "The equation of a circle with centre (a, b) and radius r is: (x - a)² + (y - b)² = r².\n\nExpanding gives: x² + y² - 2ax - 2by + (a² + b² - r²) = 0.\n\nTo find the centre and radius from the expanded form, complete the square for x and y separately.\n\nKey properties:\nThe tangent to a circle at a point P is perpendicular to the radius at P.\nThe perpendicular from the centre to a chord bisects the chord.\n\nExample: x² + y² - 6x + 4y - 12 = 0. Completing the square: (x - 3)² + (y + 2)² = 25. Centre (3, -2), radius 5.",
+          "content_zh": "圆心为 (a, b)、半径为 r 的圆的方程为：(x - a)² + (y - b)² = r²。\n\n展开得：x² + y² - 2ax - 2by + (a² + b² - r²) = 0。\n\n从展开式求圆心和半径：分别对 x 和 y 进行配方。\n\n关键性质：圆上一点 P 处的切线垂直于过 P 的半径；从圆心到弦的垂线平分该弦。\n\n例题：x² + y² - 6x + 4y - 12 = 0。配方：(x - 3)² + (y + 2)² = 25。圆心 (3, -2)，半径 5。"
+        },
+        {
+          "title_en": "Intersection of Lines and Curves",
+          "title_zh": "直线与曲线的交点",
+          "content_en": "To find the intersection points of a line and a curve, solve their equations simultaneously by substituting the linear equation into the equation of the curve. This usually produces a quadratic equation.\n\nThe discriminant of this quadratic tells us:\nD > 0: two intersection points.\nD = 0: one point (the line is tangent to the curve).\nD < 0: no intersection.\n\nExample: Find where y = x + 1 meets y = x² - 3. Substituting: x + 1 = x² - 3, so x² - x - 4 = 0. Using the formula: x = (1 +/- sqrt(17))/2.",
+          "content_zh": "求直线与曲线的交点：联立方程，将一次方程代入曲线方程。通常会得到一个二次方程。\n\n判别式告诉我们：\nD > 0：两个交点。\nD = 0：一个交点（直线与曲线相切）。\nD < 0：无交点。\n\n例题：求 y = x + 1 与 y = x² - 3 的交点。代入：x + 1 = x² - 3，即 x² - x - 4 = 0。用公式：x = (1 +/- sqrt(17))/2。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "Find the distance between the points (1, -2) and (4, 2).",
+          "question_zh": "求点 (1, -2) 和 (4, 2) 之间的距离。",
+          "options": {
+            "A": "5",
+            "B": "7",
+            "C": "√7",
+            "D": "25"
+          },
+          "answer": "A",
+          "explanation_en": "Distance = sqrt((4-1)² + (2-(-2))²) = sqrt(9 + 16) = sqrt(25) = 5.",
+          "explanation_zh": "距离 = sqrt((4-1)² + (2-(-2))²) = sqrt(9 + 16) = sqrt(25) = 5。"
+        },
+        {
+          "question_en": "A line passes through (1, 3) and is perpendicular to the line y = 2x + 5. What is its equation?",
+          "question_zh": "一条直线过点 (1, 3) 且垂直于直线 y = 2x + 5，求其方程。",
+          "options": {
+            "A": "y = 2x + 1",
+            "B": "y = -x/2 + 7/2",
+            "C": "y = -2x + 5",
+            "D": "y = x/2 + 5/2"
+          },
+          "answer": "B",
+          "explanation_en": "The gradient of y = 2x + 5 is 2. Perpendicular gradient = -1/2. Equation: y - 3 = -1/2(x - 1), so y = -x/2 + 7/2.",
+          "explanation_zh": "y = 2x + 5 的斜率为 2。垂直线斜率 = -1/2。方程：y - 3 = -1/2(x - 1)，即 y = -x/2 + 7/2。"
+        },
+        {
+          "question_en": "What is the centre and radius of the circle x² + y² - 8x + 6y = 0?",
+          "question_zh": "圆 x² + y² - 8x + 6y = 0 的圆心和半径是什么？",
+          "options": {
+            "A": "Centre (4, -3), radius 5",
+            "B": "Centre (-4, 3), radius 5",
+            "C": "Centre (4, -3), radius 25",
+            "D": "Centre (8, -6), radius 10"
+          },
+          "answer": "A",
+          "explanation_en": "(x² - 8x + 16) + (y² + 6y + 9) = 0 + 16 + 9, so (x - 4)² + (y + 3)² = 25. Centre (4, -3), radius = 5.",
+          "explanation_zh": "(x² - 8x + 16) + (y² + 6y + 9) = 0 + 16 + 9，即 (x - 4)² + (y + 3)² = 25。圆心 (4, -3)，半径 = 5。"
+        },
+        {
+          "question_en": "Find the midpoint of A(-3, 7) and B(5, -1).",
+          "question_zh": "求 A(-3, 7) 和 B(5, -1) 的中点。",
+          "options": {
+            "A": "(1, 3)",
+            "B": "(2, 6)",
+            "C": "(4, -4)",
+            "D": "(1, 4)"
+          },
+          "answer": "A",
+          "explanation_en": "Midpoint = ((-3+5)/2, (7+(-1))/2) = (1, 3).",
+          "explanation_zh": "中点 = ((-3+5)/2, (7+(-1))/2) = (1, 3)。"
+        },
+        {
+          "question_en": "For what value of k is the line y = kx - 1 tangent to the curve y = x²?",
+          "question_zh": "当 k 为何值时，直线 y = kx - 1 与曲线 y = x² 相切？",
+          "options": {
+            "A": "k = 2 or k = -2",
+            "B": "k = 4 or k = -4",
+            "C": "k = 1 or k = -1",
+            "D": "k = 2 only"
+          },
+          "answer": "A",
+          "explanation_en": "Setting equal: x² = kx - 1, so x² - kx + 1 = 0. For tangency, D = 0: k² - 4 = 0, so k = 2 or k = -2.",
+          "explanation_zh": "令 x² = kx - 1，即 x² - kx + 1 = 0。相切要求 D = 0：k² - 4 = 0，k = 2 或 k = -2。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "p1_ch4",
+      "title_en": "Circular Measure",
+      "title_zh": "弧度制",
+      "knowledge_points": [
+        {
+          "title_en": "Radian Measure",
+          "title_zh": "弧度制",
+          "content_en": "A radian is the angle subtended at the centre of a circle by an arc equal in length to the radius. One complete revolution = 2π radians = 360 degrees.\n\nConversions:\nDegrees to radians: multiply by π/180.\nRadians to degrees: multiply by 180/π.\n\nKey equivalences: 30 deg = π/6, 45 deg = π/4, 60 deg = π/3, 90 deg = π/2, 180 deg = π, 360 deg = 2π.\n\nExample: Convert 150 deg to radians: 150 x π/180 = 5π/6.",
+          "content_zh": "弧度是圆心角所对的弧长等于半径时的角度。一圈 = 2π 弧度 = 360°。\n\n换算：\n角度转弧度：乘以 π/180。\n弧度转角度：乘以 180/π。\n\n常用值：30° = π/6，45° = π/4，60° = π/3，90° = π/2，180° = π，360° = 2π。\n\n例题：将 150° 转换为弧度：150 x π/180 = 5π/6。"
+        },
+        {
+          "title_en": "Arc Length",
+          "title_zh": "弧长",
+          "content_en": "For a circle with radius r and an angle theta (in radians) at the centre:\n\nArc length s = r x theta.\n\nThis is derived from the proportion: s/(2πr) = theta/(2π), giving s = r x theta.\n\nNote: theta must be in radians for this formula to work directly.\n\nExample: A sector has radius 8 cm and angle 1.2 radians. Arc length = 8 x 1.2 = 9.6 cm.",
+          "content_zh": "对于半径为 r、圆心角为 θ（弧度）的圆：\n\n弧长 s = rθ。\n\n推导：由比例关系 s/(2πr) = θ/(2π) 得 s = rθ。\n\n注意：此公式中 θ 必须为弧度。\n\n例题：一个扇形的半径为 8 cm，圆心角为 1.2 弧度。弧长 = 8 x 1.2 = 9.6 cm。"
+        },
+        {
+          "title_en": "Area of a Sector",
+          "title_zh": "扇形面积",
+          "content_en": "The area of a sector with radius r and angle theta (in radians):\n\nArea = (1/2)r² x theta.\n\nThis is derived from: Area/(πr²) = theta/(2π), giving Area = (1/2)r² x theta.\n\nExample: Find the area of a sector with radius 6 cm and angle π/3 radians.\nArea = (1/2)(36)(π/3) = 6π cm².",
+          "content_zh": "半径为 r、圆心角为 θ（弧度）的扇形面积：\n\n面积 = (1/2)r²θ。\n\n推导：由 面积/(πr²) = θ/(2π) 得 面积 = (1/2)r²θ。\n\n例题：求半径为 6 cm、圆心角为 π/3 弧度的扇形面积。\n面积 = (1/2)(36)(π/3) = 6π cm²。"
+        },
+        {
+          "title_en": "Area of a Segment",
+          "title_zh": "弓形面积",
+          "content_en": "A segment is the region between a chord and the arc it subtends. The area of a segment is:\n\nArea of segment = Area of sector - Area of triangle = (1/2)r² x theta - (1/2)r² x sin(theta) = (1/2)r²(theta - sin(theta)).\n\nThe triangle formed has two sides equal to r and the included angle theta, so its area is (1/2)r² sin(theta).\n\nExample: A chord subtends an angle of 2 radians at the centre of a circle of radius 5 cm.\nArea of segment = (1/2)(25)(2 - sin 2) = (1/2)(25)(2 - 0.9093) = 13.63 cm².",
+          "content_zh": "弓形是弦和弧之间的区域。弓形面积为：\n\n弓形面积 = 扇形面积 - 三角形面积 = (1/2)r²θ - (1/2)r²sinθ = (1/2)r²(θ - sinθ)。\n\n三角形的两条边等于 r，夹角为 θ，面积为 (1/2)r²sinθ。\n\n例题：圆的半径为 5 cm，弦对应的圆心角为 2 弧度。\n弓形面积 = (1/2)(25)(2 - sin 2) = (1/2)(25)(2 - 0.9093) = 13.63 cm²。"
+        },
+        {
+          "title_en": "Perimeter of Composite Figures",
+          "title_zh": "组合图形的周长",
+          "content_en": "Exam questions often combine arcs, chords, and straight lines. For such problems:\n\n1. Identify all the parts of the perimeter.\n2. Calculate the arc length: s = r x theta.\n3. Calculate chord lengths using the cosine rule or trigonometry: chord = 2r sin(theta/2).\n4. Add all parts together.\n\nThe cosine rule for the triangle with two radii: chord² = 2r²(1 - cos(theta)).\n\nExample: A sector of radius 10 cm and angle 0.8 rad. Perimeter = arc + 2 radii = 10(0.8) + 2(10) = 28 cm.",
+          "content_zh": "考试题目常将弧、弦和直线组合在一起。解题步骤：\n\n1. 识别周长的所有组成部分。\n2. 计算弧长：s = rθ。\n3. 用余弦定理或三角函数计算弦长：弦 = 2r sin(θ/2)。\n4. 将各部分相加。\n\n余弦定理求弦长：弦² = 2r²(1 - cosθ)。\n\n例题：一个扇形半径 10 cm，圆心角 0.8 弧度。周长 = 弧长 + 两条半径 = 10(0.8) + 2(10) = 28 cm。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "Convert 240 degrees to radians.",
+          "question_zh": "将 240° 转换为弧度。",
+          "options": {
+            "A": "3π/4",
+            "B": "4π/3",
+            "C": "2π/3",
+            "D": "5π/6"
+          },
+          "answer": "B",
+          "explanation_en": "240 x π/180 = 240π/180 = 4π/3.",
+          "explanation_zh": "240 x π/180 = 240π/180 = 4π/3。"
+        },
+        {
+          "question_en": "A sector has radius 10 cm and arc length 15 cm. Find the angle in radians.",
+          "question_zh": "一个扇形的半径为 10 cm，弧长为 15 cm，求圆心角（弧度）。",
+          "options": {
+            "A": "0.15",
+            "B": "1.5",
+            "C": "150",
+            "D": "2/3"
+          },
+          "answer": "B",
+          "explanation_en": "s = r x theta, so theta = s/r = 15/10 = 1.5 radians.",
+          "explanation_zh": "s = rθ，所以 θ = s/r = 15/10 = 1.5 弧度。"
+        },
+        {
+          "question_en": "Find the area of a sector with radius 8 cm and angle π/4 radians.",
+          "question_zh": "求半径为 8 cm、圆心角为 π/4 弧度的扇形面积。",
+          "options": {
+            "A": "8π cm²",
+            "B": "16π cm²",
+            "C": "4π cm²",
+            "D": "32π cm²"
+          },
+          "answer": "A",
+          "explanation_en": "Area = (1/2)r² x theta = (1/2)(64)(π/4) = 8π cm².",
+          "explanation_zh": "面积 = (1/2)r²θ = (1/2)(64)(π/4) = 8π cm²。"
+        },
+        {
+          "question_en": "A segment is formed by a chord in a circle of radius 6 cm, with central angle 1 radian. Find the area of the segment, correct to 3 significant figures.",
+          "question_zh": "在半径为 6 cm 的圆中，弦对应圆心角为 1 弧度的弓形面积是多少？（保留三位有效数字）",
+          "options": {
+            "A": "2.85 cm²",
+            "B": "2.76 cm²",
+            "C": "3.00 cm²",
+            "D": "1.44 cm²"
+          },
+          "answer": "A",
+          "explanation_en": "Area = (1/2)r²(θ - sin θ) = (1/2)(36)(1 - sin 1) = 18(1 - 0.8415) = 18(0.1585) = 2.85 cm².",
+          "explanation_zh": "面积 = (1/2)r²(θ - sin θ) = (1/2)(36)(1 - sin 1) = 18(1 - 0.8415) = 18 × 0.1585 ≈ 2.85 cm²。"
+        },
+        {
+          "question_en": "The perimeter of a sector is 20 cm and the radius is 6 cm. What is the angle of the sector in radians?",
+          "question_zh": "一个扇形的周长为 20 cm，半径为 6 cm，求圆心角（弧度）。",
+          "options": {
+            "A": "4/3",
+            "B": "8/6",
+            "C": "10/6",
+            "D": "20/6"
+          },
+          "answer": "A",
+          "explanation_en": "Perimeter = 2r + r x theta = 12 + 6 x theta = 20. So 6 x theta = 8, theta = 8/6 = 4/3 radians.",
+          "explanation_zh": "周长 = 2r + rθ = 12 + 6θ = 20。所以 6θ = 8，θ = 8/6 = 4/3 弧度。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "p1_ch5",
+      "title_en": "Trigonometry",
+      "title_zh": "三角函数",
+      "knowledge_points": [
+        {
+          "title_en": "Trigonometric Ratios and Exact Values",
+          "title_zh": "三角比与精确值",
+          "content_en": "The three main trigonometric ratios for a right-angled triangle are:\nsin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse, tan θ = opposite/adjacent.\n\nExact values to memorise:\nθ = 0°: sin 0 = 0, cos 0 = 1, tan 0 = 0\nθ = 30° (π/6): sin = 1/2, cos = √3/2, tan = 1/√3\nθ = 45° (π/4): sin = √2/2, cos = √2/2, tan = 1\nθ = 60° (π/3): sin = √3/2, cos = 1/2, tan = √3\nθ = 90° (π/2): sin = 1, cos = 0, tan = undefined\n\nThese are derived from the 45-45-90 triangle (sides 1, 1, √2) and the 30-60-90 triangle (sides 1, √3, 2).",
+          "content_zh": "直角三角形的三个主要三角比：\nsin θ = 对边/斜边，cos θ = 邻边/斜边，tan θ = 对边/邻边。\n\n需要记住的精确值：\nθ = 0°: sin 0 = 0, cos 0 = 1, tan 0 = 0\nθ = 30° (π/6): sin = 1/2, cos = √3/2, tan = 1/√3\nθ = 45° (π/4): sin = √2/2, cos = √2/2, tan = 1\nθ = 60° (π/3): sin = √3/2, cos = 1/2, tan = √3\nθ = 90° (π/2): sin = 1, cos = 0, tan 无定义\n\n这些值来自 45-45-90 三角形（边长 1, 1, √2）和 30-60-90 三角形（边长 1, √3, 2）。"
+        },
+        {
+          "title_en": "Trigonometric Identities",
+          "title_zh": "三角恒等式",
+          "content_en": "The two fundamental identities for Pure Mathematics 1 are:\n\n1. tan θ = sin θ / cos θ\n2. sin²θ + cos²θ = 1 (the Pythagorean identity)\n\nFrom identity 2, we can derive:\nsin²θ = 1 - cos²θ\ncos²θ = 1 - sin²θ\n\nThese identities are used to:\n- Simplify trigonometric expressions.\n- Prove other trigonometric identities.\n- Solve trigonometric equations by converting to a single trig function.\n\nExample: Simplify (1 - cos²θ) / sin θ.\n= sin²θ / sin θ = sin θ.",
+          "content_zh": "纯数学 1 中的两个基本恒等式：\n\n1. tan θ = sin θ / cos θ\n2. sin²θ + cos²θ = 1（勾股定理恒等式）\n\n由恒等式 2 可得：\nsin²θ = 1 - cos²θ\ncos²θ = 1 - sin²θ\n\n这些恒等式用于：\n- 化简三角表达式。\n- 证明其他三角恒等式。\n- 通过转化为单一三角函数来解三角方程。\n\n例题：化简 (1 - cos²θ) / sin θ。\n= sin²θ / sin θ = sin θ。"
+        },
+        {
+          "title_en": "Graphs of Trigonometric Functions",
+          "title_zh": "三角函数的图像",
+          "content_en": "Key properties of trig graphs:\n\ny = sin x: period 2π (360°), amplitude 1, range [-1, 1], passes through origin.\ny = cos x: period 2π (360°), amplitude 1, range [-1, 1], starts at (0, 1).\ny = tan x: period π (180°), no amplitude, range all real numbers, vertical asymptotes at x = π/2 + nπ.\n\nTransformations:\ny = a sin(bx + c) + d has amplitude |a|, period 2π/b, phase shift -c/b, vertical shift d.\n\nExample: y = 3 sin(2x) has amplitude 3 and period 2π/2 = π.",
+          "content_zh": "三角函数图像的关键性质：\n\ny = sin x：周期 2π（360°），振幅 1，值域 [-1, 1]，过原点。\ny = cos x：周期 2π（360°），振幅 1，值域 [-1, 1]，起点为 (0, 1)。\ny = tan x：周期 π（180°），无振幅，值域为全体实数，在 x = π/2 + nπ 处有垂直渐近线。\n\n变换：\ny = a sin(bx + c) + d 的振幅为 |a|，周期为 2π/b，相位移 -c/b，纵向平移 d。\n\n例题：y = 3 sin(2x) 的振幅为 3，周期为 2π/2 = π。"
+        },
+        {
+          "title_en": "Solving Trigonometric Equations",
+          "title_zh": "解三角方程",
+          "content_en": "To solve trig equations in a given interval:\n\n1. Rearrange to get sin θ = k, cos θ = k, or tan θ = k.\n2. Find the principal value (first solution) using inverse trig functions.\n3. Use the CAST diagram or symmetry properties to find all solutions in the given range.\n\nCAST rule (anticlockwise from positive x-axis): Q4 = Cos, Q1 = All, Q2 = Sin, Q3 = Tan.\n\nFor sin θ = k: solutions are θ and (180° - θ) or (π - θ).\nFor cos θ = k: solutions are θ and (360° - θ) or (2π - θ).\nFor tan θ = k: solutions are θ and (θ + 180°) or (θ + π).\n\nExample: Solve sin θ = 0.5 for 0° ≤ θ ≤ 360°.\nPrincipal value: θ = 30°. Second solution: 180° - 30° = 150°. So θ = 30° or 150°.",
+          "content_zh": "在给定区间内解三角方程：\n\n1. 整理为 sin θ = k、cos θ = k 或 tan θ = k 的形式。\n2. 用反三角函数求主值（第一个解）。\n3. 用 CAST 图或对称性求给定范围内的所有解。\n\nCAST 规则（从 x 轴正方向逆时针）：第四象限 = Cos，第一象限 = All，第二象限 = Sin，第三象限 = Tan。\n\n对于 sin θ = k：解为 θ 和 (180° - θ) 或 (π - θ)。\n对于 cos θ = k：解为 θ 和 (360° - θ) 或 (2π - θ)。\n对于 tan θ = k：解为 θ 和 (θ + 180°) 或 (θ + π)。\n\n例题：解 sin θ = 0.5，0° ≤ θ ≤ 360°。\n主值：θ = 30°。第二个解：180° - 30° = 150°。所以 θ = 30° 或 150°。"
+        },
+        {
+          "title_en": "Trigonometric Equations Involving Identities",
+          "title_zh": "含恒等式的三角方程",
+          "content_en": "Many exam equations require using identities before solving:\n\nType 1: Equations with sin² and cos². Use sin²θ + cos²θ = 1 to convert to one trig function, then solve the resulting quadratic.\n\nExample: 2cos²θ - sin θ = 1 for 0° ≤ θ ≤ 360°.\nReplace cos²θ = 1 - sin²θ: 2(1 - sin²θ) - sin θ = 1\n2 - 2sin²θ - sin θ = 1\n2sin²θ + sin θ - 1 = 0\n(2sin θ - 1)(sin θ + 1) = 0\nsin θ = 1/2 or sin θ = -1\nθ = 30°, 150°, 270°.\n\nType 2: Equations with tan and sec or sin/cos. Use tan θ = sin θ/cos θ and multiply through.",
+          "content_zh": "许多考试方程需要先用恒等式转化再求解：\n\n类型 1：含 sin² 和 cos² 的方程。用 sin²θ + cos²θ = 1 转化为单一三角函数，然后解二次方程。\n\n例题：解 2cos²θ - sin θ = 1，0° ≤ θ ≤ 360°。\n用 cos²θ = 1 - sin²θ 替换：2(1 - sin²θ) - sin θ = 1\n2 - 2sin²θ - sin θ = 1\n2sin²θ + sin θ - 1 = 0\n(2sin θ - 1)(sin θ + 1) = 0\nsin θ = 1/2 或 sin θ = -1\nθ = 30°, 150°, 270°。\n\n类型 2：含 tan 和 sin/cos 的方程。用 tan θ = sin θ/cos θ 并通分。"
+        },
+        {
+          "title_en": "Sketching and Reading Trigonometric Graphs",
+          "title_zh": "绘制和读取三角函数图像",
+          "content_en": "When sketching y = a sin(bx + c) + d or similar:\n\n1. Determine the amplitude |a| (vertical stretch).\n2. Determine the period 2π/b (horizontal compression).\n3. Determine the phase shift -c/b (horizontal translation).\n4. Determine the vertical shift d.\n5. Mark key points: maximum, minimum, zeros, and midline.\n\nTo find the number of solutions to a trig equation graphically, sketch both sides and count intersections.\n\nExample: How many solutions does 2 sin x = x/π have for 0 ≤ x ≤ 2π? Sketch y = 2 sin x and y = x/π. They intersect at x = 0 and once more near x ≈ 1.9, giving 2 solutions.",
+          "content_zh": "绘制 y = a sin(bx + c) + d 或类似图像时：\n\n1. 确定振幅 |a|（纵向拉伸）。\n2. 确定周期 2π/b（横向压缩）。\n3. 确定相位移 -c/b（横向平移）。\n4. 确定纵向平移 d。\n5. 标记关键点：最大值、最小值、零点和中线。\n\n要图解三角方程的解的个数，画出两边的图像并数交点。\n\n例题：2 sin x = x/π 在 0 ≤ x ≤ 2π 上有几个解？画出 y = 2 sin x 和 y = x/π，它们在 x = 0 和 x ≈ 1.9 处相交，有 2 个解。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "What is the exact value of sin 60°?",
+          "question_zh": "sin 60° 的精确值是多少？",
+          "options": {
+            "A": "1/2",
+            "B": "√3/2",
+            "C": "√2/2",
+            "D": "1"
+          },
+          "answer": "B",
+          "explanation_en": "From the 30-60-90 triangle, sin 60° = √3/2.",
+          "explanation_zh": "由 30-60-90 三角形可知，sin 60° = √3/2。"
+        },
+        {
+          "question_en": "Simplify sin²θ + sin²θ tan²θ.",
+          "question_zh": "化简 sin²θ + sin²θ tan²θ。",
+          "options": {
+            "A": "sin²θ",
+            "B": "tan²θ",
+            "C": "1",
+            "D": "cos²θ"
+          },
+          "answer": "B",
+          "explanation_en": "Factor out sin²θ: sin²θ(1 + tan²θ) = sin²θ(1 + sin²θ/cos²θ) = sin²θ(cos²θ + sin²θ)/cos²θ = sin²θ/cos²θ = tan²θ.",
+          "explanation_zh": "提取 sin²θ：sin²θ(1 + tan²θ) = sin²θ(1 + sin²θ/cos²θ) = sin²θ × 1/cos²θ = tan²θ。"
+        },
+        {
+          "question_en": "Solve cos θ = -1/2 for 0° ≤ θ ≤ 360°.",
+          "question_zh": "解 cos θ = -1/2，0° ≤ θ ≤ 360°。",
+          "options": {
+            "A": "60° and 300°",
+            "B": "120° and 240°",
+            "C": "150° and 210°",
+            "D": "60° and 120°"
+          },
+          "answer": "B",
+          "explanation_en": "cos θ = -1/2. Reference angle is 60° (since cos 60° = 1/2). Cosine is negative in Q2 and Q3. So θ = 180° - 60° = 120° and θ = 180° + 60° = 240°.",
+          "explanation_zh": "cos θ = -1/2。参考角为 60°（因为 cos 60° = 1/2）。余弦在第二、三象限为负。所以 θ = 120° 和 θ = 240°。"
+        },
+        {
+          "question_en": "What is the period of y = tan(2x)?",
+          "question_zh": "y = tan(2x) 的周期是多少？",
+          "options": {
+            "A": "π",
+            "B": "π/2",
+            "C": "2π",
+            "D": "π/4"
+          },
+          "answer": "B",
+          "explanation_en": "The period of tan(bx) is π/b. Here b = 2, so period = π/2.",
+          "explanation_zh": "tan(bx) 的周期为 π/b。这里 b = 2，所以周期 = π/2。"
+        },
+        {
+          "question_en": "Solve 2sin²θ + sin θ - 1 = 0 for 0° ≤ θ ≤ 360°.",
+          "question_zh": "解 2sin²θ + sin θ - 1 = 0，0° ≤ θ ≤ 360°。",
+          "options": {
+            "A": "30°, 150°, 270°",
+            "B": "30°, 150°",
+            "C": "30°, 150°, 210°",
+            "D": "30°, 270°"
+          },
+          "answer": "A",
+          "explanation_en": "Let u = sin θ: 2u² + u - 1 = 0, (2u - 1)(u + 1) = 0, u = 1/2 or u = -1.\nsin θ = 1/2: θ = 30° or 150°.\nsin θ = -1: θ = 270°.\nSolutions: 30°, 150°, 270°.",
+          "explanation_zh": "令 u = sin θ：2u² + u - 1 = 0，(2u - 1)(u + 1) = 0，u = 1/2 或 u = -1。\nsin θ = 1/2：θ = 30° 或 150°。\nsin θ = -1：θ = 270°。\n解为 30°, 150°, 270°。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "p1_ch6",
+      "title_en": "Series",
+      "title_zh": "级数",
+      "knowledge_points": [
+        {
+          "title_en": "Binomial Expansion",
+          "title_zh": "二项式展开",
+          "content_en": "The binomial expansion of (a + b)^n for positive integer n is:\n(a + b)^n = C(n,0)a^n + C(n,1)a^(n-1)b + C(n,2)a^(n-2)b² + ... + C(n,n)b^n\n\nwhere C(n,r) = n! / (r!(n-r)!) is the binomial coefficient, also written as nCr or (n choose r).\n\nKey properties:\n- There are (n + 1) terms.\n- C(n,r) = C(n, n-r) (symmetry).\n- The general term is T(r+1) = C(n,r) a^(n-r) b^r.\n\nExample: Expand (2x + 3)³.\n= C(3,0)(2x)³ + C(3,1)(2x)²(3) + C(3,2)(2x)(3)² + C(3,3)(3)³\n= 8x³ + 36x² + 54x + 27.",
+          "content_zh": "当 n 为正整数时，(a + b)^n 的二项式展开为：\n(a + b)^n = C(n,0)a^n + C(n,1)a^(n-1)b + C(n,2)a^(n-2)b² + ... + C(n,n)b^n\n\n其中 C(n,r) = n! / (r!(n-r)!) 是二项式系数，也写作 nCr 或 C(n,r)。\n\n关键性质：\n- 共有 (n + 1) 项。\n- C(n,r) = C(n, n-r)（对称性）。\n- 通项为 T(r+1) = C(n,r) a^(n-r) b^r。\n\n例题：展开 (2x + 3)³。\n= C(3,0)(2x)³ + C(3,1)(2x)²(3) + C(3,2)(2x)(3)² + C(3,3)(3)³\n= 8x³ + 36x² + 54x + 27。"
+        },
+        {
+          "title_en": "Finding Specific Terms in Binomial Expansion",
+          "title_zh": "求二项式展开的特定项",
+          "content_en": "To find a specific term in the expansion of (a + b)^n, use the general term:\nT(r+1) = C(n,r) a^(n-r) b^r\n\nCommon exam questions:\n1. Find the coefficient of x^k: set up the power of x in T(r+1) equal to k, solve for r.\n2. Find the term independent of x (constant term): set the power of x equal to 0.\n\nExample: Find the coefficient of x³ in (1 + 2x)^7.\nT(r+1) = C(7,r)(1)^(7-r)(2x)^r = C(7,r) 2^r x^r.\nFor x³: r = 3. Coefficient = C(7,3) × 2³ = 35 × 8 = 280.",
+          "content_zh": "要求 (a + b)^n 展开式的特定项，用通项：\nT(r+1) = C(n,r) a^(n-r) b^r\n\n常见考试题型：\n1. 求 x^k 的系数：令 T(r+1) 中 x 的次数等于 k，解出 r。\n2. 求不含 x 的项（常数项）：令 x 的次数等于 0。\n\n例题：求 (1 + 2x)^7 展开式中 x³ 的系数。\nT(r+1) = C(7,r)(1)^(7-r)(2x)^r = C(7,r) 2^r x^r。\n对于 x³：r = 3。系数 = C(7,3) × 2³ = 35 × 8 = 280。"
+        },
+        {
+          "title_en": "Arithmetic Progressions (AP)",
+          "title_zh": "等差数列",
+          "content_en": "An arithmetic progression (AP) is a sequence where each term differs from the previous one by a constant d (common difference).\n\nFormulas:\n- nth term: a_n = a + (n-1)d, where a is the first term.\n- Sum of first n terms: S_n = n/2 × (2a + (n-1)d) = n/2 × (a + l), where l is the last term.\n\nKey relationships:\n- Common difference d = a_n - a_(n-1) for any consecutive terms.\n- If three numbers are in AP, the middle one equals the average of the other two.\n\nExample: AP with a = 3, d = 5. The 10th term = 3 + 9(5) = 48. Sum of 10 terms = 10/2 × (3 + 48) = 255.",
+          "content_zh": "等差数列是每一项与前一项的差为常数 d（公差）的数列。\n\n公式：\n- 第 n 项：a_n = a + (n-1)d，其中 a 为首项。\n- 前 n 项和：S_n = n/2 × (2a + (n-1)d) = n/2 × (a + l)，其中 l 为末项。\n\n关键关系：\n- 公差 d = a_n - a_(n-1)。\n- 若三个数成等差，中间那个等于另外两个的平均值。\n\n例题：等差数列 a = 3，d = 5。第 10 项 = 3 + 9(5) = 48。前 10 项和 = 10/2 × (3 + 48) = 255。"
+        },
+        {
+          "title_en": "Geometric Progressions (GP)",
+          "title_zh": "等比数列",
+          "content_en": "A geometric progression (GP) is a sequence where each term is multiplied by a constant r (common ratio) to get the next term.\n\nFormulas:\n- nth term: a_n = ar^(n-1), where a is the first term.\n- Sum of first n terms: S_n = a(1 - r^n)/(1 - r) for r ≠ 1.\n- Sum to infinity (converges when |r| < 1): S_inf = a/(1 - r).\n\nKey relationships:\n- Common ratio r = a_(n+1)/a_n.\n- If three numbers are in GP, the middle one squared equals the product of the other two.\n\nExample: GP with a = 2, r = 3. T5 = 2 × 3⁴ = 162. S5 = 2(1 - 3⁵)/(1 - 3) = 2(-242)/(-2) = 242.",
+          "content_zh": "等比数列是每一项乘以常数 r（公比）得到下一项的数列。\n\n公式：\n- 第 n 项：a_n = ar^(n-1)，其中 a 为首项。\n- 前 n 项和：S_n = a(1 - r^n)/(1 - r)，r ≠ 1。\n- 无穷级数和（当 |r| < 1 时收敛）：S_inf = a/(1 - r)。\n\n关键关系：\n- 公比 r = a_(n+1)/a_n。\n- 若三个数成等比，中间那个的平方等于另外两个的乘积。\n\n例题：等比数列 a = 2，r = 3。T5 = 2 × 3⁴ = 162。S5 = 2(1 - 3⁵)/(1 - 3) = 2(-242)/(-2) = 242。"
+        },
+        {
+          "title_en": "Sum to Infinity of a GP",
+          "title_zh": "等比数列的无穷级数和",
+          "content_en": "When |r| < 1 (i.e., -1 < r < 1), the GP converges and has a sum to infinity:\n\nS_inf = a/(1 - r)\n\nThis is because as n approaches infinity, r^n approaches 0.\n\nCondition for convergence: |r| < 1 is essential. If |r| >= 1, the series diverges.\n\nExample: Find the sum to infinity of 8 + 4 + 2 + 1 + ...\na = 8, r = 1/2. Since |1/2| < 1, S_inf = 8/(1 - 1/2) = 8/(1/2) = 16.\n\nExample: A ball bounces to 3/4 of its previous height. If dropped from 10m, find total distance.\nDistance = 10 + 2(10 × 3/4 + 10 × (3/4)² + ...) = 10 + 2 × 10(3/4)/(1 - 3/4) = 10 + 60 = 70m.",
+          "content_zh": "当 |r| < 1（即 -1 < r < 1）时，等比数列收敛，有无穷级数和：\n\nS_inf = a/(1 - r)\n\n这是因为当 n 趋近无穷大时，r^n 趋近 0。\n\n收敛条件：|r| < 1 是必要的。若 |r| >= 1，级数发散。\n\n例题：求 8 + 4 + 2 + 1 + ... 的无穷级数和。\na = 8，r = 1/2。因为 |1/2| < 1，S_inf = 8/(1 - 1/2) = 16。\n\n例题：一个球每次弹起前一次高度的 3/4。从 10m 高处落下，求总距离。\n距离 = 10 + 2 × 10(3/4)/(1 - 3/4) = 10 + 60 = 70m。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "Find the coefficient of x² in the expansion of (1 + 3x)⁵.",
+          "question_zh": "求 (1 + 3x)⁵ 展开式中 x² 的系数。",
+          "options": {
+            "A": "90",
+            "B": "45",
+            "C": "30",
+            "D": "270"
+          },
+          "answer": "A",
+          "explanation_en": "T(r+1) = C(5,r)(3x)^r. For x²: r = 2. Coefficient = C(5,2) × 3² = 10 × 9 = 90.",
+          "explanation_zh": "T(r+1) = C(5,r)(3x)^r。对于 x²：r = 2。系数 = C(5,2) × 3² = 10 × 9 = 90。"
+        },
+        {
+          "question_en": "An AP has first term 5 and common difference 3. Find the sum of the first 20 terms.",
+          "question_zh": "等差数列首项为 5，公差为 3，求前 20 项和。",
+          "options": {
+            "A": "670",
+            "B": "580",
+            "C": "340",
+            "D": "700"
+          },
+          "answer": "A",
+          "explanation_en": "S_20 = 20/2 × (2(5) + 19(3)) = 10 × (10 + 57) = 10 × 67 = 670.",
+          "explanation_zh": "S_20 = 20/2 × (2(5) + 19(3)) = 10 × (10 + 57) = 10 × 67 = 670。"
+        },
+        {
+          "question_en": "A GP has first term 6 and common ratio 1/3. Find the sum to infinity.",
+          "question_zh": "等比数列首项为 6，公比为 1/3，求无穷级数和。",
+          "options": {
+            "A": "18",
+            "B": "9",
+            "C": "12",
+            "D": "6"
+          },
+          "answer": "B",
+          "explanation_en": "S_inf = a/(1 - r) = 6/(1 - 1/3) = 6/(2/3) = 9.",
+          "explanation_zh": "S_inf = a/(1 - r) = 6/(1 - 1/3) = 6/(2/3) = 9。"
+        },
+        {
+          "question_en": "The 5th term of a GP is 48 and the 8th term is 384. Find the common ratio.",
+          "question_zh": "等比数列的第 5 项为 48，第 8 项为 384，求公比。",
+          "options": {
+            "A": "2",
+            "B": "3",
+            "C": "4",
+            "D": "1/2"
+          },
+          "answer": "A",
+          "explanation_en": "a_8/a_5 = ar⁷/(ar⁴) = r³ = 384/48 = 8. So r = 2.",
+          "explanation_zh": "a_8/a_5 = ar⁷/(ar⁴) = r³ = 384/48 = 8。所以 r = 2。"
+        },
+        {
+          "question_en": "Find the term independent of x in the expansion of (x + 2/x)⁶.",
+          "question_zh": "求 (x + 2/x)⁶ 展开式中不含 x 的项。",
+          "options": {
+            "A": "160",
+            "B": "240",
+            "C": "80",
+            "D": "120"
+          },
+          "answer": "A",
+          "explanation_en": "T(r+1) = C(6,r)(x)^(6-r)(2/x)^r = C(6,r) × 2^r × x^(6-r) × x^(-r) = C(6,r) × 2^r × x^(6-2r). For term independent of x: 6 - 2r = 0, so r = 3. Term = C(6,3) × 2³ = 20 × 8 = 160.",
+          "explanation_zh": "T(r+1) = C(6,r)(x)^(6-r)(2/x)^r = C(6,r) × 2^r × x^(6-2r)。不含 x 的项：6 - 2r = 0，r = 3。该项 = C(6,3) × 2³ = 20 × 8 = 160。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "p1_ch7",
+      "title_en": "Differentiation",
+      "title_zh": "微分",
+      "knowledge_points": [
+        {
+          "title_en": "The Derivative and Basic Rules",
+          "title_zh": "导数与基本规则",
+          "content_en": "The derivative of y with respect to x, written dy/dx or f'(x), represents the rate of change of y with respect to x, and geometrically represents the gradient of the curve at a point.\n\nBasic rules:\n- If y = x^n, then dy/dx = nx^(n-1) (power rule).\n- If y = kf(x), then dy/dx = k f'(x) (constant multiple rule).\n- If y = f(x) + g(x), then dy/dx = f'(x) + g'(x) (sum rule).\n- If y = c (constant), then dy/dx = 0.\n\nExample: y = 3x⁴ - 5x² + 7x - 2.\ndy/dx = 12x³ - 10x + 7.",
+          "content_zh": "y 关于 x 的导数，记作 dy/dx 或 f'(x)，表示 y 关于 x 的变化率，几何上表示曲线在某点的斜率。\n\n基本规则：\n- 若 y = x^n，则 dy/dx = nx^(n-1)（幂规则）。\n- 若 y = kf(x)，则 dy/dx = k f'(x)（常数倍规则）。\n- 若 y = f(x) + g(x)，则 dy/dx = f'(x) + g'(x)（求和规则）。\n- 若 y = c（常数），则 dy/dx = 0。\n\n例题：y = 3x⁴ - 5x² + 7x - 2。\ndy/dx = 12x³ - 10x + 7。"
+        },
+        {
+          "title_en": "Tangents and Normals",
+          "title_zh": "切线与法线",
+          "content_en": "The gradient of the tangent to a curve y = f(x) at a point (a, f(a)) is f'(a).\n\nEquation of the tangent at (a, f(a)): y - f(a) = f'(a)(x - a).\n\nThe normal is perpendicular to the tangent, so its gradient is -1/f'(a) (provided f'(a) is not 0).\nEquation of the normal: y - f(a) = -1/f'(a) × (x - a).\n\nExample: Find the tangent to y = x² at x = 3.\ny(3) = 9, dy/dx = 2x, so gradient at x = 3 is 6.\nTangent: y - 9 = 6(x - 3), i.e., y = 6x - 9.",
+          "content_zh": "曲线 y = f(x) 在点 (a, f(a)) 处的切线斜率为 f'(a)。\n\n切线方程：y - f(a) = f'(a)(x - a)。\n\n法线垂直于切线，斜率为 -1/f'(a)（f'(a) ≠ 0）。\n法线方程：y - f(a) = -1/f'(a) × (x - a)。\n\n例题：求 y = x² 在 x = 3 处的切线。\ny(3) = 9，dy/dx = 2x，x = 3 处斜率为 6。\n切线：y - 9 = 6(x - 3)，即 y = 6x - 9。"
+        },
+        {
+          "title_en": "Stationary Points and Turning Points",
+          "title_zh": "驻点与拐点",
+          "content_en": "A stationary point occurs where dy/dx = 0. To find stationary points:\n1. Differentiate y = f(x) to get f'(x).\n2. Set f'(x) = 0 and solve for x.\n3. Find the y-coordinate by substituting back.\n\nTo determine the nature of the stationary point, use the second derivative test:\n- If f''(x) > 0: minimum point.\n- If f''(x) < 0: maximum point.\n- If f''(x) = 0: the test is inconclusive (could be a point of inflexion).\n\nAlternatively, check the sign of f'(x) on either side of the stationary point.\n\nExample: y = x³ - 3x + 2. f'(x) = 3x² - 3 = 0, so x = ±1.\nf''(x) = 6x. At x = 1: f''(1) = 6 > 0 (minimum). At x = -1: f''(-1) = -6 < 0 (maximum).",
+          "content_zh": "驻点在 dy/dx = 0 处出现。求驻点的步骤：\n1. 对 y = f(x) 求导得 f'(x)。\n2. 令 f'(x) = 0，解出 x。\n3. 代回求 y 坐标。\n\n判定驻点性质，用二阶导数检验：\n- 若 f''(x) > 0：最小值点。\n- 若 f''(x) < 0：最大值点。\n- 若 f''(x) = 0：检验无效（可能是拐点）。\n\n也可以检查驻点两侧 f'(x) 的符号。\n\n例题：y = x³ - 3x + 2。f'(x) = 3x² - 3 = 0，x = ±1。\nf''(x) = 6x。x = 1 时：f''(1) = 6 > 0（最小值）。x = -1 时：f''(-1) = -6 < 0（最大值）。"
+        },
+        {
+          "title_en": "Connected Rates of Change",
+          "title_zh": "相关变化率",
+          "content_en": "When two or more quantities are related and change with time, we use the chain rule:\n\ndy/dt = dy/dx × dx/dt\n\nThis connects the rate of change of y with respect to time to the rate of change of x with respect to time.\n\nCommon applications:\n- A shape expanding or contracting (area, volume changing).\n- Water filling or draining from a container.\n\nExample: A circle's radius increases at 2 cm/s. Find the rate of increase of area when r = 5.\nA = πr², dA/dr = 2πr. dA/dt = dA/dr × dr/dt = 2π(5)(2) = 20π cm²/s.",
+          "content_zh": "当两个或多个量相关并随时间变化时，使用链式法则：\n\ndy/dt = dy/dx × dx/dt\n\n这将 y 关于时间的变化率与 x 关于时间的变化率联系起来。\n\n常见应用：\n- 图形的膨胀或收缩（面积、体积变化）。\n- 容器中水的注入或排出。\n\n例题：圆的半径以 2 cm/s 的速率增大。求当 r = 5 时面积的增大率。\nA = πr²，dA/dr = 2πr。dA/dt = dA/dr × dr/dt = 2π(5)(2) = 20π cm²/s。"
+        },
+        {
+          "title_en": "Increasing and Decreasing Functions",
+          "title_zh": "增函数与减函数",
+          "content_en": "A function f is increasing on an interval if f'(x) > 0 for all x in that interval.\nA function f is decreasing on an interval if f'(x) < 0 for all x in that interval.\n\nTo find intervals of increase/decrease:\n1. Find f'(x).\n2. Find where f'(x) = 0 (stationary points).\n3. Test the sign of f'(x) in each interval.\n\nExample: f(x) = x³ - 6x² + 9x + 1.\nf'(x) = 3x² - 12x + 9 = 3(x² - 4x + 3) = 3(x - 1)(x - 3).\nf'(x) > 0 when x < 1 or x > 3 (increasing).\nf'(x) < 0 when 1 < x < 3 (decreasing).",
+          "content_zh": "函数 f 在某区间上递增，当 f'(x) > 0。\n函数 f 在某区间上递减，当 f'(x) < 0。\n\n求增减区间的步骤：\n1. 求 f'(x)。\n2. 求 f'(x) = 0 的点（驻点）。\n3. 测试每个区间内 f'(x) 的符号。\n\n例题：f(x) = x³ - 6x² + 9x + 1。\nf'(x) = 3x² - 12x + 9 = 3(x - 1)(x - 3)。\nx < 1 或 x > 3 时 f'(x) > 0（递增）。\n1 < x < 3 时 f'(x) < 0（递减）。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "Find dy/dx if y = 4x³ - 2x² + 5.",
+          "question_zh": "若 y = 4x³ - 2x² + 5，求 dy/dx。",
+          "options": {
+            "A": "12x² - 4x",
+            "B": "12x² - 4x + 5",
+            "C": "12x³ - 4x",
+            "D": "4x² - 2x"
+          },
+          "answer": "A",
+          "explanation_en": "dy/dx = 3(4)x² - 2(2)x + 0 = 12x² - 4x.",
+          "explanation_zh": "dy/dx = 3(4)x² - 2(2)x + 0 = 12x² - 4x。"
+        },
+        {
+          "question_en": "Find the equation of the tangent to y = x² - 3x at the point where x = 2.",
+          "question_zh": "求曲线 y = x² - 3x 在 x = 2 处的切线方程。",
+          "options": {
+            "A": "y = x - 4",
+            "B": "y = x + 4",
+            "C": "y = x - 2",
+            "D": "y = -x + 4"
+          },
+          "answer": "A",
+          "explanation_en": "At x = 2: y = 4 - 6 = -2. dy/dx = 2x - 3. At x = 2: gradient = 1. Tangent: y - (-2) = 1(x - 2), so y = x - 4.",
+          "explanation_zh": "当 x = 2：y = 4 - 6 = -2。dy/dx = 2x - 3。x = 2 处斜率 = 1。切线：y + 2 = 1(x - 2)，即 y = x - 4。"
+        },
+        {
+          "question_en": "Find the stationary points of y = 2x³ - 9x² + 12x.",
+          "question_zh": "求 y = 2x³ - 9x² + 12x 的驻点。",
+          "options": {
+            "A": "x = 1 and x = 2",
+            "B": "x = 0 and x = 3",
+            "C": "x = -1 and x = 2",
+            "D": "x = 1 and x = 3"
+          },
+          "answer": "A",
+          "explanation_en": "dy/dx = 6x² - 18x + 12 = 6(x² - 3x + 2) = 6(x - 1)(x - 2) = 0. So x = 1 or x = 2.",
+          "explanation_zh": "dy/dx = 6x² - 18x + 12 = 6(x - 1)(x - 2) = 0。所以 x = 1 或 x = 2。"
+        },
+        {
+          "question_en": "The volume of a sphere is V = (4/3)πr³. If the radius increases at 0.5 cm/s, find the rate of change of volume when r = 3 cm.",
+          "question_zh": "球的体积 V = (4/3)πr³。若半径以 0.5 cm/s 的速率增大，求 r = 3 cm 时体积的变化率。",
+          "options": {
+            "A": "18π cm³/s",
+            "B": "36π cm³/s",
+            "C": "54π cm³/s",
+            "D": "12π cm³/s"
+          },
+          "answer": "A",
+          "explanation_en": "dV/dr = 4πr². dV/dt = dV/dr × dr/dt = 4π(9)(0.5) = 18π cm³/s.",
+          "explanation_zh": "dV/dr = 4πr²。dV/dt = dV/dr × dr/dt = 4π(9)(0.5) = 18π cm³/s。"
+        },
+        {
+          "question_en": "For what values of x is the function f(x) = x³ - 3x² decreasing?",
+          "question_zh": "函数 f(x) = x³ - 3x² 在哪些 x 值上递减？",
+          "options": {
+            "A": "0 < x < 2",
+            "B": "x < 0 or x > 2",
+            "C": "x < 0",
+            "D": "x > 2"
+          },
+          "answer": "A",
+          "explanation_en": "f'(x) = 3x² - 6x = 3x(x - 2). f'(x) < 0 when 0 < x < 2. So f is decreasing for 0 < x < 2.",
+          "explanation_zh": "f'(x) = 3x² - 6x = 3x(x - 2)。当 0 < x < 2 时 f'(x) < 0。所以 f 在 0 < x < 2 上递减。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "p1_ch8",
+      "title_en": "Integration",
+      "title_zh": "积分",
+      "knowledge_points": [
+        {
+          "title_en": "Integration as the Reverse of Differentiation",
+          "title_zh": "积分作为微分的逆运算",
+          "content_en": "Integration reverses differentiation. If dy/dx = f(x), then y = ∫f(x)dx.\n\nBasic rule: ∫x^n dx = x^(n+1)/(n+1) + c, where n ≠ -1 and c is the constant of integration.\n\nKey integrals:\n∫k dx = kx + c\n∫x^n dx = x^(n+1)/(n+1) + c\n∫(ax + b)^n dx = (ax + b)^(n+1) / (a(n+1)) + c\n\nThe constant c is determined using initial conditions or boundary conditions.\n\nExample: ∫(3x² + 2x - 1)dx = x³ + x² - x + c.",
+          "content_zh": "积分是微分的逆运算。若 dy/dx = f(x)，则 y = ∫f(x)dx。\n\n基本规则：∫x^n dx = x^(n+1)/(n+1) + c，其中 n ≠ -1，c 为积分常数。\n\n关键积分：\n∫k dx = kx + c\n∫x^n dx = x^(n+1)/(n+1) + c\n∫(ax + b)^n dx = (ax + b)^(n+1) / (a(n+1)) + c\n\n常数 c 通过初始条件或边界条件确定。\n\n例题：∫(3x² + 2x - 1)dx = x³ + x² - x + c。"
+        },
+        {
+          "title_en": "Definite Integration",
+          "title_zh": "定积分",
+          "content_en": "A definite integral has limits of integration and gives a numerical value:\n\n∫[a to b] f(x)dx = F(b) - F(a), where F(x) is the antiderivative of f(x).\n\nNo constant c is needed for definite integrals because it cancels out.\n\nExample: ∫[1 to 3] (2x + 1)dx = [x² + x] from 1 to 3 = (9 + 3) - (1 + 1) = 12 - 2 = 10.\n\nProperties:\n∫[a to b] f(x)dx = -∫[b to a] f(x)dx\n∫[a to b] f(x)dx + ∫[b to c] f(x)dx = ∫[a to c] f(x)dx",
+          "content_zh": "定积分有积分上下限，结果为数值：\n\n∫[a 到 b] f(x)dx = F(b) - F(a)，其中 F(x) 是 f(x) 的原函数。\n\n定积分不需要常数 c，因为它会被消去。\n\n例题：∫[1 到 3] (2x + 1)dx = [x² + x] 从 1 到 3 = (9 + 3) - (1 + 1) = 10。\n\n性质：\n∫[a 到 b] f(x)dx = -∫[b 到 a] f(x)dx\n∫[a 到 b] f(x)dx + ∫[b 到 c] f(x)dx = ∫[a 到 c] f(x)dx"
+        },
+        {
+          "title_en": "Area Under a Curve",
+          "title_zh": "曲线下的面积",
+          "content_en": "The area between the curve y = f(x), the x-axis, and the lines x = a and x = b is:\n\nArea = ∫[a to b] f(x)dx (when f(x) ≥ 0 on [a, b]).\n\nIMPORTANT: If the curve goes below the x-axis, the integral gives a negative value. For total area, split the integral at the zeros and take the absolute value of each part.\n\nArea between two curves y = f(x) and y = g(x) where f(x) ≥ g(x):\nArea = ∫[a to b] [f(x) - g(x)]dx.\n\nExample: Area under y = x² from x = 0 to x = 3.\nArea = ∫[0 to 3] x² dx = [x³/3] from 0 to 3 = 27/3 - 0 = 9.",
+          "content_zh": "曲线 y = f(x)、x 轴和直线 x = a、x = b 之间的面积：\n\n面积 = ∫[a 到 b] f(x)dx（当 f(x) ≥ 0）。\n\n重要：若曲线在 x 轴下方，积分结果为负值。求总面积时，需在零点处分割积分，取每部分的绝对值。\n\n两条曲线 y = f(x) 和 y = g(x) 之间的面积（f(x) ≥ g(x)）：\n面积 = ∫[a 到 b] [f(x) - g(x)]dx。\n\n例题：y = x² 从 x = 0 到 x = 3 下的面积。\n面积 = ∫[0 到 3] x² dx = [x³/3] 从 0 到 3 = 9。"
+        },
+        {
+          "title_en": "Area Between a Curve and a Line",
+          "title_zh": "曲线与直线之间的面积",
+          "content_en": "To find the area enclosed between a curve and a line:\n\n1. Find the intersection points by solving the equations simultaneously.\n2. Determine which function is above the other in the interval.\n3. Integrate the difference: Area = ∫[a to b] (upper function - lower function) dx.\n\nExample: Find the area between y = 6 - x² and y = 2.\nIntersection: 6 - x² = 2, x² = 4, x = ±2.\nArea = ∫[-2 to 2] [(6 - x²) - 2] dx = ∫[-2 to 2] (4 - x²) dx\n= [4x - x³/3] from -2 to 2\n= (8 - 8/3) - (-8 + 8/3)\n= 16/3 + 16/3 = 32/3.",
+          "content_zh": "求曲线与直线围成的面积：\n\n1. 联立方程求交点。\n2. 确定哪个函数在上方。\n3. 积分差值：面积 = ∫[a 到 b] (上方函数 - 下方函数) dx。\n\n例题：求 y = 6 - x² 和 y = 2 之间的面积。\n交点：6 - x² = 2，x² = 4，x = ±2。\n面积 = ∫[-2 到 2] (4 - x²) dx\n= [4x - x³/3] 从 -2 到 2\n= (8 - 8/3) - (-8 + 8/3)\n= 32/3。"
+        },
+        {
+          "title_en": "Volume of Revolution",
+          "title_zh": "旋转体的体积",
+          "content_en": "When a curve y = f(x) is rotated 360° about the x-axis, the volume of the solid formed is:\n\nV = π∫[a to b] y² dx.\n\nWhen rotated about the y-axis:\nV = π∫[c to d] x² dy (express x in terms of y first).\n\nExample: Find the volume when y = x² from x = 0 to x = 2 is rotated about the x-axis.\nV = π∫[0 to 2] (x²)² dx = π∫[0 to 2] x⁴ dx = π[x⁵/5] from 0 to 2 = π(32/5) = 32π/5.",
+          "content_zh": "当曲线 y = f(x) 绕 x 轴旋转 360° 时，所形成的立体体积为：\n\nV = π∫[a 到 b] y² dx。\n\n绕 y 轴旋转时：\nV = π∫[c 到 d] x² dy（先将 x 表示为 y 的函数）。\n\n例题：求 y = x² 从 x = 0 到 x = 2 绕 x 轴旋转的体积。\nV = π∫[0 到 2] x⁴ dx = π[x⁵/5] 从 0 到 2 = 32π/5。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "Find ∫(6x² - 4x + 3)dx.",
+          "question_zh": "求 ∫(6x² - 4x + 3)dx。",
+          "options": {
+            "A": "2x³ - 2x² + 3x + c",
+            "B": "12x - 4 + c",
+            "C": "2x³ - 4x² + 3x + c",
+            "D": "6x³ - 2x² + 3x + c"
+          },
+          "answer": "A",
+          "explanation_en": "∫(6x² - 4x + 3)dx = 6x³/3 - 4x²/2 + 3x + c = 2x³ - 2x² + 3x + c.",
+          "explanation_zh": "∫(6x² - 4x + 3)dx = 6x³/3 - 4x²/2 + 3x + c = 2x³ - 2x² + 3x + c。"
+        },
+        {
+          "question_en": "Evaluate ∫[1 to 4] (3x² - 2)dx.",
+          "question_zh": "计算 ∫[1 到 4] (3x² - 2)dx。",
+          "options": {
+            "A": "57",
+            "B": "54",
+            "C": "60",
+            "D": "63"
+          },
+          "answer": "A",
+          "explanation_en": "∫(3x² - 2)dx = x³ - 2x. [x³ - 2x] from 1 to 4 = (64 - 8) - (1 - 2) = 56 - (-1) = 57.",
+          "explanation_zh": "∫(3x² - 2)dx = x³ - 2x。[x³ - 2x] 从 1 到 4 = (64 - 8) - (1 - 2) = 56 + 1 = 57。"
+        },
+        {
+          "question_en": "Find the area under y = 4x - x² from x = 0 to x = 4.",
+          "question_zh": "求 y = 4x - x² 从 x = 0 到 x = 4 下的面积。",
+          "options": {
+            "A": "32/3",
+            "B": "16/3",
+            "C": "8",
+            "D": "64/3"
+          },
+          "answer": "A",
+          "explanation_en": "Area = ∫[0 to 4] (4x - x²)dx = [2x² - x³/3] from 0 to 4 = (32 - 64/3) - 0 = (96 - 64)/3 = 32/3.",
+          "explanation_zh": "面积 = ∫[0 到 4] (4x - x²)dx = [2x² - x³/3] 从 0 到 4 = 32 - 64/3 = 32/3。"
+        },
+        {
+          "question_en": "Find the volume of revolution when y = 3x is rotated 360° about the x-axis from x = 0 to x = 2.",
+          "question_zh": "求 y = 3x 从 x = 0 到 x = 2 绕 x 轴旋转 360° 的体积。",
+          "options": {
+            "A": "24π",
+            "B": "36π",
+            "C": "12π",
+            "D": "72π"
+          },
+          "answer": "A",
+          "explanation_en": "V = π∫[0 to 2] (3x)² dx = π∫[0 to 2] 9x² dx = π[3x³] from 0 to 2 = π(24) = 24π.",
+          "explanation_zh": "V = π∫[0 到 2] 9x² dx = π[3x³] 从 0 到 2 = 24π。"
+        },
+        {
+          "question_en": "Given that dy/dx = 3x² - 6x and the curve passes through (2, 1), find y.",
+          "question_zh": "已知 dy/dx = 3x² - 6x 且曲线过点 (2, 1)，求 y。",
+          "options": {
+            "A": "y = x³ - 3x² + 5",
+            "B": "y = x³ - 3x² + 1",
+            "C": "y = x³ - 3x² - 3",
+            "D": "y = x³ - 3x²"
+          },
+          "answer": "A",
+          "explanation_en": "y = ∫(3x² - 6x)dx = x³ - 3x² + c. At (2, 1): 8 - 12 + c = 1, so c = 5. y = x³ - 3x² + 5.",
+          "explanation_zh": "y = ∫(3x² - 6x)dx = x³ - 3x² + c。代入 (2, 1)：8 - 12 + c = 1，c = 5。y = x³ - 3x² + 5。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,533 @@
+{
+  "subject_id": "math_stats1",
+  "subject_name_en": "Probability & Statistics 1",
+  "subject_name_zh": "概率与统计 1",
+  "chapters": [
+    {
+      "chapter_id": "s1_ch1",
+      "title_en": "Representation of Data",
+      "title_zh": "数据表示",
+      "knowledge_points": [
+        {
+          "title_en": "Stem-and-Leaf Diagrams",
+          "title_zh": "茎叶图",
+          "content_en": "A stem-and-leaf diagram is a method of displaying data where each data value is split into a 'stem' (the leading digit(s)) and a 'leaf' (the last digit). The stems are listed vertically in ascending order, and the leaves are written horizontally in ascending order next to their corresponding stem.\n\nKey rules:\n1. Each leaf must be a single digit.\n2. Leaves must be in order from smallest to largest.\n3. A key must always be provided (e.g., '2 | 3 means 23').\n4. For a back-to-back stem-and-leaf diagram, two datasets share a common stem. The left dataset has leaves reading outward to the left, and the right dataset has leaves reading outward to the right.\n\nExample: Data = {23, 25, 31, 34, 36, 42, 45}\nStem | Leaf\n  2  | 3 5\n  3  | 1 4 6\n  4  | 2 5\nKey: 2 | 3 means 23\n\nAdvantages: Retains the original data values, easy to find the median and mode, shows the distribution shape.\nDisadvantages: Not suitable for very large datasets.",
+          "content_zh": "茎叶图是一种数据展示方法，其中每个数据值被分成「茎」（前导数字）和「叶」（最后一位数字）。茎按升序垂直排列，叶按升序水平写在对应的茎旁边。\n\n关键规则：\n1. 每个叶必须是单个数字。\n2. 叶必须从小到大排列。\n3. 必须提供图例（例如：'2 | 3 表示 23'）。\n4. 对于背靠背茎叶图，两组数据共用一个茎。左侧数据的叶向左延伸，右侧数据的叶向右延伸。\n\n示例：数据 = {23, 25, 31, 34, 36, 42, 45}\n茎 | 叶\n 2 | 3 5\n 3 | 1 4 6\n 4 | 2 5\n图例：2 | 3 表示 23\n\n优点：保留原始数据值，容易找到中位数和众数，显示数据分布形状。\n缺点：不适合非常大的数据集。"
+        },
+        {
+          "title_en": "Histograms and Frequency Density",
+          "title_zh": "直方图与频率密度",
+          "content_en": "A histogram displays continuous data using bars where the area of each bar is proportional to the frequency. Unlike bar charts, histograms have no gaps between bars (unless a class has zero frequency).\n\nFrequency density = Frequency / Class width\n\nThis is critical when class widths are unequal. The y-axis of a histogram must show frequency density, not frequency, when class widths vary.\n\nExample: If a class 10-20 has frequency 30, the class width is 10, so frequency density = 30/10 = 3.\n\nTo find frequency from a histogram: Frequency = Frequency density x Class width (i.e., the area of the bar).\n\nKey points for CIE exams:\n- Always check whether class widths are equal or unequal.\n- The area of each bar represents the frequency.\n- When reading a histogram, estimate frequencies by calculating areas.\n- Boundaries may differ from class limits (e.g., class '10-19' has boundaries 9.5 to 19.5 for discrete data).",
+          "content_zh": "直方图使用柱形来显示连续数据，其中每个柱形的面积与频率成正比。与条形图不同，直方图的柱形之间没有间隙（除非某个组的频率为零）。\n\n频率密度 = 频率 / 组距\n\n当组距不等时，这一点至关重要。当组距不同时，直方图的 y 轴必须显示频率密度而非频率。\n\n示例：如果组 10-20 的频率为 30，组距为 10，则频率密度 = 30/10 = 3。\n\n从直方图中求频率：频率 = 频率密度 * 组距（即柱形的面积）。\n\nCIE 考试要点：\n- 始终检查组距是否相等。\n- 每个柱形的面积代表频率。\n- 阅读直方图时，通过计算面积来估算频率。\n- 边界可能与组限不同（例如，离散数据中组 '10-19' 的边界为 9.5 到 19.5）。"
+        },
+        {
+          "title_en": "Cumulative Frequency Graphs",
+          "title_zh": "累积频率图",
+          "content_en": "A cumulative frequency graph (ogive) plots the running total of frequencies against the upper class boundaries. Points are joined with a smooth curve or straight lines.\n\nHow to construct:\n1. Calculate cumulative frequencies by adding each frequency to the sum of all preceding frequencies.\n2. Plot each cumulative frequency against the upper class boundary.\n3. Join the points with a smooth curve.\n4. Start the curve at the lower boundary of the first class with cumulative frequency 0.\n\nUsing the cumulative frequency graph to find:\n- Median: Read across from the 50th percentile (n/2) on the y-axis to the curve, then down to the x-axis.\n- Lower quartile (Q1): Read from n/4 on the y-axis.\n- Upper quartile (Q3): Read from 3n/4 on the y-axis.\n- Interquartile range (IQR) = Q3 - Q1.\n- Percentiles: Read from the required percentage of n on the y-axis.\n\nThe cumulative frequency graph always has an S-shape (sigmoid curve) for normally distributed data.",
+          "content_zh": "累积频率图（ogive）将频率的累计总数对上组界进行绘制。点之间用平滑曲线或直线连接。\n\n如何绘制：\n1. 通过将每个频率加到前面所有频率的总和来计算累积频率。\n2. 将每个累积频率对上组界进行绘制。\n3. 用平滑曲线连接各点。\n4. 曲线从第一组的下界开始，累积频率为 0。\n\n使用累积频率图可以求出：\n- 中位数：从 y 轴的第 50 百分位（n/2）水平读到曲线，然后向下读到 x 轴。\n- 下四分位数（Q1）：从 y 轴的 n/4 处读取。\n- 上四分位数（Q3）：从 y 轴的 3n/4 处读取。\n- 四分位距（IQR）= Q3 - Q1。\n- 百分位数：从 y 轴上所需的 n 的百分比处读取。\n\n对于正态分布数据，累积频率图总是呈 S 形（sigmoid 曲线）。"
+        },
+        {
+          "title_en": "Box-and-Whisker Plots (Box Plots)",
+          "title_zh": "箱线图",
+          "content_en": "A box-and-whisker plot (box plot) is a graphical summary of data using five key values:\n1. Minimum value (or lowest value that is not an outlier)\n2. Lower quartile (Q1)\n3. Median (Q2)\n4. Upper quartile (Q3)\n5. Maximum value (or highest value that is not an outlier)\n\nThe box spans from Q1 to Q3, with a line at the median. Whiskers extend from the box to the minimum and maximum values.\n\nOutliers: A data point is an outlier if it is more than 1.5 x IQR below Q1 or above Q3.\n- Lower fence = Q1 - 1.5 x IQR\n- Upper fence = Q3 + 1.5 x IQR\nOutliers are marked as individual points beyond the whiskers.\n\nBox plots are useful for:\n- Comparing distributions of two or more datasets side by side.\n- Identifying skewness: if the median is closer to Q1, the data is positively skewed; if closer to Q3, negatively skewed.\n- Identifying outliers.\n\nLimitations: Box plots do not show the exact distribution shape or individual data values.",
+          "content_zh": "箱线图是使用五个关键值对数据进行图形化总结：\n1. 最小值（或不是异常值的最低值）\n2. 下四分位数（Q1）\n3. 中位数（Q2）\n4. 上四分位数（Q3）\n5. 最大值（或不是异常值的最高值）\n\n箱体从 Q1 延伸到 Q3，中位数处有一条线。须从箱体延伸到最小值和最大值。\n\n异常值：如果一个数据点低于 Q1 超过 1.5 * IQR 或高于 Q3 超过 1.5 * IQR，则为异常值。\n- 下界 = Q1 - 1.5 * IQR\n- 上界 = Q3 + 1.5 * IQR\n异常值在须之外标记为单独的点。\n\n箱线图的用途：\n- 并排比较两个或多个数据集的分布。\n- 识别偏度：如果中位数更接近 Q1，数据为正偏；如果更接近 Q3，则为负偏。\n- 识别异常值。\n\n局限性：箱线图不能显示确切的分布形状或单个数据值。"
+        },
+        {
+          "title_en": "Measures of Central Tendency: Mean",
+          "title_zh": "集中趋势度量：均值",
+          "content_en": "The mean (average) is the most commonly used measure of central tendency.\n\nFor raw data: Mean = (Sum of all values) / (Number of values)\nx-bar = (1/n) * Sum(xi)\n\nFor frequency distribution:\nx-bar = Sum(fi * xi) / Sum(fi)\nwhere fi is the frequency and xi is the class midpoint (for grouped data).\n\nFor grouped data, xi is the midpoint of each class interval:\nMidpoint = (Lower boundary + Upper boundary) / 2\n\nThe mean is affected by extreme values (outliers), which is a disadvantage compared to the median.\n\nCoded/estimated mean: If data is coded using y = (x - a) / b, then:\nx-bar = a + b * y-bar\nThis simplifies calculations with large numbers.\n\nProperties of the mean:\n- Sum of deviations from the mean is always zero: Sum(xi - x-bar) = 0.\n- The mean uses all data values in its calculation.",
+          "content_zh": "均值（平均数）是最常用的集中趋势度量。\n\n对于原始数据：均值 = 所有值的总和 / 值的个数\nx-bar = (1/n) * Sum(xi)\n\n对于频率分布：\nx-bar = Sum(fi * xi) / Sum(fi)\n其中 fi 是频率，xi 是组中值（对于分组数据）。\n\n对于分组数据，xi 是每个组距的中点：\n中点 = (下界 + 上界) / 2\n\n均值受极端值（异常值）的影响，这是相比中位数的一个缺点。\n\n编码/估计均值：如果数据用 y = (x - a) / b 编码，则：\nx-bar = a + b * y-bar\n这简化了大数字的计算。\n\n均值的性质：\n- 与均值的偏差之和始终为零：Sum(xi - x-bar) = 0。\n- 均值在计算中使用了所有数据值。"
+        },
+        {
+          "title_en": "Measures of Spread: Variance and Standard Deviation",
+          "title_zh": "离散度量：方差与标准差",
+          "content_en": "Variance and standard deviation measure the spread of data around the mean.\n\nVariance formula:\nVar = (1/n) * Sum(xi - x-bar)^2 = (1/n) * Sum(xi^2) - x-bar^2\n\nThe second form is the 'computing formula' and is easier for calculations:\nVar = Sum(xi^2)/n - (Sum(xi)/n)^2\n\nFor frequency distributions:\nVar = Sum(fi * xi^2) / Sum(fi) - [Sum(fi * xi) / Sum(fi)]^2\n\nStandard deviation = sqrt(Variance)\n\nImportant notes for CIE:\n- CIE uses the population variance formula (dividing by n, not n-1).\n- If data is coded using y = (x - a) / b, then:\n  Var(x) = b^2 * Var(y)\n  SD(x) = |b| * SD(y)\n  Note: the constant 'a' does not affect variance or standard deviation.\n\nInterpretation:\n- A small standard deviation means data points are close to the mean (consistent data).\n- A large standard deviation means data points are spread out from the mean (variable data).\n- Standard deviation has the same units as the original data, making it more interpretable than variance.",
+          "content_zh": "方差和标准差衡量数据围绕均值的离散程度。\n\n方差公式：\nVar = (1/n) * Sum(xi - x-bar)^2 = (1/n) * Sum(xi^2) - x-bar^2\n\n第二种形式是「计算公式」，更容易计算：\nVar = Sum(xi^2)/n - (Sum(xi)/n)^2\n\n对于频率分布：\nVar = Sum(fi * xi^2) / Sum(fi) - [Sum(fi * xi) / Sum(fi)]^2\n\n标准差 = sqrt(方差)\n\nCIE 考试要点：\n- CIE 使用总体方差公式（除以 n，而不是 n-1）。\n- 如果数据用 y = (x - a) / b 编码，则：\n  Var(x) = b^2 * Var(y)\n  SD(x) = |b| * SD(y)\n  注意：常数 'a' 不影响方差或标准差。\n\n解释：\n- 标准差小意味着数据点接近均值（数据一致）。\n- 标准差大意味着数据点远离均值（数据变化大）。\n- 标准差与原始数据具有相同的单位，因此比方差更容易解释。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "The heights (in cm) of 10 students are: 155, 160, 162, 165, 168, 170, 172, 175, 180, 185. What is the interquartile range?",
+          "question_zh": "10 名学生的身高（厘米）为：155, 160, 162, 165, 168, 170, 172, 175, 180, 185。四分位距是多少？",
+          "options": {
+            "A": "13",
+            "B": "15",
+            "C": "17",
+            "D": "20"
+          },
+          "answer": "A",
+          "explanation_en": "With n = 10, split into two halves. Lower half = {155, 160, 162, 165, 168}, Q1 = median = 162. Upper half = {170, 172, 175, 180, 185}, Q3 = median = 175. IQR = Q3 - Q1 = 175 - 162 = 13.",
+          "explanation_zh": "n = 10，分成两半。下半部分 = {155, 160, 162, 165, 168}，Q1 = 中位数 = 162。上半部分 = {170, 172, 175, 180, 185}，Q3 = 中位数 = 175。IQR = Q3 - Q1 = 175 - 162 = 13。"
+        },
+        {
+          "question_en": "In a histogram, a class interval of 20-30 has a frequency density of 2.5. What is the frequency of this class?",
+          "question_zh": "在直方图中，组距 20-30 的频率密度为 2.5。该组的频率是多少？",
+          "options": {
+            "A": "15",
+            "B": "20",
+            "C": "25",
+            "D": "30"
+          },
+          "answer": "C",
+          "explanation_en": "Frequency = Frequency density x Class width. The class width = 30 - 20 = 10. Therefore Frequency = 2.5 x 10 = 25.",
+          "explanation_zh": "频率 = 频率密度 * 组距。组距 = 30 - 20 = 10。因此频率 = 2.5 * 10 = 25。"
+        },
+        {
+          "question_en": "The mean of 5 numbers is 12. When a sixth number is added, the mean becomes 14. What is the sixth number?",
+          "question_zh": "5 个数的均值为 12。加入第六个数后，均值变为 14。第六个数是多少？",
+          "options": {
+            "A": "20",
+            "B": "22",
+            "C": "24",
+            "D": "26"
+          },
+          "answer": "C",
+          "explanation_en": "Sum of the original 5 numbers = 5 x 12 = 60. Sum of all 6 numbers = 6 x 14 = 84. The sixth number = 84 - 60 = 24.",
+          "explanation_zh": "原来 5 个数的总和 = 5 * 12 = 60。所有 6 个数的总和 = 6 * 14 = 84。第六个数 = 84 - 60 = 24。"
+        },
+        {
+          "question_en": "For a dataset with Sum(x) = 240, Sum(x^2) = 6000, and n = 10, what is the variance?",
+          "question_zh": "对于一个数据集，Sum(x) = 240，Sum(x^2) = 6000，n = 10，方差是多少？",
+          "options": {
+            "A": "12",
+            "B": "24",
+            "C": "25",
+            "D": "600"
+          },
+          "answer": "B",
+          "explanation_en": "Variance = Sum(x^2)/n - (Sum(x)/n)^2 = 6000/10 - (240/10)^2 = 600 - 576 = 24.",
+          "explanation_zh": "方差 = Sum(x^2)/n - (Sum(x)/n)^2 = 6000/10 - (240/10)^2 = 600 - 576 = 24。"
+        },
+        {
+          "question_en": "A back-to-back stem-and-leaf diagram is most useful for:",
+          "question_zh": "背靠背茎叶图最适合用于：",
+          "options": {
+            "A": "Displaying the frequency of a single dataset",
+            "B": "Comparing two datasets",
+            "C": "Showing the trend over time",
+            "D": "Calculating the mean of grouped data"
+          },
+          "answer": "B",
+          "explanation_en": "A back-to-back stem-and-leaf diagram is specifically designed to compare two datasets side by side using a common stem. This allows for easy visual comparison of the distributions, medians, and spreads of the two datasets.",
+          "explanation_zh": "背靠背茎叶图专门用于使用共同的茎来并排比较两个数据集。这可以方便地直观比较两个数据集的分布、中位数和离散程度。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "s1_ch2",
+      "title_en": "Permutations and Combinations",
+      "title_zh": "排列与组合",
+      "knowledge_points": [
+        {
+          "title_en": "Factorials",
+          "title_zh": "阶乘",
+          "content_en": "The factorial of a non-negative integer n, written as n!, is the product of all positive integers from 1 to n.\n\nn! = n x (n-1) x (n-2) x ... x 2 x 1\n\nSpecial cases:\n- 0! = 1 (by definition)\n- 1! = 1\n\nExamples:\n- 5! = 5 x 4 x 3 x 2 x 1 = 120\n- 8! = 8 x 7 x 6 x 5 x 4 x 3 x 2 x 1 = 40320\n\nFactorials grow very rapidly. They are fundamental to counting problems because n! represents the number of ways to arrange n distinct objects in a line.\n\nUseful property:\nn! = n x (n-1)!\nThis recursive property is often used to simplify expressions involving factorials.\n\nExample: Simplify 10!/(8!) = (10 x 9 x 8!) / 8! = 10 x 9 = 90.",
+          "content_zh": "非负整数 n 的阶乘，记作 n!，是从 1 到 n 的所有正整数的乘积。\n\nn! = n * (n-1) * (n-2) * ... * 2 * 1\n\n特殊情况：\n- 0! = 1（定义）\n- 1! = 1\n\n示例：\n- 5! = 5 * 4 * 3 * 2 * 1 = 120\n- 8! = 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1 = 40320\n\n阶乘增长非常快。它们是计数问题的基础，因为 n! 表示将 n 个不同物体排成一行的方式数。\n\n有用的性质：\nn! = n * (n-1)!\n这个递推性质常用于简化包含阶乘的表达式。\n\n示例：简化 10!/(8!) = (10 * 9 * 8!) / 8! = 10 * 9 = 90。"
+        },
+        {
+          "title_en": "Permutations (nPr) - Arrangements Where Order Matters",
+          "title_zh": "排列 (nPr) — 顺序重要的安排",
+          "content_en": "A permutation is an arrangement of objects where the order matters.\n\nThe number of ways to arrange r objects chosen from n distinct objects is:\nnPr = n! / (n-r)!\n\nExamples:\n- 5P3 = 5!/(5-3)! = 5!/2! = 120/2 = 60\n- 8P2 = 8!/6! = 8 x 7 = 56\n\nSpecial case: Arranging all n objects in a line = nPn = n!\n\nArrangements in a circle:\nThe number of ways to arrange n distinct objects in a circle is (n-1)!\nThis is because in a circle, rotations of the same arrangement are considered identical.\n\nArrangements with identical objects:\nIf there are n objects where p are identical of one type, q are identical of another type, etc., the number of distinct arrangements is:\nn! / (p! x q! x ...)\n\nExample: How many distinct arrangements of the letters in 'STATISTICS'?\nS appears 3 times, T appears 3 times, A appears 1 time, I appears 2 times, C appears 1 time.\nTotal = 10! / (3! x 3! x 2!) = 3628800 / (6 x 6 x 2) = 50400.",
+          "content_zh": "排列是顺序重要的物体安排。\n\n从 n 个不同物体中选择 r 个物体进行排列的方式数为：\nnPr = n! / (n-r)!\n\n示例：\n- 5P3 = 5!/(5-3)! = 5!/2! = 120/2 = 60\n- 8P2 = 8!/6! = 8 * 7 = 56\n\n特殊情况：将所有 n 个物体排成一行 = nPn = n!\n\n圆形排列：\n将 n 个不同物体排成一个圆的方式数为 (n-1)!\n这是因为在圆中，同一排列的旋转被视为相同的。\n\n有相同物体的排列：\n如果有 n 个物体，其中 p 个是同一类型的，q 个是另一类型的，等等，则不同排列的数量为：\nn! / (p! * q! * ...)\n\n示例：'STATISTICS' 的字母有多少种不同排列？\nS 出现 3 次，T 出现 3 次，A 出现 1 次，I 出现 2 次，C 出现 1 次。\n总数 = 10! / (3! * 3! * 2!) = 3628800 / (6 * 6 * 2) = 50400。"
+        },
+        {
+          "title_en": "Combinations (nCr) - Selections Where Order Does Not Matter",
+          "title_zh": "组合 (nCr) — 顺序不重要的选择",
+          "content_en": "A combination is a selection of objects where the order does not matter.\n\nThe number of ways to choose r objects from n distinct objects is:\nnCr = n! / [r! x (n-r)!]\n\nThis is also written as C(n,r) or the binomial coefficient 'n choose r'.\n\nExamples:\n- 5C3 = 5! / (3! x 2!) = 120 / (6 x 2) = 10\n- 8C2 = 8! / (2! x 6!) = (8 x 7) / (2 x 1) = 28\n\nKey properties:\n1. nCr = nC(n-r). For example, 10C3 = 10C7.\n2. nC0 = nCn = 1.\n3. nC1 = n.\n\nWhen to use permutations vs combinations:\n- Permutation: 'In how many ways can we ARRANGE...' (order matters)\n- Combination: 'In how many ways can we CHOOSE/SELECT...' (order doesn't matter)\n\nExample: From a group of 8 people, a committee of 3 is to be formed. How many ways? This is a combination since the order of selection doesn't matter: 8C3 = 56.",
+          "content_zh": "组合是顺序不重要的物体选择。\n\n从 n 个不同物体中选择 r 个物体的方式数为：\nnCr = n! / [r! * (n-r)!]\n\n也写作 C(n,r) 或二项式系数「n 选 r」。\n\n示例：\n- 5C3 = 5! / (3! * 2!) = 120 / (6 * 2) = 10\n- 8C2 = 8! / (2! * 6!) = (8 * 7) / (2 * 1) = 28\n\n关键性质：\n1. nCr = nC(n-r)。例如，10C3 = 10C7。\n2. nC0 = nCn = 1。\n3. nC1 = n。\n\n何时使用排列与组合：\n- 排列：'有多少种方式可以排列...'（顺序重要）\n- 组合：'有多少种方式可以选择...'（顺序不重要）\n\n示例：从 8 个人的小组中，要组成一个 3 人委员会。有多少种方式？这是组合，因为选择顺序不重要：8C3 = 56。"
+        },
+        {
+          "title_en": "Problems with Restrictions",
+          "title_zh": "有限制条件的问题",
+          "content_en": "Many CIE questions involve restrictions on arrangements or selections.\n\nCommon types:\n\n1. Items that MUST be together:\nTreat the items that must be together as a single unit. Arrange the units, then arrange the items within the combined unit.\nExample: 5 people in a row, but A and B must sit together. Treat AB as one unit: arrange 4 units in 4! ways, and A and B can swap within their unit in 2! ways. Total = 4! x 2! = 48.\n\n2. Items that MUST NOT be together:\nTotal arrangements without restriction - Arrangements where they ARE together.\nFrom the example above: Total unrestricted = 5! = 120. Together = 48. Not together = 120 - 48 = 72.\n\n3. Items in specific positions:\nFix the restricted items first, then arrange the remaining items.\nExample: 5 people in a row, A must be at one end. Choose which end for A (2 ways), then arrange the remaining 4 in 4! ways. Total = 2 x 24 = 48.\n\n4. Combinations with conditions:\nSplit into cases that satisfy the condition.\nExample: Choose 3 from 5 boys and 4 girls with at least 1 girl.\nMethod: Total - (no girls) = 9C3 - 5C3 = 84 - 10 = 74.\nOr by cases: (1 girl, 2 boys) + (2 girls, 1 boy) + (3 girls) = 4C1 x 5C2 + 4C2 x 5C1 + 4C3 = 40 + 30 + 4 = 74.",
+          "content_zh": "许多 CIE 题目涉及对排列或选择的限制条件。\n\n常见类型：\n\n1. 必须在一起的项目：\n将必须在一起的项目视为一个整体。先排列各个整体，然后排列整体内部的项目。\n示例：5 个人排成一排，但 A 和 B 必须坐在一起。将 AB 视为一个整体：4 个整体有 4! 种排列方式，A 和 B 在其内部可以交换有 2! 种方式。总数 = 4! * 2! = 48。\n\n2. 不能在一起的项目：\n无限制的总排列数 - 它们在一起的排列数。\n从上面的例子：无限制总数 = 5! = 120。在一起 = 48。不在一起 = 120 - 48 = 72。\n\n3. 特定位置的项目：\n先固定受限制的项目，然后排列其余项目。\n示例：5 个人排成一排，A 必须在某一端。选择 A 在哪一端（2 种方式），然后排列其余 4 人有 4! 种方式。总数 = 2 * 24 = 48。\n\n4. 有条件的组合：\n分成满足条件的情况。\n示例：从 5 个男孩和 4 个女孩中选 3 人，至少有 1 个女孩。\n方法：总数 -（没有女孩）= 9C3 - 5C3 = 84 - 10 = 74。\n或按情况分：(1 女 2 男) + (2 女 1 男) + (3 女) = 4C1 * 5C2 + 4C2 * 5C1 + 4C3 = 40 + 30 + 4 = 74。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "How many different 4-letter arrangements can be made from the letters of the word 'MATHEMATICS' if each letter can only be used as many times as it appears?",
+          "question_zh": "从单词 'MATHEMATICS' 的字母中可以组成多少个不同的 4 字母排列（每个字母最多使用其出现次数）？",
+          "options": {
+            "A": "2454",
+            "B": "3672",
+            "C": "5040",
+            "D": "7920"
+          },
+          "answer": "A",
+          "explanation_en": "MATHEMATICS has letters: M(2), A(2), T(2), H(1), E(1), I(1), C(1), S(1) - 8 distinct letters. We need to consider cases: (1) All 4 different: choose 4 from 8 and arrange = 8P4 = 1680. (2) Exactly one pair and 2 different: choose which letter is paired (3 choices: M,A,T), choose 2 more from remaining 7 letters (7C2), arrange 4 letters with one repeated pair = 3 x 21 x 4!/2! = 3 x 21 x 12 = 756. (3) Two pairs: choose 2 from {M,A,T} for the pairs (3C2=3), arrange = 3 x 4!/(2!x2!) = 3 x 6 = 18. Total = 1680 + 756 + 18 = 2454.",
+          "explanation_zh": "MATHEMATICS 的字母：M(2), A(2), T(2), H(1), E(1), I(1), C(1), S(1) — 8 个不同字母。需要考虑情况：(1) 4 个全不同：从 8 个中选 4 个并排列 = 8P4 = 1680。(2) 恰好一对相同和 2 个不同：选择哪个字母成对（3 种选择：M,A,T），从剩余 7 个字母中再选 2 个（7C2），排列有一对重复的 4 个字母 = 3 * 21 * 4!/2! = 3 * 21 * 12 = 756。(3) 两对：从 {M,A,T} 中选 2 个作为两对（3C2=3），排列 = 3 * 4!/(2!*2!) = 3 * 6 = 18。总数 = 1680 + 756 + 18 = 2454。"
+        },
+        {
+          "question_en": "A committee of 5 is to be chosen from 6 men and 4 women. How many committees can be formed if there must be at least 2 women?",
+          "question_zh": "从 6 名男性和 4 名女性中选出 5 人组成委员会。如果必须至少有 2 名女性，能组成多少个委员会？",
+          "options": {
+            "A": "120",
+            "B": "186",
+            "C": "246",
+            "D": "252"
+          },
+          "answer": "B",
+          "explanation_en": "Cases with at least 2 women:\n- 2 women, 3 men: 4C2 x 6C3 = 6 x 20 = 120\n- 3 women, 2 men: 4C3 x 6C2 = 4 x 15 = 60\n- 4 women, 1 man: 4C4 x 6C1 = 1 x 6 = 6\nTotal = 120 + 60 + 6 = 186.",
+          "explanation_zh": "至少 2 名女性的情况：\n- 2 女 3 男：4C2 * 6C3 = 6 * 20 = 120\n- 3 女 2 男：4C3 * 6C2 = 4 * 15 = 60\n- 4 女 1 男：4C4 * 6C1 = 1 * 6 = 6\n总数 = 120 + 60 + 6 = 186。"
+        },
+        {
+          "question_en": "In how many ways can 6 people be seated in a circle?",
+          "question_zh": "6 个人围成一圈就坐有多少种方式？",
+          "options": {
+            "A": "60",
+            "B": "120",
+            "C": "360",
+            "D": "720"
+          },
+          "answer": "B",
+          "explanation_en": "The number of ways to arrange n distinct objects in a circle is (n-1)!. For 6 people: (6-1)! = 5! = 120. In a circular arrangement, we fix one person's position to avoid counting rotations as different arrangements.",
+          "explanation_zh": "将 n 个不同物体排成一个圆的方式数为 (n-1)!。对于 6 个人：(6-1)! = 5! = 120。在圆形排列中，我们固定一个人的位置以避免将旋转计为不同的排列。"
+        },
+        {
+          "question_en": "How many ways can the letters of the word 'BANANA' be arranged?",
+          "question_zh": "单词 'BANANA' 的字母有多少种不同排列方式？",
+          "options": {
+            "A": "20",
+            "B": "60",
+            "C": "120",
+            "D": "720"
+          },
+          "answer": "B",
+          "explanation_en": "BANANA has 6 letters: B(1), A(3), N(2). The number of distinct arrangements = 6! / (3! x 2!) = 720 / (6 x 2) = 720/12 = 60.",
+          "explanation_zh": "BANANA 有 6 个字母：B(1), A(3), N(2)。不同排列的数量 = 6! / (3! * 2!) = 720 / (6 * 2) = 720/12 = 60。"
+        },
+        {
+          "question_en": "From a standard deck of 52 cards, how many ways can a hand of 5 cards be dealt?",
+          "question_zh": "从一副标准 52 张扑克牌中，有多少种方式可以发出 5 张牌的手牌？",
+          "options": {
+            "A": "2,598,960",
+            "B": "311,875,200",
+            "C": "1,287",
+            "D": "120"
+          },
+          "answer": "A",
+          "explanation_en": "Since the order of cards in a hand doesn't matter, this is a combination. 52C5 = 52! / (5! x 47!) = (52 x 51 x 50 x 49 x 48) / (5 x 4 x 3 x 2 x 1) = 311,875,200 / 120 = 2,598,960.",
+          "explanation_zh": "由于手牌中牌的顺序不重要，这是一个组合问题。52C5 = 52! / (5! * 47!) = (52 * 51 * 50 * 49 * 48) / (5 * 4 * 3 * 2 * 1) = 311,875,200 / 120 = 2,598,960。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "s1_ch3",
+      "title_en": "Probability",
+      "title_zh": "概率",
+      "knowledge_points": [
+        {
+          "title_en": "Basic Probability Concepts",
+          "title_zh": "基本概率概念",
+          "content_en": "Probability measures the likelihood of an event occurring, on a scale from 0 (impossible) to 1 (certain).\n\nP(A) = Number of favourable outcomes / Total number of equally likely outcomes\n\nKey terms:\n- Experiment: A process that results in an outcome (e.g., rolling a die).\n- Sample space (S): The set of all possible outcomes.\n- Event: A subset of the sample space.\n- Complement: P(A') = 1 - P(A), where A' means 'not A'.\n\nExample: Rolling a fair die.\nSample space S = {1, 2, 3, 4, 5, 6}\nP(even number) = 3/6 = 1/2\nP(not even) = 1 - 1/2 = 1/2\n\nImportant:\n- 0 <= P(A) <= 1 for any event A.\n- P(S) = 1 (something must happen).\n- The sum of probabilities of all mutually exclusive outcomes equals 1.",
+          "content_zh": "概率衡量事件发生的可能性，范围从 0（不可能）到 1（确定）。\n\nP(A) = 有利结果的数量 / 等可能结果的总数\n\n关键术语：\n- 实验：产生结果的过程（例如，掷骰子）。\n- 样本空间 (S)：所有可能结果的集合。\n- 事件：样本空间的子集。\n- 补事件：P(A') = 1 - P(A)，其中 A' 表示「非 A」。\n\n示例：掷一个公平骰子。\n样本空间 S = {1, 2, 3, 4, 5, 6}\nP(偶数) = 3/6 = 1/2\nP(非偶数) = 1 - 1/2 = 1/2\n\n重要：\n- 对于任何事件 A，0 <= P(A) <= 1。\n- P(S) = 1（必然发生某件事）。\n- 所有互斥结果的概率之和等于 1。"
+        },
+        {
+          "title_en": "Addition Rule and Mutually Exclusive Events",
+          "title_zh": "加法规则与互斥事件",
+          "content_en": "The addition rule calculates the probability that at least one of two events occurs.\n\nGeneral Addition Rule:\nP(A or B) = P(A union B) = P(A) + P(B) - P(A and B)\n\nThe term P(A and B) is subtracted to avoid double-counting outcomes that are in both A and B.\n\nMutually exclusive events: Two events A and B are mutually exclusive if they cannot occur at the same time (A intersection B = empty set).\n- If A and B are mutually exclusive: P(A and B) = 0\n- Therefore: P(A or B) = P(A) + P(B)\n\nExample: In drawing a card from a deck:\n- P(King or Queen) = P(King) + P(Queen) = 4/52 + 4/52 = 8/52 = 2/13\n(These are mutually exclusive - a card cannot be both a King and a Queen.)\n\n- P(King or Heart) = P(King) + P(Heart) - P(King and Heart)\n= 4/52 + 13/52 - 1/52 = 16/52 = 4/13\n(Not mutually exclusive - the King of Hearts is both.)",
+          "content_zh": "加法规则计算两个事件中至少一个发生的概率。\n\n一般加法规则：\nP(A 或 B) = P(A 并 B) = P(A) + P(B) - P(A 且 B)\n\n减去 P(A 且 B) 是为了避免重复计算同时属于 A 和 B 的结果。\n\n互斥事件：如果两个事件 A 和 B 不能同时发生（A 交 B = 空集），则它们互斥。\n- 如果 A 和 B 互斥：P(A 且 B) = 0\n- 因此：P(A 或 B) = P(A) + P(B)\n\n示例：从一副牌中抽一张牌：\n- P(国王或王后) = P(国王) + P(王后) = 4/52 + 4/52 = 8/52 = 2/13\n（这些是互斥的 — 一张牌不能同时是国王和王后。）\n\n- P(国王或红心) = P(国王) + P(红心) - P(国王且红心)\n= 4/52 + 13/52 - 1/52 = 16/52 = 4/13\n（不互斥 — 红心国王同时满足两个条件。）"
+        },
+        {
+          "title_en": "Multiplication Rule and Independent Events",
+          "title_zh": "乘法规则与独立事件",
+          "content_en": "The multiplication rule calculates the probability that two events both occur.\n\nGeneral Multiplication Rule:\nP(A and B) = P(A) x P(B|A)\nwhere P(B|A) is the conditional probability of B given that A has occurred.\n\nIndependent events: Two events A and B are independent if the occurrence of one does not affect the probability of the other.\n- If A and B are independent: P(B|A) = P(B)\n- Therefore: P(A and B) = P(A) x P(B)\n\nTesting for independence:\nA and B are independent if and only if P(A and B) = P(A) x P(B).\n\nExample: Rolling two fair dice.\nP(first die shows 6 AND second die shows 6) = 1/6 x 1/6 = 1/36\n(The two dice are independent.)\n\nExample: Drawing cards WITHOUT replacement.\nP(1st card is Ace AND 2nd card is Ace) = 4/52 x 3/51 = 12/2652 = 1/221\n(Not independent - the first draw affects the second.)\n\nWith replacement, the events would be independent:\nP(1st Ace AND 2nd Ace) = 4/52 x 4/52 = 16/2704 = 1/169.",
+          "content_zh": "乘法规则计算两个事件同时发生的概率。\n\n一般乘法规则：\nP(A 且 B) = P(A) * P(B|A)\n其中 P(B|A) 是在 A 已经发生的条件下 B 发生的条件概率。\n\n独立事件：如果一个事件的发生不影响另一个事件的概率，则两个事件 A 和 B 是独立的。\n- 如果 A 和 B 独立：P(B|A) = P(B)\n- 因此：P(A 且 B) = P(A) * P(B)\n\n检验独立性：\nA 和 B 独立当且仅当 P(A 且 B) = P(A) * P(B)。\n\n示例：掷两个公平骰子。\nP(第一个骰子显示 6 且第二个骰子显示 6) = 1/6 * 1/6 = 1/36\n（两个骰子是独立的。）\n\n示例：不放回地抽牌。\nP(第一张是 A 且第二张是 A) = 4/52 * 3/51 = 12/2652 = 1/221\n（不独立 — 第一次抽取影响了第二次。）\n\n有放回时，事件是独立的：\nP(第一张 A 且第二张 A) = 4/52 * 4/52 = 16/2704 = 1/169。"
+        },
+        {
+          "title_en": "Conditional Probability",
+          "title_zh": "条件概率",
+          "content_en": "Conditional probability is the probability of an event occurring given that another event has already occurred.\n\nFormula:\nP(A|B) = P(A and B) / P(B), provided P(B) > 0\n\nThis can be rearranged to:\nP(A and B) = P(A|B) x P(B) = P(B|A) x P(A)\n\nExample: In a class of 30 students, 18 study Maths, 15 study Physics, and 10 study both.\nP(Maths | Physics) = P(Maths and Physics) / P(Physics) = (10/30) / (15/30) = 10/15 = 2/3.\n\nThis means: given that a student studies Physics, the probability they also study Maths is 2/3.\n\nCommon CIE exam approach:\n1. Draw a Venn diagram or tree diagram to visualize the problem.\n2. Identify what is given (the condition) and what is being asked.\n3. Apply the formula carefully.\n\nImportant: P(A|B) is generally NOT equal to P(B|A).",
+          "content_zh": "条件概率是在另一事件已经发生的条件下，某事件发生的概率。\n\n公式：\nP(A|B) = P(A 且 B) / P(B)，前提是 P(B) > 0\n\n可以变形为：\nP(A 且 B) = P(A|B) * P(B) = P(B|A) * P(A)\n\n示例：在 30 名学生的班级中，18 人学数学，15 人学物理，10 人两门都学。\nP(数学 | 物理) = P(数学且物理) / P(物理) = (10/30) / (15/30) = 10/15 = 2/3。\n\n这意味着：已知一个学生学物理，他也学数学的概率是 2/3。\n\nCIE 考试常见方法：\n1. 画文氏图或树形图来可视化问题。\n2. 识别已知条件（条件）和所求。\n3. 仔细应用公式。\n\n重要：P(A|B) 通常不等于 P(B|A)。"
+        },
+        {
+          "title_en": "Tree Diagrams",
+          "title_zh": "树形图",
+          "content_en": "A tree diagram is a visual tool for displaying all possible outcomes of a sequence of events and their probabilities.\n\nRules for tree diagrams:\n1. Each branch represents a possible outcome.\n2. The probability is written on each branch.\n3. Probabilities on branches from the same point must sum to 1.\n4. To find the probability of a path, MULTIPLY the probabilities along the branches (AND rule).\n5. To find the probability of multiple paths, ADD the probabilities of the individual paths (OR rule).\n\nExample: A bag contains 3 red and 2 blue balls. Two balls are drawn without replacement.\n\nFirst draw:\n- P(Red) = 3/5\n- P(Blue) = 2/5\n\nSecond draw (if first was Red):\n- P(Red) = 2/4 = 1/2\n- P(Blue) = 2/4 = 1/2\n\nSecond draw (if first was Blue):\n- P(Red) = 3/4\n- P(Blue) = 1/4\n\nP(both Red) = 3/5 x 1/2 = 3/10\nP(one of each) = P(RB) + P(BR) = 3/5 x 1/2 + 2/5 x 3/4 = 3/10 + 6/20 = 3/10 + 3/10 = 6/10 = 3/5\n\nTree diagrams are especially useful when events are sequential and conditional probabilities change.",
+          "content_zh": "树形图是一种显示一系列事件所有可能结果及其概率的可视化工具。\n\n树形图规则：\n1. 每个分支代表一个可能的结果。\n2. 每个分支上写明概率。\n3. 从同一点出发的分支概率之和必须为 1。\n4. 求某条路径的概率，将沿途分支的概率相乘（且规则）。\n5. 求多条路径的概率，将各条路径的概率相加（或规则）。\n\n示例：一个袋子里有 3 个红球和 2 个蓝球。不放回地抽取两个球。\n\n第一次抽取：\n- P(红) = 3/5\n- P(蓝) = 2/5\n\n第二次抽取（如果第一次是红色）：\n- P(红) = 2/4 = 1/2\n- P(蓝) = 2/4 = 1/2\n\n第二次抽取（如果第一次是蓝色）：\n- P(红) = 3/4\n- P(蓝) = 1/4\n\nP(两个都是红色) = 3/5 * 1/2 = 3/10\nP(各一个) = P(红蓝) + P(蓝红) = 3/5 * 1/2 + 2/5 * 3/4 = 3/10 + 6/20 = 3/10 + 3/10 = 6/10 = 3/5\n\n当事件是顺序的且条件概率会变化时，树形图特别有用。"
+        },
+        {
+          "title_en": "Venn Diagrams for Probability",
+          "title_zh": "文氏图在概率中的应用",
+          "content_en": "A Venn diagram uses overlapping circles within a rectangle to represent events and their relationships.\n\nThe rectangle represents the sample space S. Each circle represents an event.\n\nKey regions for two events A and B:\n- A only (not B): in circle A but not in the overlap\n- B only (not A): in circle B but not in the overlap\n- A and B (intersection): the overlapping region\n- Neither A nor B: outside both circles but inside the rectangle\n\nAll four regions must sum to 1 (or to n for frequencies).\n\nUsing Venn diagrams:\n1. Start by filling in the intersection P(A and B).\n2. Then fill A only = P(A) - P(A and B).\n3. Then fill B only = P(B) - P(A and B).\n4. Then fill neither = 1 - P(A or B).\n\nExample: P(A) = 0.6, P(B) = 0.5, P(A and B) = 0.2.\n- A only = 0.6 - 0.2 = 0.4\n- B only = 0.5 - 0.2 = 0.3\n- A and B = 0.2\n- Neither = 1 - (0.4 + 0.3 + 0.2) = 0.1\n- P(A or B) = 0.4 + 0.3 + 0.2 = 0.9 (or use formula: 0.6 + 0.5 - 0.2 = 0.9)\n\nVenn diagrams can also be used with three events, creating more regions.",
+          "content_zh": "文氏图使用矩形内的重叠圆来表示事件及其关系。\n\n矩形代表样本空间 S。每个圆代表一个事件。\n\n两个事件 A 和 B 的关键区域：\n- 仅 A（非 B）：在圆 A 内但不在重叠区域\n- 仅 B（非 A）：在圆 B 内但不在重叠区域\n- A 且 B（交集）：重叠区域\n- 既非 A 也非 B：在两个圆外但在矩形内\n\n所有四个区域的总和必须为 1（或频率为 n）。\n\n使用文氏图：\n1. 首先填入交集 P(A 且 B)。\n2. 然后填入仅 A = P(A) - P(A 且 B)。\n3. 然后填入仅 B = P(B) - P(A 且 B)。\n4. 然后填入两者都不 = 1 - P(A 或 B)。\n\n示例：P(A) = 0.6，P(B) = 0.5，P(A 且 B) = 0.2。\n- 仅 A = 0.6 - 0.2 = 0.4\n- 仅 B = 0.5 - 0.2 = 0.3\n- A 且 B = 0.2\n- 两者都不 = 1 - (0.4 + 0.3 + 0.2) = 0.1\n- P(A 或 B) = 0.4 + 0.3 + 0.2 = 0.9（或使用公式：0.6 + 0.5 - 0.2 = 0.9）\n\n文氏图也可以用于三个事件，创建更多区域。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "Events A and B are such that P(A) = 0.4, P(B) = 0.5, and P(A or B) = 0.7. What is P(A and B)?",
+          "question_zh": "事件 A 和 B 满足 P(A) = 0.4，P(B) = 0.5，P(A 或 B) = 0.7。P(A 且 B) 是多少？",
+          "options": {
+            "A": "0.1",
+            "B": "0.2",
+            "C": "0.3",
+            "D": "0.9"
+          },
+          "answer": "B",
+          "explanation_en": "Using the addition rule: P(A or B) = P(A) + P(B) - P(A and B). Substituting: 0.7 = 0.4 + 0.5 - P(A and B). Therefore P(A and B) = 0.4 + 0.5 - 0.7 = 0.2.",
+          "explanation_zh": "使用加法规则：P(A 或 B) = P(A) + P(B) - P(A 且 B)。代入：0.7 = 0.4 + 0.5 - P(A 且 B)。因此 P(A 且 B) = 0.4 + 0.5 - 0.7 = 0.2。"
+        },
+        {
+          "question_en": "A bag contains 5 red balls and 3 blue balls. Two balls are drawn without replacement. What is the probability that both balls are red?",
+          "question_zh": "一个袋子里有 5 个红球和 3 个蓝球。不放回地抽取两个球。两个球都是红色的概率是多少？",
+          "options": {
+            "A": "5/14",
+            "B": "25/64",
+            "C": "5/16",
+            "D": "10/28"
+          },
+          "answer": "A",
+          "explanation_en": "P(1st red) = 5/8. P(2nd red | 1st red) = 4/7 (one red ball removed, so 4 red left out of 7 total). P(both red) = 5/8 x 4/7 = 20/56 = 5/14. Note that option D (10/28) simplifies to 5/14 as well, but A is the simplified form and the intended answer.",
+          "explanation_zh": "P(第一个红) = 5/8。P(第二个红 | 第一个红) = 4/7（取出一个红球后，7 个球中剩 4 个红球）。P(两个都红) = 5/8 * 4/7 = 20/56 = 5/14。注意选项 D (10/28) 化简后也是 5/14，但 A 是最简形式，为标准答案。"
+        },
+        {
+          "question_en": "If P(A) = 0.3 and P(B) = 0.6, and A and B are independent, what is P(A|B)?",
+          "question_zh": "如果 P(A) = 0.3，P(B) = 0.6，且 A 和 B 独立，P(A|B) 是多少？",
+          "options": {
+            "A": "0.18",
+            "B": "0.3",
+            "C": "0.5",
+            "D": "0.6"
+          },
+          "answer": "B",
+          "explanation_en": "Since A and B are independent, the occurrence of B does not affect the probability of A. Therefore P(A|B) = P(A) = 0.3. This is the definition of independence: knowing B has occurred gives no information about A.",
+          "explanation_zh": "由于 A 和 B 独立，B 的发生不影响 A 的概率。因此 P(A|B) = P(A) = 0.3。这就是独立性的定义：知道 B 已经发生不会提供关于 A 的任何信息。"
+        },
+        {
+          "question_en": "In a school, 60% of students play football, 40% play basketball, and 25% play both. A student is chosen at random. Given that the student plays football, what is the probability that they also play basketball?",
+          "question_zh": "在一所学校中，60% 的学生踢足球，40% 打篮球，25% 两项都参加。随机选择一名学生。已知该学生踢足球，他也打篮球的概率是多少？",
+          "options": {
+            "A": "5/12",
+            "B": "5/8",
+            "C": "2/5",
+            "D": "1/4"
+          },
+          "answer": "A",
+          "explanation_en": "P(Basketball | Football) = P(Basketball and Football) / P(Football) = 0.25 / 0.60 = 25/60 = 5/12.",
+          "explanation_zh": "P(篮球 | 足球) = P(篮球且足球) / P(足球) = 0.25 / 0.60 = 25/60 = 5/12。"
+        },
+        {
+          "question_en": "A fair coin is tossed 3 times. What is the probability of getting at least one head?",
+          "question_zh": "一枚公平硬币抛掷 3 次。至少得到一次正面的概率是多少？",
+          "options": {
+            "A": "1/2",
+            "B": "3/4",
+            "C": "7/8",
+            "D": "1/8"
+          },
+          "answer": "C",
+          "explanation_en": "P(at least one head) = 1 - P(no heads) = 1 - P(all tails). P(all tails) = (1/2)^3 = 1/8. Therefore P(at least one head) = 1 - 1/8 = 7/8. Using the complement method is much easier than listing all favourable outcomes.",
+          "explanation_zh": "P(至少一次正面) = 1 - P(没有正面) = 1 - P(全部反面)。P(全部反面) = (1/2)^3 = 1/8。因此 P(至少一次正面) = 1 - 1/8 = 7/8。使用补集方法比列出所有有利结果要容易得多。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "s1_ch4",
+      "title_en": "Discrete Random Variables",
+      "title_zh": "离散随机变量",
+      "knowledge_points": [
+        {
+          "title_en": "Discrete Random Variables and Probability Distributions",
+          "title_zh": "离散随机变量与概率分布",
+          "content_en": "A discrete random variable X is a variable that can take a finite or countably infinite number of distinct values, each with a specific probability.\n\nA probability distribution table lists all possible values of X and their associated probabilities.\n\nExample:\n  X:    1     2     3     4\n  P(X): 0.1   0.3   0.4   0.2\n\nProperties of a valid probability distribution:\n1. 0 <= P(X = x) <= 1 for all values x.\n2. The sum of all probabilities equals 1: Sum of P(X = x) = 1.\n\nThis second property is frequently used in CIE questions to find an unknown probability.\n\nExample: If P(X=1) = k, P(X=2) = 2k, P(X=3) = 3k, P(X=4) = 4k, find k.\nk + 2k + 3k + 4k = 1\n10k = 1\nk = 0.1\n\nProbability distributions can also be defined by a formula, e.g., P(X = x) = x/10 for x = 1, 2, 3, 4.",
+          "content_zh": "离散随机变量 X 是一个可以取有限个或可数无限个不同值的变量，每个值都有特定的概率。\n\n概率分布表列出 X 的所有可能值及其相关概率。\n\n示例：\n  X:    1     2     3     4\n  P(X): 0.1   0.3   0.4   0.2\n\n有效概率分布的性质：\n1. 对于所有值 x，0 <= P(X = x) <= 1。\n2. 所有概率之和等于 1：Sum of P(X = x) = 1。\n\n第二个性质经常在 CIE 题目中用来求未知概率。\n\n示例：如果 P(X=1) = k，P(X=2) = 2k，P(X=3) = 3k，P(X=4) = 4k，求 k。\nk + 2k + 3k + 4k = 1\n10k = 1\nk = 0.1\n\n概率分布也可以用公式定义，例如 P(X = x) = x/10，其中 x = 1, 2, 3, 4。"
+        },
+        {
+          "title_en": "Expectation E(X) - The Mean of a Discrete Random Variable",
+          "title_zh": "期望 E(X) — 离散随机变量的均值",
+          "content_en": "The expectation (or expected value, or mean) of a discrete random variable X is:\n\nE(X) = Sum of [x * P(X = x)] for all values of x\n\nThis is often denoted by the Greek letter mu.\n\nExample:\n  X:    1     2     3     4\n  P(X): 0.1   0.3   0.4   0.2\n\nE(X) = 1(0.1) + 2(0.3) + 3(0.4) + 4(0.2) = 0.1 + 0.6 + 1.2 + 0.8 = 2.7\n\nInterpretation: E(X) is the long-run average value of X over many trials. It does not have to be one of the possible values of X.\n\nProperties of Expectation:\n1. E(aX + b) = a * E(X) + b, where a and b are constants.\n2. E(X + Y) = E(X) + E(Y) for any random variables X and Y.\n3. E(a) = a for a constant a.\n\nExample: If E(X) = 5, find E(3X + 2).\nE(3X + 2) = 3 * E(X) + 2 = 3(5) + 2 = 17.",
+          "content_zh": "离散随机变量 X 的期望（或期望值，或均值）为：\n\nE(X) = Sum of [x * P(X = x)]，对 x 的所有值求和\n\n通常用希腊字母 mu 表示。\n\n示例：\n  X:    1     2     3     4\n  P(X): 0.1   0.3   0.4   0.2\n\nE(X) = 1(0.1) + 2(0.3) + 3(0.4) + 4(0.2) = 0.1 + 0.6 + 1.2 + 0.8 = 2.7\n\n解释：E(X) 是 X 在多次试验中的长期平均值。它不一定是 X 的可能取值之一。\n\n期望的性质：\n1. E(aX + b) = a * E(X) + b，其中 a 和 b 是常数。\n2. E(X + Y) = E(X) + E(Y)，对任意随机变量 X 和 Y。\n3. E(a) = a，对常数 a。\n\n示例：如果 E(X) = 5，求 E(3X + 2)。\nE(3X + 2) = 3 * E(X) + 2 = 3(5) + 2 = 17。"
+        },
+        {
+          "title_en": "E(X^2) and Variance Var(X)",
+          "title_zh": "E(X^2) 与方差 Var(X)",
+          "content_en": "The variance of a discrete random variable X measures the spread of the distribution.\n\nVariance formula:\nVar(X) = E(X^2) - [E(X)]^2\n\nwhere E(X^2) = Sum of [x^2 * P(X = x)] for all values of x.\n\nThis formula is the most commonly used in CIE exams.\n\nAlternative form: Var(X) = E[(X - mu)^2] = Sum of [(x - mu)^2 * P(X = x)]\n\nStandard deviation: SD(X) = sqrt(Var(X))\n\nExample:\n  X:    1     2     3     4\n  P(X): 0.1   0.3   0.4   0.2\n\nE(X) = 2.7 (calculated previously)\nE(X^2) = 1^2(0.1) + 2^2(0.3) + 3^2(0.4) + 4^2(0.2) = 0.1 + 1.2 + 3.6 + 3.2 = 8.1\nVar(X) = 8.1 - 2.7^2 = 8.1 - 7.29 = 0.81\nSD(X) = sqrt(0.81) = 0.9\n\nProperties of Variance:\n1. Var(aX + b) = a^2 * Var(X). Note: the constant b does NOT affect variance.\n2. Var(X) >= 0 always.\n3. If Var(X) = 0, then X is a constant.",
+          "content_zh": "离散随机变量 X 的方差衡量分布的离散程度。\n\n方差公式：\nVar(X) = E(X^2) - [E(X)]^2\n\n其中 E(X^2) = Sum of [x^2 * P(X = x)]，对 x 的所有值求和。\n\n这个公式在 CIE 考试中最常用。\n\n替代形式：Var(X) = E[(X - mu)^2] = Sum of [(x - mu)^2 * P(X = x)]\n\n标准差：SD(X) = sqrt(Var(X))\n\n示例：\n  X:    1     2     3     4\n  P(X): 0.1   0.3   0.4   0.2\n\nE(X) = 2.7（之前计算过）\nE(X^2) = 1^2(0.1) + 2^2(0.3) + 3^2(0.4) + 4^2(0.2) = 0.1 + 1.2 + 3.6 + 3.2 = 8.1\nVar(X) = 8.1 - 2.7^2 = 8.1 - 7.29 = 0.81\nSD(X) = sqrt(0.81) = 0.9\n\n方差的性质：\n1. Var(aX + b) = a^2 * Var(X)。注意：常数 b 不影响方差。\n2. Var(X) >= 0 始终成立。\n3. 如果 Var(X) = 0，则 X 是一个常数。"
+        },
+        {
+          "title_en": "Expectation and Variance of Linear Functions of X",
+          "title_zh": "X 的线性函数的期望与方差",
+          "content_en": "If Y = aX + b where a and b are constants:\n\nE(Y) = E(aX + b) = aE(X) + b\nVar(Y) = Var(aX + b) = a^2 Var(X)\nSD(Y) = |a| SD(X)\n\nNote the key difference: the additive constant b affects the mean but NOT the variance.\n\nThis is crucial for CIE questions that ask about transformations.\n\nExample: X has E(X) = 10 and Var(X) = 4.\nLet Y = 2X - 3.\nE(Y) = 2(10) - 3 = 17\nVar(Y) = 2^2 (4) = 16\nSD(Y) = sqrt(16) = 4\n\nAnother common question type: finding E(X) and Var(X) given E(aX+b) and Var(aX+b).\nExample: If E(3X + 1) = 16, find E(X).\n3E(X) + 1 = 16\nE(X) = 5\n\nIf Var(3X + 1) = 36, find Var(X).\n9 Var(X) = 36\nVar(X) = 4.",
+          "content_zh": "如果 Y = aX + b，其中 a 和 b 是常数：\n\nE(Y) = E(aX + b) = aE(X) + b\nVar(Y) = Var(aX + b) = a^2 Var(X)\nSD(Y) = |a| SD(X)\n\n注意关键区别：加法常数 b 影响均值但不影响方差。\n\n这对于询问变换的 CIE 题目至关重要。\n\n示例：X 的 E(X) = 10，Var(X) = 4。\n令 Y = 2X - 3。\nE(Y) = 2(10) - 3 = 17\nVar(Y) = 2^2 (4) = 16\nSD(Y) = sqrt(16) = 4\n\n另一种常见题型：已知 E(aX+b) 和 Var(aX+b) 求 E(X) 和 Var(X)。\n示例：如果 E(3X + 1) = 16，求 E(X)。\n3E(X) + 1 = 16\nE(X) = 5\n\n如果 Var(3X + 1) = 36，求 Var(X)。\n9 Var(X) = 36\nVar(X) = 4。"
+        },
+        {
+          "title_en": "Constructing Probability Distributions from Context",
+          "title_zh": "根据背景构建概率分布",
+          "content_en": "In CIE exams, you are often asked to construct a probability distribution table from a given scenario.\n\nCommon approaches:\n\n1. Listing outcomes systematically:\nExample: Two fair coins are tossed. Let X = number of heads.\nOutcomes: HH, HT, TH, TT\nX = 0: TT -> P = 1/4\nX = 1: HT, TH -> P = 2/4 = 1/2\nX = 2: HH -> P = 1/4\n\n2. Using combinations and counting:\nExample: A bag has 3 red and 2 blue balls. Two are chosen at random. Let X = number of red balls.\nTotal ways to choose 2 from 5 = 5C2 = 10\nP(X=0) = 2C2/10 = 1/10\nP(X=1) = (3C1 x 2C1)/10 = 6/10 = 3/5\nP(X=2) = 3C2/10 = 3/10\n\nVerification: 1/10 + 6/10 + 3/10 = 10/10 = 1. Correct!\n\n3. Using tree diagrams to find probabilities, then compile into a table.\n\nAlways verify that probabilities sum to 1 as a check on your work.",
+          "content_zh": "在 CIE 考试中，经常要求根据给定场景构建概率分布表。\n\n常见方法：\n\n1. 系统地列出结果：\n示例：抛两枚公平硬币。令 X = 正面的次数。\n结果：HH, HT, TH, TT\nX = 0: TT -> P = 1/4\nX = 1: HT, TH -> P = 2/4 = 1/2\nX = 2: HH -> P = 1/4\n\n2. 使用组合和计数：\n示例：一个袋子里有 3 个红球和 2 个蓝球。随机选 2 个。令 X = 红球数。\n从 5 个中选 2 个的总方式数 = 5C2 = 10\nP(X=0) = 2C2/10 = 1/10\nP(X=1) = (3C1 * 2C1)/10 = 6/10 = 3/5\nP(X=2) = 3C2/10 = 3/10\n\n验证：1/10 + 6/10 + 3/10 = 10/10 = 1。正确！\n\n3. 使用树形图求概率，然后编成表格。\n\n始终验证概率之和为 1，作为检查工作的手段。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "A discrete random variable X has the following probability distribution:\nX: 1, 2, 3, 4\nP(X=x): 0.1, 0.2, k, 0.3\nWhat is the value of k?",
+          "question_zh": "一个离散随机变量 X 有以下概率分布：\nX: 1, 2, 3, 4\nP(X=x): 0.1, 0.2, k, 0.3\nk 的值是多少？",
+          "options": {
+            "A": "0.2",
+            "B": "0.3",
+            "C": "0.4",
+            "D": "0.5"
+          },
+          "answer": "C",
+          "explanation_en": "The sum of all probabilities must equal 1. So 0.1 + 0.2 + k + 0.3 = 1. Therefore 0.6 + k = 1, giving k = 0.4.",
+          "explanation_zh": "所有概率之和必须等于 1。因此 0.1 + 0.2 + k + 0.3 = 1。所以 0.6 + k = 1，得 k = 0.4。"
+        },
+        {
+          "question_en": "For the random variable X with P(X=1)=0.3, P(X=2)=0.5, P(X=3)=0.2, what is E(X)?",
+          "question_zh": "对于随机变量 X，P(X=1)=0.3，P(X=2)=0.5，P(X=3)=0.2，E(X) 是多少？",
+          "options": {
+            "A": "1.5",
+            "B": "1.9",
+            "C": "2.0",
+            "D": "2.1"
+          },
+          "answer": "B",
+          "explanation_en": "E(X) = 1(0.3) + 2(0.5) + 3(0.2) = 0.3 + 1.0 + 0.6 = 1.9.",
+          "explanation_zh": "E(X) = 1(0.3) + 2(0.5) + 3(0.2) = 0.3 + 1.0 + 0.6 = 1.9。"
+        },
+        {
+          "question_en": "If E(X) = 4 and Var(X) = 3, what is E(X^2)?",
+          "question_zh": "如果 E(X) = 4 且 Var(X) = 3，E(X^2) 是多少？",
+          "options": {
+            "A": "7",
+            "B": "13",
+            "C": "16",
+            "D": "19"
+          },
+          "answer": "D",
+          "explanation_en": "Using Var(X) = E(X^2) - [E(X)]^2. Substituting: 3 = E(X^2) - 4^2 = E(X^2) - 16. Therefore E(X^2) = 16 + 3 = 19.",
+          "explanation_zh": "使用 Var(X) = E(X^2) - [E(X)]^2。代入：3 = E(X^2) - 4^2 = E(X^2) - 16。因此 E(X^2) = 16 + 3 = 19。"
+        },
+        {
+          "question_en": "If X has E(X) = 5 and Var(X) = 2, and Y = 3X - 1, what is Var(Y)?",
+          "question_zh": "如果 X 的 E(X) = 5，Var(X) = 2，且 Y = 3X - 1，Var(Y) 是多少？",
+          "options": {
+            "A": "5",
+            "B": "6",
+            "C": "17",
+            "D": "18"
+          },
+          "answer": "D",
+          "explanation_en": "For Y = aX + b, Var(Y) = a^2 * Var(X). Here a = 3, b = -1. Var(Y) = 3^2 * 2 = 9 * 2 = 18. Note that the constant -1 does not affect the variance.",
+          "explanation_zh": "对于 Y = aX + b，Var(Y) = a^2 * Var(X)。这里 a = 3，b = -1。Var(Y) = 3^2 * 2 = 9 * 2 = 18。注意常数 -1 不影响方差。"
+        },
+        {
+          "question_en": "Two fair dice are thrown. Let X be the sum of the two numbers shown. What is P(X = 7)?",
+          "question_zh": "掷两个公平骰子。令 X 为两个骰子点数之和。P(X = 7) 是多少？",
+          "options": {
+            "A": "1/12",
+            "B": "1/6",
+            "C": "5/36",
+            "D": "7/36"
+          },
+          "answer": "B",
+          "explanation_en": "The total number of outcomes when throwing two dice is 6 x 6 = 36. The combinations that give a sum of 7 are: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6 outcomes. Therefore P(X=7) = 6/36 = 1/6.",
+          "explanation_zh": "掷两个骰子时总结果数为 6 * 6 = 36。点数和为 7 的组合有：(1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6 种结果。因此 P(X=7) = 6/36 = 1/6。"
+        }
+      ]
+    },
+    {
+      "chapter_id": "s1_ch5",
+      "title_en": "The Normal Distribution",
+      "title_zh": "正态分布",
+      "knowledge_points": [
+        {
+          "title_en": "The Normal Distribution and Its Properties",
+          "title_zh": "正态分布及其性质",
+          "content_en": "The normal distribution is a continuous probability distribution that is symmetric and bell-shaped. It is defined by two parameters: the mean (mu) and the variance (sigma^2).\n\nNotation: X ~ N(mu, sigma^2)\n\nKey properties:\n1. The curve is symmetric about the mean mu.\n2. The mean, median, and mode are all equal to mu.\n3. The total area under the curve equals 1.\n4. Approximately 68% of data falls within 1 standard deviation of the mean.\n5. Approximately 95% falls within 2 standard deviations.\n6. Approximately 99.7% falls within 3 standard deviations.\n7. The curve extends infinitely in both directions but never touches the x-axis (asymptotic).\n8. The curve is determined completely by mu and sigma.\n\nThe normal distribution is used to model many real-world quantities such as heights, weights, exam scores, and measurement errors.\n\nIMPORTANT for CIE: The second parameter in N(mu, sigma^2) is the VARIANCE, not the standard deviation. So X ~ N(50, 16) means mu = 50 and sigma^2 = 16, hence sigma = 4.",
+          "content_zh": "正态分布是一种对称的钟形连续概率分布。它由两个参数定义：均值 (mu) 和方差 (sigma^2)。\n\n记号：X ~ N(mu, sigma^2)\n\n关键性质：\n1. 曲线关于均值 mu 对称。\n2. 均值、中位数和众数都等于 mu。\n3. 曲线下的总面积等于 1。\n4. 大约 68% 的数据落在均值的 1 个标准差范围内。\n5. 大约 95% 落在 2 个标准差范围内。\n6. 大约 99.7% 落在 3 个标准差范围内。\n7. 曲线在两个方向上无限延伸但永远不会触及 x 轴（渐近线）。\n8. 曲线完全由 mu 和 sigma 决定。\n\n正态分布用于建模许多现实世界的量，如身高、体重、考试成绩和测量误差。\n\nCIE 重要提示：N(mu, sigma^2) 中的第二个参数是方差，而不是标准差。所以 X ~ N(50, 16) 意味着 mu = 50，sigma^2 = 16，因此 sigma = 4。"
+        },
+        {
+          "title_en": "The Standard Normal Distribution and Z-Scores",
+          "title_zh": "标准正态分布与 Z 分数",
+          "content_en": "The standard normal distribution has mean 0 and variance 1: Z ~ N(0, 1).\n\nAny normal distribution can be converted to the standard normal using the Z-score transformation:\n\nZ = (X - mu) / sigma\n\nwhere X is the value, mu is the mean, and sigma is the standard deviation.\n\nThe Z-score tells you how many standard deviations a value is from the mean.\n- Z = 0 means X equals the mean.\n- Z > 0 means X is above the mean.\n- Z < 0 means X is below the mean.\n\nThe standard normal table (provided in CIE exams) gives P(Z < z) for positive z values, denoted as Phi(z).\n\nKey relationships:\n- P(Z < z) = Phi(z) (read directly from the table)\n- P(Z > z) = 1 - Phi(z)\n- P(Z < -z) = 1 - Phi(z) (by symmetry)\n- P(Z > -z) = Phi(z) (by symmetry)\n- P(a < Z < b) = Phi(b) - Phi(a)\n\nExample: Find P(Z < 1.5).\nFrom the table: Phi(1.5) = 0.9332.\nSo P(Z < 1.5) = 0.9332.",
+          "content_zh": "标准正态分布的均值为 0，方差为 1：Z ~ N(0, 1)。\n\n任何正态分布都可以使用 Z 分数变换转换为标准正态分布：\n\nZ = (X - mu) / sigma\n\n其中 X 是值，mu 是均值，sigma 是标准差。\n\nZ 分数表示一个值距均值有多少个标准差。\n- Z = 0 表示 X 等于均值。\n- Z > 0 表示 X 高于均值。\n- Z < 0 表示 X 低于均值。\n\n标准正态分布表（CIE 考试中提供）给出正 z 值的 P(Z < z)，记为 Phi(z)。\n\n关键关系：\n- P(Z < z) = Phi(z)（直接从表中读取）\n- P(Z > z) = 1 - Phi(z)\n- P(Z < -z) = 1 - Phi(z)（由对称性）\n- P(Z > -z) = Phi(z)（由对称性）\n- P(a < Z < b) = Phi(b) - Phi(a)\n\n示例：求 P(Z < 1.5)。\n从表中：Phi(1.5) = 0.9332。\n所以 P(Z < 1.5) = 0.9332。"
+        },
+        {
+          "title_en": "Finding Probabilities Using the Normal Distribution",
+          "title_zh": "使用正态分布计算概率",
+          "content_en": "To find probabilities for X ~ N(mu, sigma^2):\n\nStep 1: Standardise using Z = (X - mu) / sigma.\nStep 2: Use the standard normal table to find the required probability.\n\nExample 1: X ~ N(50, 25), find P(X < 55).\nsigma = sqrt(25) = 5\nZ = (55 - 50) / 5 = 1.0\nP(X < 55) = P(Z < 1.0) = Phi(1.0) = 0.8413\n\nExample 2: X ~ N(100, 225), find P(X > 115).\nsigma = sqrt(225) = 15\nZ = (115 - 100) / 15 = 1.0\nP(X > 115) = P(Z > 1.0) = 1 - Phi(1.0) = 1 - 0.8413 = 0.1587\n\nExample 3: X ~ N(70, 64), find P(62 < X < 78).\nsigma = sqrt(64) = 8\nZ1 = (62 - 70) / 8 = -1.0\nZ2 = (78 - 70) / 8 = 1.0\nP(62 < X < 78) = Phi(1.0) - Phi(-1.0) = Phi(1.0) - [1 - Phi(1.0)] = 2 * Phi(1.0) - 1 = 2(0.8413) - 1 = 0.6826\n\nImportant: For continuous distributions, P(X = a) = 0, so P(X < a) = P(X <= a).",
+          "content_zh": "对于 X ~ N(mu, sigma^2) 求概率：\n\n步骤 1：使用 Z = (X - mu) / sigma 标准化。\n步骤 2：使用标准正态分布表找到所需概率。\n\n示例 1：X ~ N(50, 25)，求 P(X < 55)。\nsigma = sqrt(25) = 5\nZ = (55 - 50) / 5 = 1.0\nP(X < 55) = P(Z < 1.0) = Phi(1.0) = 0.8413\n\n示例 2：X ~ N(100, 225)，求 P(X > 115)。\nsigma = sqrt(225) = 15\nZ = (115 - 100) / 15 = 1.0\nP(X > 115) = P(Z > 1.0) = 1 - Phi(1.0) = 1 - 0.8413 = 0.1587\n\n示例 3：X ~ N(70, 64)，求 P(62 < X < 78)。\nsigma = sqrt(64) = 8\nZ1 = (62 - 70) / 8 = -1.0\nZ2 = (78 - 70) / 8 = 1.0\nP(62 < X < 78) = Phi(1.0) - Phi(-1.0) = Phi(1.0) - [1 - Phi(1.0)] = 2 * Phi(1.0) - 1 = 2(0.8413) - 1 = 0.6826\n\n重要：对于连续分布，P(X = a) = 0，所以 P(X < a) = P(X <= a)。"
+        },
+        {
+          "title_en": "Inverse Normal (Finding Values from Probabilities)",
+          "title_zh": "逆正态（从概率求值）",
+          "content_en": "Inverse normal problems require finding a value of X (or Z) given a probability.\n\nType 1: Finding a Z-value from probability.\nIf P(Z < z) = p, look up p in the body of the normal table to find z.\n\nExample: Find z such that P(Z < z) = 0.95.\nFrom the table: z = 1.645.\n\nType 2: Finding X given a probability.\nStep 1: Find the Z-value from the table.\nStep 2: Use X = mu + Z * sigma.\n\nExample: X ~ N(80, 100). Find the value of a such that P(X < a) = 0.9.\nsigma = sqrt(100) = 10\nP(Z < z) = 0.9, from the table z = 1.282.\na = 80 + 1.282 * 10 = 80 + 12.82 = 92.82\n\nType 3: Finding mu or sigma given a probability.\nExample: X ~ N(mu, 9). If P(X < 20) = 0.8, find mu.\nsigma = 3\nP(Z < (20-mu)/3) = 0.8\n(20-mu)/3 = 0.842 (from table)\n20 - mu = 2.526\nmu = 17.474\n\nType 4: Finding both mu and sigma (requires two equations from two probability statements).\nSolve the simultaneous equations to find both parameters.",
+          "content_zh": "逆正态问题要求在给定概率的情况下找到 X（或 Z）的值。\n\n类型 1：从概率求 Z 值。\n如果 P(Z < z) = p，在正态表的主体中查找 p 来找到 z。\n\n示例：求 z 使得 P(Z < z) = 0.95。\n从表中：z = 1.645。\n\n类型 2：在给定概率的情况下求 X。\n步骤 1：从表中找到 Z 值。\n步骤 2：使用 X = mu + Z * sigma。\n\n示例：X ~ N(80, 100)。求 a 的值使得 P(X < a) = 0.9。\nsigma = sqrt(100) = 10\nP(Z < z) = 0.9，从表中 z = 1.282。\na = 80 + 1.282 * 10 = 80 + 12.82 = 92.82\n\n类型 3：在给定概率的情况下求 mu 或 sigma。\n示例：X ~ N(mu, 9)。如果 P(X < 20) = 0.8，求 mu。\nsigma = 3\nP(Z < (20-mu)/3) = 0.8\n(20-mu)/3 = 0.842（从表中）\n20 - mu = 2.526\nmu = 17.474\n\n类型 4：求 mu 和 sigma（需要从两个概率陈述中得到两个方程）。\n解联立方程来找到两个参数。"
+        },
+        {
+          "title_en": "Normal Approximation and Applied Problems",
+          "title_zh": "正态近似与应用问题",
+          "content_en": "Applied normal distribution problems in CIE often involve real-world contexts.\n\nCommon question types:\n\n1. Finding the proportion/percentage of a population above or below a value:\nExample: Heights are N(170, 64). What percentage are above 180 cm?\nZ = (180-170)/8 = 1.25\nP(X > 180) = 1 - Phi(1.25) = 1 - 0.8944 = 0.1056 = 10.56%\n\n2. Finding a boundary value for a given proportion:\nExample: The top 5% of students get grade A. If scores are N(60, 100), what is the minimum score for grade A?\nP(X > a) = 0.05, so P(X < a) = 0.95\nZ = 1.645\na = 60 + 1.645 x 10 = 76.45, so minimum score is approximately 77.\n\n3. Comparing two normal distributions:\nCompare probabilities or proportions from different normal distributions by standardising each.\n\n4. Setting up simultaneous equations:\nWhen given two probability conditions, set up two Z-score equations and solve simultaneously for mu and sigma.\nExample: P(X < 40) = 0.2 and P(X > 70) = 0.1.\nEquation 1: (40 - mu)/sigma = -0.842\nEquation 2: (70 - mu)/sigma = 1.282\nSolving: subtract equation 1 from equation 2 to eliminate mu.\n\n5. Symmetry problems:\nIf P(X < a) = P(X > b), then a and b are symmetric about the mean, so mu = (a+b)/2.",
+          "content_zh": "CIE 中的正态分布应用问题通常涉及现实世界的情境。\n\n常见题型：\n\n1. 求总体中高于或低于某值的比例/百分比：\n示例：身高服从 N(170, 64)。超过 180 厘米的百分比是多少？\nZ = (180-170)/8 = 1.25\nP(X > 180) = 1 - Phi(1.25) = 1 - 0.8944 = 0.1056 = 10.56%\n\n2. 求给定比例的边界值：\n示例：前 5% 的学生获得 A 等级。如果成绩服从 N(60, 100)，获得 A 等级的最低分是多少？\nP(X > a) = 0.05，所以 P(X < a) = 0.95\nZ = 1.645\na = 60 + 1.645 * 10 = 76.45，所以最低分约为 77。\n\n3. 比较两个正态分布：\n通过分别标准化来比较不同正态分布的概率或比例。\n\n4. 建立联立方程：\n当给出两个概率条件时，建立两个 Z 分数方程并联立求解 mu 和 sigma。\n示例：P(X < 40) = 0.2 且 P(X > 70) = 0.1。\n方程 1：(40 - mu)/sigma = -0.842\n方程 2：(70 - mu)/sigma = 1.282\n解法：方程 2 减方程 1 消去 mu。\n\n5. 对称性问题：\n如果 P(X < a) = P(X > b)，则 a 和 b 关于均值对称，所以 mu = (a+b)/2。"
+        }
+      ],
+      "questions": [
+        {
+          "question_en": "If X ~ N(50, 16), what is P(X > 54)?",
+          "question_zh": "如果 X ~ N(50, 16)，P(X > 54) 是多少？",
+          "options": {
+            "A": "0.1587",
+            "B": "0.2119",
+            "C": "0.3085",
+            "D": "0.8413"
+          },
+          "answer": "A",
+          "explanation_en": "X ~ N(50, 16) means mu = 50, sigma^2 = 16, so sigma = 4. Z = (54 - 50)/4 = 1.0. P(X > 54) = P(Z > 1.0) = 1 - Phi(1.0) = 1 - 0.8413 = 0.1587.",
+          "explanation_zh": "X ~ N(50, 16) 意味着 mu = 50，sigma^2 = 16，所以 sigma = 4。Z = (54 - 50)/4 = 1.0。P(X > 54) = P(Z > 1.0) = 1 - Phi(1.0) = 1 - 0.8413 = 0.1587。"
+        },
+        {
+          "question_en": "The weights of apples are normally distributed with mean 150g and standard deviation 20g. What proportion of apples weigh between 130g and 170g?",
+          "question_zh": "苹果的重量服从正态分布，均值 150g，标准差 20g。重量在 130g 和 170g 之间的苹果比例是多少？",
+          "options": {
+            "A": "0.5000",
+            "B": "0.6826",
+            "C": "0.9544",
+            "D": "0.3413"
+          },
+          "answer": "B",
+          "explanation_en": "X ~ N(150, 400). Z1 = (130-150)/20 = -1.0 and Z2 = (170-150)/20 = 1.0. P(130 < X < 170) = Phi(1.0) - Phi(-1.0) = 0.8413 - (1 - 0.8413) = 0.8413 - 0.1587 = 0.6826. This corresponds to the well-known result that about 68% of data lies within 1 standard deviation of the mean.",
+          "explanation_zh": "X ~ N(150, 400)。Z1 = (130-150)/20 = -1.0，Z2 = (170-150)/20 = 1.0。P(130 < X < 170) = Phi(1.0) - Phi(-1.0) = 0.8413 - (1 - 0.8413) = 0.8413 - 0.1587 = 0.6826。这对应于众所周知的结论：大约 68% 的数据位于均值的 1 个标准差范围内。"
+        },
+        {
+          "question_en": "If Z ~ N(0,1) and P(Z < a) = 0.9, what is the approximate value of a?",
+          "question_zh": "如果 Z ~ N(0,1) 且 P(Z < a) = 0.9，a 的近似值是多少？",
+          "options": {
+            "A": "1.036",
+            "B": "1.282",
+            "C": "1.645",
+            "D": "1.960"
+          },
+          "answer": "B",
+          "explanation_en": "We need to find the z-value such that the area to the left is 0.9. From the standard normal table, Phi(1.282) = 0.9 (approximately). Common z-values to memorise: Phi(1.282) = 0.9, Phi(1.645) = 0.95, Phi(1.960) = 0.975, Phi(2.326) = 0.99.",
+          "explanation_zh": "我们需要找到左侧面积为 0.9 的 z 值。从标准正态分布表中，Phi(1.282) = 0.9（近似）。需要记住的常见 z 值：Phi(1.282) = 0.9，Phi(1.645) = 0.95，Phi(1.960) = 0.975，Phi(2.326) = 0.99。"
+        },
+        {
+          "question_en": "X ~ N(mu, 25). If P(X < 62) = 0.95, what is the value of mu?",
+          "question_zh": "X ~ N(mu, 25)。如果 P(X < 62) = 0.95，mu 的值是多少？",
+          "options": {
+            "A": "48.5",
+            "B": "50.0",
+            "C": "53.775",
+            "D": "57.0"
+          },
+          "answer": "C",
+          "explanation_en": "sigma = sqrt(25) = 5. P(X < 62) = 0.95 means P(Z < (62-mu)/5) = 0.95. From the table, z = 1.645. So (62 - mu)/5 = 1.645. Therefore 62 - mu = 8.225, giving mu = 62 - 8.225 = 53.775.",
+          "explanation_zh": "sigma = sqrt(25) = 5。P(X < 62) = 0.95 意味着 P(Z < (62-mu)/5) = 0.95。从表中，z = 1.645。所以 (62 - mu)/5 = 1.645。因此 62 - mu = 8.225，得 mu = 62 - 8.225 = 53.775。"
+        },
+        {
+          "question_en": "Exam scores are normally distributed with mean 65 and variance 144. Students scoring above 83 receive a distinction. What percentage of students receive a distinction?",
+          "question_zh": "考试成绩服从正态分布，均值 65，方差 144。得分高于 83 的学生获得优等。有多少百分比的学生获得优等？",
+          "options": {
+            "A": "2.28%",
+            "B": "6.68%",
+            "C": "9.34%",
+            "D": "15.87%"
+          },
+          "answer": "B",
+          "explanation_en": "X ~ N(65, 144), so sigma = sqrt(144) = 12. Z = (83 - 65)/12 = 18/12 = 1.5. P(X > 83) = P(Z > 1.5) = 1 - Phi(1.5) = 1 - 0.9332 = 0.0668 = 6.68%. So approximately 6.68% of students receive a distinction.",
+          "explanation_zh": "X ~ N(65, 144)，所以 sigma = sqrt(144) = 12。Z = (83 - 65)/12 = 18/12 = 1.5。P(X > 83) = P(Z > 1.5) = 1 - Phi(1.5) = 1 - 0.9332 = 0.0668 = 6.68%。所以大约 6.68% 的学生获得优等。"
+        }
+      ]
+    }
+  ]
+}
